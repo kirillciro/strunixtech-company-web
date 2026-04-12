@@ -274,7 +274,12 @@
     position: absolute;
     height: 2px;
     width: 46%;
-    background: linear-gradient(90deg, transparent 0%, rgba(56, 189, 248, 0.36) 50%, transparent 100%);
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(56, 189, 248, 0.36) 50%,
+      transparent 100%
+    );
     opacity: 0.5;
     animation: strip-drift 14s ease-in-out infinite;
   }

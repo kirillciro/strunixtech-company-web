@@ -1,12 +1,11 @@
 "use client";
 
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { templateCategories } from "@/lib/template-categories";
 import { ChevronDown, LogIn, LogOut, MessageCircleMore } from "lucide-react";
-import AuthModal from "@/app/src/components/home/AuthModal";
 import LanguageSwitcher from "@/app/src/components/home/LanguageSwitcher";
-import { clearSession, getStoredUser } from "@/lib/auth-client";
+import { useAuth } from "@/context/AuthContext";
 
 type HeaderLabels = {
   templates: string;
@@ -14,28 +13,6 @@ type HeaderLabels = {
   logout: string;
   chat: string;
 };
-
-function subscribeAuth(callback: () => void): () => void {
-  if (typeof window === "undefined") {
-    return () => {};
-  }
-
-  window.addEventListener("storage", callback);
-  window.addEventListener("auth:changed", callback as EventListener);
-
-  return () => {
-    window.removeEventListener("storage", callback);
-    window.removeEventListener("auth:changed", callback as EventListener);
-  };
-}
-
-function getAuthSnapshot(): string | null {
-  if (typeof window === "undefined") {
-    return null;
-  }
-
-  return getStoredUser()?.email ?? null;
-}
 
 export default function Header({
   lang = "en",
@@ -45,24 +22,13 @@ export default function Header({
   labels: HeaderLabels;
 }) {
   const [isTemplatesOpen, setIsTemplatesOpen] = useState(false);
-  const [isAuthOpen, setIsAuthOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
-  const userEmail = useSyncExternalStore(
-    subscribeAuth,
-    getAuthSnapshot,
-    () => null,
-  );
+  const { user, openAuth, logout } = useAuth();
 
   useEffect(() => {
-    const onScroll = () => {
-      setHasScrolled(window.scrollY > 0);
-    };
-
+    const onScroll = () => setHasScrolled(window.scrollY > 0);
     window.addEventListener("scroll", onScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
@@ -97,7 +63,6 @@ export default function Header({
               />
             </button>
 
-            {/* Dropdown Menu */}
             {isTemplatesOpen && (
               <div className="absolute top-full left-0 mt-2 w-56 bg-slate-900/95 border border-slate-700 rounded-lg py-2 origin-top animate-fadeInUp">
                 {templateCategories.map((cat) => (
@@ -118,12 +83,10 @@ export default function Header({
         {/* Right Navigation */}
         <div className="flex items-center gap-2 sm:gap-4">
           <LanguageSwitcher currentLang={lang} />
-          {userEmail ? (
+
+          {user ? (
             <button
-              onClick={() => {
-                clearSession();
-                window.dispatchEvent(new Event("auth:changed"));
-              }}
+              onClick={() => logout()}
               className="text-slate-200 hover:text-cyan-300 font-medium transition-colors hidden sm:flex items-center gap-2"
             >
               <LogOut className="w-4 h-4" />
@@ -131,22 +94,24 @@ export default function Header({
             </button>
           ) : (
             <button
-              onClick={() => setIsAuthOpen(true)}
+              onClick={() => openAuth("login")}
               className="text-slate-200 hover:text-cyan-300 font-medium transition-colors hidden sm:flex items-center gap-2"
             >
               <LogIn className="w-4 h-4" />
               {labels.login}
             </button>
           )}
-          {!userEmail && (
+
+          {!user && (
             <button
-              onClick={() => setIsAuthOpen(true)}
+              onClick={() => openAuth("login")}
               className="sm:hidden rounded-lg border border-slate-600 px-3 py-2 text-slate-200 transition hover:border-cyan-400 hover:text-cyan-300"
               aria-label="Open login popup"
             >
               <LogIn className="w-4 h-4" />
             </button>
           )}
+
           <button className="btn-soft-motion hidden sm:inline-flex px-5 py-2 bg-linear-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold rounded-lg items-center gap-2 whitespace-nowrap">
             <MessageCircleMore className="w-4 h-4" />
             {labels.chat}
@@ -159,14 +124,6 @@ export default function Header({
           </button>
         </div>
       </nav>
-
-      <AuthModal
-        open={isAuthOpen}
-        onClose={() => setIsAuthOpen(false)}
-        onSuccess={() => {
-          window.dispatchEvent(new Event("auth:changed"));
-        }}
-      />
     </header>
   );
 }

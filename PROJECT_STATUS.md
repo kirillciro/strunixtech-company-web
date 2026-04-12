@@ -1,127 +1,181 @@
 # Company Platform — Project Status
 
+Last updated: April 12, 2026
+
 ## Stack
 
-| Layer    | Tech                                                         |
-|----------|--------------------------------------------------------------|
+| Layer    | Tech                                                           |
+| -------- | -------------------------------------------------------------- |
 | Frontend | Next.js 16.2.3 (App Router), React 19, TypeScript, Tailwind v4 |
-| Backend  | Node.js, Express 5, TypeScript, pg (PostgreSQL client)       |
-| Database | PostgreSQL (schema in `database/001_init.sql`)               |
-| Images   | Cloudinary                                                   |
-| Auth     | JWT + bcryptjs                                               |
+| Backend  | Node.js, Express 5, TypeScript, pg (PostgreSQL client)         |
+| Database | PostgreSQL hosted on Supabase (session pooler, eu-west-1)      |
+| Images   | Cloudinary                                                     |
+| Auth     | JWT + bcryptjs                                                 |
+| Repo     | github.com/kirillciro/strunixtech-company-web                  |
 
 ---
 
-## What Is Done
+## Architecture
+
+```
+Browser
+  └── Next.js (Vercel) — frontend
+        └── Express API (Railway) — backend
+              └── PostgreSQL (Supabase) — database
+```
+
+- Frontend never talks to the DB directly
+- All data flows through the Express backend API
+- Cloudinary for image storage (direct from backend)
+- `database/` folder = SQL migration files (version control for schema, safe to be public)
+
+---
+
+## Backend API Routes
+
+Base URL (local): `http://localhost:4000`
+
+### Health
+
+| Method | Route      | Auth | Description                                             |
+| ------ | ---------- | ---- | ------------------------------------------------------- |
+| GET    | `/health`  | —    | Returns `{ status: "ok" }` + DB ping                    |
+| GET    | `/test-db` | —    | Returns `{ ok: true, time: "..." }` — live DB timestamp |
+
+### Auth
+
+| Method | Route            | Auth | Description                                |
+| ------ | ---------------- | ---- | ------------------------------------------ |
+| POST   | `/auth/register` | —    | Create account → returns `{ token, user }` |
+| POST   | `/auth/login`    | —    | Login → returns `{ token, user }`          |
+| GET    | `/auth/me`       | JWT  | Returns current user from token            |
+
+**Register/Login body:**
+
+```json
+{ "fullName": "...", "email": "...", "password": "..." }
+```
+
+### Public Content
+
+| Method | Route                          | Auth | Description                                        |
+| ------ | ------------------------------ | ---- | -------------------------------------------------- |
+| GET    | `/content/:contentKey?lang=en` | —    | Returns localized content JSON, falls back to `en` |
+
+### Admin Content (JWT required)
+
+| Method | Route                                              | Auth | Description                                                         |
+| ------ | -------------------------------------------------- | ---- | ------------------------------------------------------------------- |
+| PUT    | `/admin/content/:contentKey/source`                | JWT  | Update English source content, marks all other locales as `pending` |
+| PUT    | `/admin/content/:contentKey/localizations/:locale` | JWT  | Save translated content for a specific locale                       |
+| GET    | `/admin/content/:contentKey/localizations`         | JWT  | List all locale statuses for a content key                          |
+
+---
+
+## Database Schema
+
+### `users` (applied ✅)
+
+| Column        | Type         | Notes  |
+| ------------- | ------------ | ------ |
+| id            | BIGSERIAL    | PK     |
+| full_name     | VARCHAR(100) |        |
+| email         | VARCHAR(200) | UNIQUE |
+| password_hash | TEXT         | bcrypt |
+| created_at    | TIMESTAMPTZ  |        |
+
+### `content_documents` (pending — `002_content.sql`)
+
+Stores one record per content key (e.g. `homepage`, `services`).
+
+### `content_localizations` (pending — `002_content.sql`)
+
+Stores translated JSON per document + locale pair. Tracks translation status.
+
+### `content_translation_jobs` (pending — `002_content.sql`)
+
+Queue table for automated translation jobs.
+
+---
+
+## What Is Done ✅
+
+### Infrastructure
+
+- Supabase PostgreSQL connected via session pooler (IPv4-compatible, eu-west-1)
+- pgAdmin 4 connected — tables visible and queryable
+- `users` table created and live in Supabase
+- Backend running locally on `http://localhost:4000`
+- `/test-db` confirmed returning live DB timestamp
+- GitHub repo pushed: `kirillciro/strunixtech-company-web` (94 files, initial commit)
+- `.gitignore` covers `.env`, `node_modules`, build outputs
 
 ### Backend
+
 - Express server with JWT auth, bcrypt password hashing, Zod validation
 - PostgreSQL connection pool via `pg` in `backend/src/db.ts`
-- `DATABASE_URL` env-based config — needs a running Postgres instance to activate
-- Build and typecheck scripts ready (`npm run build`, `npm run dev`)
+- SSL auto-enabled when `DATABASE_URL` contains "supabase"
+- All auth routes implemented: register, login, `/auth/me`
+- Full content management API implemented (source + localizations + status listing)
+- `languageSchema` covers all 12 locales: en, nl, de, fr, it, es, pt, pl, ro, et, lv, fi
 
 ### Frontend — Routing & Localisation
+
 - `[lang]` dynamic route with `generateStaticParams` covering 12 locales
-- `generateStaticParams` outputs static pages for all locales at build time
 - Middleware-based locale enforcement with `notFound()` fallback
-- Dictionary-driven content loaded via `getDictionary.ts` (API-first, JSON fallback)
-- Supported languages:
-  - en, nl, de, fr, it, es (full JSON dictionaries)
-  - pt, pl, ro, et, lv, fi (fallback to English until translated)
-- `isSupportedLanguage` type guard used throughout
+- Dictionary-driven content loaded via `getDictionary.ts`
+- Supported languages: en, nl, de, fr, it, es (full JSON dictionaries); pt, pl, ro, et, lv, fi (fallback to English)
 - `LanguageSwitcher` component with full dropdown
 
 ### Frontend — Homepage Sections
-All sections are dictionary-driven (content comes from JSON / API, not hardcoded).
 
-| Section | Status | Notes |
-|---|---|---|
-| `HeroSection` | ✅ Done | Lightweight tech background — grid + 2 moving strips, static CPU, no blur/glow. "Preview first" positioning. |
-| `PositioningSection` | ✅ Done | New section below Hero. 3-card block: Risk Reversal, Perfect For, What Happens Next |
-| `HowItWorksSection` | ✅ Done | 3 steps, one CTA button. Not duplicated with Hero anymore. |
-| `TemplatesShowcaseSection` | ✅ Done | Shows 4 categories only + "+ View all templates" link |
-| `DemoPreviewSection` | ✅ Done | Core offer block with Cloudinary image preview |
-| `ServicesSection` | ✅ Done | 4 service groups in cards — compact one-line item style |
-| `SocialProofSection` | ✅ Done | 4 reasons + animated counter stats (500+ projects, 50+ clients, 4-14 days, 98%) |
-| `CallToActionSection` | ✅ Done | Lightweight — no reveal/gradient animations, flat background |
-| `Header` | ✅ Done | Transparent → solid on scroll, auth state, language switcher, Chat CTA |
-| `Footer` | ✅ Done | Brand, services, company, legal, contact columns |
-| `ScrollReveal` | ✅ Done | Intersection observer for `.reveal` class |
-| `CookieConsent` | ✅ Done | |
-
-### Frontend — Performance
-- Removed all glow/blur utility classes from homepage
-- Removed `animate-gradient-shift` from all CTA buttons
-- Removed decorative background blobs
-- All section `reveal` animations are CSS-only (no JS per element)
-- Added `.btn-soft-motion` utility — lightweight 180ms translateY(-1px) hover only
-- Hero animation: 2 drifting strips (CSS `strip-drift` keyframe, 14s, very low opacity)
-- `prefers-reduced-motion` global disable applied
-- Tech circuit strips disabled on mobile via media query
+| Section                    | Status | Notes                                                   |
+| -------------------------- | ------ | ------------------------------------------------------- |
+| `HeroSection`              | ✅     | Lightweight background, "Preview first" positioning     |
+| `PositioningSection`       | ✅     | Risk Reversal, Perfect For, What Happens Next           |
+| `HowItWorksSection`        | ✅     | 3 steps, CTA                                            |
+| `TemplatesShowcaseSection` | ✅     | 4 categories + "View all" link                          |
+| `DemoPreviewSection`       | ✅     | Core offer block with Cloudinary preview                |
+| `ServicesSection`          | ✅     | 4 service groups, compact style                         |
+| `SocialProofSection`       | ✅     | 4 reasons + animated counters                           |
+| `CallToActionSection`      | ✅     | Flat, no animations                                     |
+| `Header`                   | ✅     | Transparent→solid scroll, auth state, language switcher |
+| `Footer`                   | ✅     | Full columns                                            |
 
 ### Frontend — SEO
-- `metadataBase` set globally in `app/layout.tsx` via `NEXT_PUBLIC_SITE_URL`
-- `generateMetadata` on `[lang]/page.tsx`:
-  - Per-locale canonical URL
-  - hreflang alternates for all 12 languages
-  - `x-default` pointing to `/en`
-  - Open Graph title/description/url
-- `/landing` hub page: `noindex, follow`
-- `/landing/[id]` variants: `noindex, follow` + per-campaign metadata (title, description, canonical, OG)
 
-### Frontend — Landing Pages (Paid Traffic)
-- `/landing` — internal campaign hub, noindexed
-- `/landing/[id]` — 5 variants: `green`, `red`, `blue`, `enterprise`, `chat-boost`
-  - Each has custom headline/description focused on preview-first positioning
-  - Risk-reversal bullet points on every variant
-  - "What happens next?" 4-step flow
-  - CTA labels aligned: "Start Chat with Developer" / "See Templates"
-
-### Content (English + Dutch)
-Key messaging applied to `en.json` and `nl.json`:
-
-| Element | Copy |
-|---|---|
-| Hero title | "Build Your Website in Days - Not Weeks" |
-| Hero subtitle | "See Your Website Before You Pay" |
-| Hero description | "No risk. No guessing. Just a real preview before we build." |
-| Primary CTA | "Start Chat with Developer" |
-| Secondary CTA | "See Templates" |
-| Final CTA title | "Start Your Project Today" |
-| Services framing | "We don't just build your website — we help you grow it" |
-| Why Choose Us reasons | Benefit-focused: "Launch Faster Than Traditional Agencies", "Direct Communication with Your Developer" |
+- `metadataBase` set in root layout via `NEXT_PUBLIC_SITE_URL`
+- `generateMetadata` on `[lang]/page.tsx`: per-locale canonical, hreflang all 12 langs, x-default=/en, OG
+- `/landing` and `/landing/[id]` variants: `noindex, follow` + per-campaign metadata
 
 ---
 
-## What Is NOT Done Yet
+## What Is NOT Done Yet ❌
 
-### Backend / Database
-- PostgreSQL instance not running yet — `DATABASE_URL` needs to be set
-- Schema from `database/001_init.sql` not applied to a real database
-- Backend server not started or tested against a live DB
-- No seed data
+### Database
+
+- `002_content.sql` not yet applied (content_documents, content_localizations, content_translation_jobs tables missing)
 
 ### Frontend
-- No translations for pt, pl, ro, et, lv, fi (currently fallback to English)
-- `/landing/[id]` pages have placeholder layout — no real brand styling matching the main site
-- No UTM parameter capture on landing pages
-- No conversion event tracking (click on chat, template, register)
-- No sticky mobile CTA bar
-- Auth modal and dashboard pages exist but not reviewed/polished
+
+- No translations for pt, pl, ro, et, lv, fi (fallback to English)
+- Auth register/login forms not tested end-to-end against live backend
+- `(admin)/` folder exists but is empty — admin panel not built
+- No sitemap.xml / robots.txt
+- `NEXT_PUBLIC_SITE_URL` not configured (defaults to localhost)
 
 ### Infrastructure
-- `NEXT_PUBLIC_SITE_URL` not configured (defaults to localhost)
-- No deployment setup (Vercel, Railway, etc.)
+
+- Not deployed (Vercel + Railway setup pending)
 - No CI/CD pipeline
-- No sitemap.xml / robots.txt generated yet
 
 ---
 
 ## Next Steps (Suggested Order)
 
-1. **PostgreSQL** — spin up instance, apply schema, set env, test backend
-2. **Translations** — generate full JSON for pt, pl, ro, et, lv, fi
-3. **Landing pages** — proper visual layout matching main brand + UTM capture
-4. **Sitemap + robots.txt** — Next.js route-based generation
-5. **Deployment** — choose host, configure env variables, set `NEXT_PUBLIC_SITE_URL`
-6. **Conversion tracking** — chat click, template click, register click events
+1. **Apply `002_content.sql`** — run in Supabase SQL Editor or pgAdmin, creates content tables
+2. **Auth end-to-end** — test register/login from frontend form → backend → DB → JWT
+3. **Admin panel** — build dashboard UI in `frontend/src/app/(admin)/`
+4. **Translations** — generate full JSON for pt, pl, ro, et, lv, fi
+5. **Deploy** — Vercel (frontend) + Railway (backend), set env vars
+6. **Sitemap + robots.txt**

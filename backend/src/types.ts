@@ -4,6 +4,9 @@ export type SafeUser = {
   id: number;
   fullName: string;
   email: string;
+  role: string;
+  isVerified: boolean;
+  provider: string;
   createdAt: string;
 };
 
@@ -11,4 +14,5 @@ export type SafeUser = {
 export type AuthTokenPayload = {
   sub: string;
   email: string;
+  role: string;
 };

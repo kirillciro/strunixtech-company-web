@@ -14,7 +14,7 @@ export default function Footer({ content }: { content: FooterContent }) {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-slate-950 border-t border-slate-700/50 py-12 sm:py-16 reveal">
+    <footer className="relative bg-slate-950 border-t border-slate-700/50 py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Footer Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-10 sm:mb-12">

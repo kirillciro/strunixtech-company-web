@@ -41,7 +41,8 @@ export default function TemplatesShowcaseSection({
   lang: string;
 }) {
   const visibleCategories = templateCategories.slice(0, 4);
-  const viewAllLabel = lang === "nl" ? "Bekijk alle templates" : "View all templates";
+  const viewAllLabel =
+    lang === "nl" ? "Bekijk alle templates" : "View all templates";
 
   return (
     <section className="py-14 sm:py-20 bg-slate-800/30 border-y border-slate-700/50 reveal">

@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  LayoutTemplate,
-  MessageCircleMore,
-  MoveRight,
-} from "lucide-react";
+import { LayoutTemplate, MessageCircleMore, MoveRight } from "lucide-react";
 
 type HeroContent = {
   title: string;

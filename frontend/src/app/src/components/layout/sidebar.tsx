@@ -2,19 +2,19 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { clearSession } from "@/lib/auth-client";
+import { useAuth } from "@/context/AuthContext";
 
 export default function Sidebar() {
   const router = useRouter();
   const pathname = usePathname();
+  const { logout } = useAuth();
 
   const pathSegments = pathname.split("/").filter(Boolean);
   const routeLang = pathSegments.length > 0 ? pathSegments[0] : "en";
 
-  function handleLogout() {
-    // Logout is currently client-side only because sessions live in localStorage.
-    clearSession();
-    router.push(`/${routeLang}/login`);
+  async function handleLogout() {
+    await logout();
+    router.push(`/${routeLang}`);
   }
 
   return (
