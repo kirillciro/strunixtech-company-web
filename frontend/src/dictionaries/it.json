@@ -1,0 +1,106 @@
+{
+  "header": {"templates": "Template", "login": "Accedi", "logout": "Esci", "chat": "Chatta con lo sviluppatore"},
+  "hero": {
+    "title": "Crea il tuo sito velocemente",
+    "subtitle": "Vedilo prima di pagare",
+    "description": "Parla direttamente con uno sviluppatore, scegli il template giusto e valida l'anteprima prima che inizi lo sviluppo.",
+    "roadmapLabel": "Come inizia",
+    "ctaPrimary": "Chatta con lo sviluppatore",
+    "ctaSecondary": "Esplora i template",
+    "trustedBy": "Scelto da oltre 50 aziende in Europa",
+    "steps": [
+      {"step": "1", "title": "Scegli un template", "detail": "Scegli la base migliore per il tuo sito, web app o piattaforma interna."},
+      {"step": "2", "title": "Personalizza e visualizza", "detail": "Controlla prima un'anteprima live per definire design e perimetro."},
+      {"step": "3", "title": "Parla con lo sviluppatore", "detail": "Allinea obiettivi, approva il piano e passa subito all'esecuzione."}
+    ]
+  },
+  "howItWorks": {
+    "title": "Come funziona",
+    "description": "Un punto di partenza semplice, focalizzato su velocita, chiarezza e comunicazione diretta.",
+    "cta": "Inizia la conversazione",
+    "steps": [
+      {"step": "1", "title": "Scegli un template", "description": "Sfoglia i nostri template e scegli il miglior punto di partenza per la tua attivita."},
+      {"step": "2", "title": "Personalizza e visualizza", "description": "Adatta struttura, branding e funzioni mentre controlli l'anteprima prima del pagamento."},
+      {"step": "3", "title": "Parla con lo sviluppatore", "description": "Conferma la direzione con uno sviluppatore e passa rapidamente alla consegna."}
+    ]
+  },
+  "templates": {
+    "title": "Template che ti fanno partire piu veloce",
+    "description": "Inizia da una base collaudata e adattala al tuo business, alla tua offerta e al tuo piano di crescita.",
+    "explore": "Esplora",
+    "featuredTitle": "Punti di partenza popolari",
+    "demoPreview": "Anteprima",
+    "featuredDemos": [
+      {"name": "Agenzia Moderna", "category": "business"},
+      {"name": "Piattaforma di prenotazione", "category": "bookings"},
+      {"name": "Dashboard Pro", "category": "admin dashboards"}
+    ],
+    "categories": {
+      "business": {"title": "Siti aziendali", "detail": "Per agenzie, consulenti, aziende locali e marchi di servizi."},
+      "bookings": {"title": "Sistemi di prenotazione", "detail": "Per saloni, cliniche, barbieri e attivita su appuntamento."},
+      "ecommerce": {"title": "E-commerce", "detail": "Per negozi online, brand di prodotto e idee retail in crescita."},
+      "admin-dashboards": {"title": "Dashboard e sistemi admin", "detail": "Per SaaS, sistemi interni, analytics e CRM."},
+      "chat-community": {"title": "App chat e community", "detail": "Per supporto clienti, piattaforme membri e prodotti community."},
+      "mobile-ui": {"title": "UI app mobile", "detail": "Per idee startup, lanci di app e prodotti mobile-first."},
+      "ai-tools": {"title": "Strumenti AI", "detail": "Per automazione, assistenti, generatori e SaaS AI."}
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Servizio principale",
+    "title": "Web app e siti su misura",
+    "description": "Questa e l'offerta principale: siti e web app veloci, su misura, con template, demo preview live e supporto diretto.",
+    "briefTitle": "Cosa porti tu",
+    "briefItems": ["Obiettivi di business", "Direzione del template preferita", "Funzioni principali", "Tempistiche e priorita"],
+    "previewTitle": "Cosa ricevi",
+    "previewFallback": "Guarda la tua demo preview prima dello sviluppo",
+    "points": [
+      {"title": "Velocita con i template", "description": "Parti da sistemi collaudati per accelerare la consegna senza perdere qualita."},
+      {"title": "Preview prima del pagamento", "description": "Conferma la direzione del design prima di iniziare lo sviluppo completo."},
+      {"title": "Pronto per il lancio", "description": "Siti e app vengono consegnati per l'uso reale, non solo per essere mostrati."}
+    ]
+  },
+  "services": {
+    "title": "Tutto quello che ti serve per far crescere il tuo business",
+    "description": "Il sito e il punto di ingresso. Possiamo supportare anche sistemi e servizi di crescita attorno ad esso.",
+    "groups": [
+      {"title": "Sviluppo web", "items": ["Siti web", "Web app", "Dashboard"]},
+      {"title": "Ottimizzazione SEO", "items": ["SEO tecnico", "SEO on-page", "Ottimizzazione performance"]},
+      {"title": "Advertising", "items": ["Meta Ads", "TikTok Ads", "Google Ads"]},
+      {"title": "Design", "items": ["UI/UX Design", "Branding", "Contenuti visuali"]}
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Il tuo partner completo per il lancio digitale",
+    "description": "Non costruiamo solo pagine. Aiutiamo le aziende a partire con il prodotto giusto, una base solida e supporto per la crescita.",
+    "reasons": [
+      {"title": "Sviluppo veloce", "description": "Passa dall'idea alla consegna con un workflow strutturato basato sui template."},
+      {"title": "Anteprima live prima del pagamento", "description": "Valida il concept prima di impegnarti nello sviluppo completo."},
+      {"title": "Sistemi pronti per il marketing", "description": "I progetti nascono pronti per SEO, tracciamento e campagne a pagamento."},
+      {"title": "Supporto completo", "description": "Rimani vicino allo sviluppatore e mantieni velocita dalla pianificazione al lancio."}
+    ],
+    "stats": [
+      {"label": "Progetti realizzati", "target": 500, "suffix": "+"},
+      {"label": "Clienti soddisfatti", "target": 50, "suffix": "+"},
+      {"label": "Visibilita progetto", "target": 100, "prefix": "0-", "suffix": "%"},
+      {"label": "Tasso di soddisfazione", "target": 98, "suffix": "%"}
+    ]
+  },
+  "cta": {
+    "title": "Pronto a lanciare?",
+    "description": "Inizia con un passo chiaro: scegli la direzione, guarda la preview e poi costruisci.",
+    "primary": "Chatta con lo sviluppatore",
+    "secondary": "Esplora i template",
+    "trust": "Nessuna carta richiesta • Consulenza gratuita • Preview prima del pagamento"
+  },
+  "footer": {
+    "brandDescription": "Costruisci con un processo chiaro, comunicazione diretta e consegna pronta al lancio.",
+    "servicesTitle": "Servizi",
+    "services": ["Sviluppo web", "Ottimizzazione SEO", "Advertising", "Design", "Supporto"],
+    "companyTitle": "Azienda",
+    "company": ["Chi siamo", "Blog", "Carriere", "Contatti", "Partner"],
+    "legalTitle": "Legale",
+    "legal": ["Privacy Policy", "Termini di servizio", "Cookie Policy"],
+    "contactTitle": "Contatti",
+    "rights": "Company Platform. Tutti i diritti riservati."
+  }
+}

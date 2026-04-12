@@ -1,0 +1,106 @@
+{
+  "header": {"templates": "Plantillas", "login": "Iniciar sesion", "logout": "Cerrar sesion", "chat": "Hablar con desarrollador"},
+  "hero": {
+    "title": "Crea tu sitio rapido",
+    "subtitle": "Míralo antes de pagar",
+    "description": "Habla directamente con un desarrollador, elige la plantilla correcta y valida la vista previa antes de empezar el desarrollo.",
+    "roadmapLabel": "Como empieza",
+    "ctaPrimary": "Hablar con desarrollador",
+    "ctaSecondary": "Explorar plantillas",
+    "trustedBy": "Con la confianza de mas de 50 empresas en Europa",
+    "steps": [
+      {"step": "1", "title": "Elige una plantilla", "detail": "Elige la mejor base para tu sitio, web app o plataforma interna."},
+      {"step": "2", "title": "Personaliza y revisa", "detail": "Revisa primero una vista previa en vivo para definir diseño y alcance."},
+      {"step": "3", "title": "Habla con el desarrollador", "detail": "Alinea objetivos, aprueba el plan y pasa directo a la ejecucion."}
+    ]
+  },
+  "howItWorks": {
+    "title": "Como funciona",
+    "description": "Una entrada simple centrada en velocidad, claridad y comunicacion directa.",
+    "cta": "Iniciar conversacion",
+    "steps": [
+      {"step": "1", "title": "Elige una plantilla", "description": "Explora nuestras plantillas y elige el mejor punto de partida para tu negocio."},
+      {"step": "2", "title": "Personaliza y revisa", "description": "Ajusta estructura, branding y funciones mientras revisas la vista previa antes de pagar."},
+      {"step": "3", "title": "Habla con el desarrollador", "description": "Confirma la direccion con un desarrollador y avanza rapido hacia la entrega."}
+    ]
+  },
+  "templates": {
+    "title": "Plantillas para avanzar mas rapido",
+    "description": "Empieza con una base probada y adaptala a tu negocio, oferta y plan de crecimiento.",
+    "explore": "Explorar",
+    "featuredTitle": "Puntos de partida populares",
+    "demoPreview": "Vista previa",
+    "featuredDemos": [
+      {"name": "Agencia Moderna", "category": "business"},
+      {"name": "Plataforma de reservas", "category": "bookings"},
+      {"name": "Dashboard Pro", "category": "admin dashboards"}
+    ],
+    "categories": {
+      "business": {"title": "Sitios empresariales", "detail": "Para agencias, consultores, negocios locales y marcas de servicios."},
+      "bookings": {"title": "Sistemas de reservas", "detail": "Para salones, clinicas, barberos y negocios por cita."},
+      "ecommerce": {"title": "E-commerce", "detail": "Para tiendas online, marcas de producto e ideas retail en crecimiento."},
+      "admin-dashboards": {"title": "Dashboards y sistemas admin", "detail": "Para herramientas SaaS, sistemas internos, analitica y CRM."},
+      "chat-community": {"title": "Apps de chat y comunidad", "detail": "Para soporte, plataformas de miembros y productos comunitarios."},
+      "mobile-ui": {"title": "UI de app movil", "detail": "Para ideas startup, lanzamientos de apps y productos mobile-first."},
+      "ai-tools": {"title": "Herramientas IA", "detail": "Para automatizacion, asistentes, generadores y SaaS de IA."}
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Servicio principal",
+    "title": "Web apps y sitios a medida",
+    "description": "Esta es la oferta principal: sitios y web apps rapidos, personalizados, con plantillas, demo preview en vivo y soporte directo.",
+    "briefTitle": "Lo que tu aportas",
+    "briefItems": ["Tus objetivos de negocio", "La direccion de plantilla preferida", "Las funciones clave", "Tus plazos y prioridades"],
+    "previewTitle": "Lo que recibes",
+    "previewFallback": "Ve tu demo preview antes de que empiece el desarrollo",
+    "points": [
+      {"title": "Velocidad con plantillas", "description": "Empieza desde sistemas probados para acelerar la entrega sin perder calidad."},
+      {"title": "Preview antes del pago", "description": "Confirma la direccion del diseño antes de iniciar el desarrollo completo."},
+      {"title": "Listo para lanzar", "description": "Los proyectos se entregan listos para uso real, no solo para mostrar."}
+    ]
+  },
+  "services": {
+    "title": "Todo lo que necesitas para hacer crecer tu negocio",
+    "description": "Tu sitio es el punto de entrada. Tambien podemos apoyar los sistemas y servicios de crecimiento alrededor.",
+    "groups": [
+      {"title": "Desarrollo web", "items": ["Sitios web", "Web apps", "Dashboards"]},
+      {"title": "Optimizacion SEO", "items": ["SEO tecnico", "SEO on-page", "Optimizacion de rendimiento"]},
+      {"title": "Publicidad", "items": ["Meta Ads", "TikTok Ads", "Google Ads"]},
+      {"title": "Diseno", "items": ["Diseno UI/UX", "Branding", "Contenido visual"]}
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Tu socio completo para el lanzamiento digital",
+    "description": "Hacemos mas que construir paginas. Ayudamos a las empresas a lanzar con el producto correcto, una base solida y apoyo para crecer.",
+    "reasons": [
+      {"title": "Desarrollo rapido", "description": "Pasa de la idea a la entrega con un flujo estructurado basado en plantillas."},
+      {"title": "Vista previa antes de pagar", "description": "Valida el concepto antes de comprometerte con el desarrollo completo."},
+      {"title": "Sistemas listos para marketing", "description": "Los proyectos nacen preparados para SEO, tracking y trafico de pago."},
+      {"title": "Soporte completo", "description": "Mantente cerca del desarrollador y conserva el ritmo desde la planificacion hasta el lanzamiento."}
+    ],
+    "stats": [
+      {"label": "Proyectos entregados", "target": 500, "suffix": "+"},
+      {"label": "Clientes felices", "target": 50, "suffix": "+"},
+      {"label": "Visibilidad del proyecto", "target": 100, "prefix": "0-", "suffix": "%"},
+      {"label": "Nivel de satisfaccion", "target": 98, "suffix": "%"}
+    ]
+  },
+  "cta": {
+    "title": "Listo para lanzar?",
+    "description": "Empieza con un paso claro: elige la direccion, revisa la preview y construye desde ahi.",
+    "primary": "Hablar con desarrollador",
+    "secondary": "Ver plantillas",
+    "trust": "Sin tarjeta • Consulta gratuita • Preview antes de pagar"
+  },
+  "footer": {
+    "brandDescription": "Construye con un proceso claro, comunicacion directa y entrega lista para lanzar.",
+    "servicesTitle": "Servicios",
+    "services": ["Desarrollo web", "Optimizacion SEO", "Publicidad", "Diseno", "Soporte"],
+    "companyTitle": "Empresa",
+    "company": ["Sobre nosotros", "Blog", "Carreras", "Contacto", "Partners"],
+    "legalTitle": "Legal",
+    "legal": ["Politica de privacidad", "Terminos del servicio", "Politica de cookies"],
+    "contactTitle": "Contacto",
+    "rights": "Company Platform. Todos los derechos reservados."
+  }
+}

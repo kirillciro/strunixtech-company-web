@@ -1,0 +1,111 @@
+{
+  "header": {
+    "templates": "Vorlagen",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "chat": "Mit Entwickler chatten"
+  },
+  "hero": {
+    "title": "Erstellen Sie Ihre Website schnell",
+    "subtitle": "Sehen Sie sie vor der Zahlung",
+    "description": "Chatten Sie direkt mit einem Entwickler, wahlen Sie die passende Vorlage und prufen Sie die Vorschau, bevor die Entwicklung beginnt.",
+    "roadmapLabel": "So beginnt es",
+    "ctaPrimary": "Mit Entwickler chatten",
+    "ctaSecondary": "Vorlagen ansehen",
+    "trustedBy": "Vertraut von uber 50 Unternehmen in Europa",
+    "steps": [
+      { "step": "1", "title": "Vorlage auswahlen", "detail": "Wahlen Sie die beste Basis fur Ihre Website, Web-App oder interne Plattform." },
+      { "step": "2", "title": "Anpassen und Vorschau", "detail": "Prufen Sie zuerst eine Live-Vorschau, damit Design und Umfang klar sind." },
+      { "step": "3", "title": "Mit Entwickler sprechen", "detail": "Ziele abstimmen, Plan freigeben und direkt in die Umsetzung gehen." }
+    ]
+  },
+  "howItWorks": {
+    "title": "So funktioniert es",
+    "description": "Ein einfacher Einstieg mit Fokus auf Tempo, Klarheit und direkter Kommunikation.",
+    "cta": "Gesprach starten",
+    "steps": [
+      { "step": "1", "title": "Vorlage auswahlen", "description": "Durchsuchen Sie unsere Vorlagen und wahlen Sie den besten Startpunkt fur Ihr Unternehmen." },
+      { "step": "2", "title": "Anpassen und Vorschau", "description": "Passen Sie Struktur, Marke und Funktionen an und prufen Sie die Vorschau vor der Zahlung." },
+      { "step": "3", "title": "Mit Entwickler sprechen", "description": "Bestatigen Sie die Richtung direkt mit einem Entwickler und starten Sie in die schnelle Umsetzung." }
+    ]
+  },
+  "templates": {
+    "title": "Vorlagen, die Sie schnell voranbringen",
+    "description": "Starten Sie mit einer bewahrten Basis und passen Sie sie an Ihr Unternehmen und Ihr Angebot an.",
+    "explore": "Entdecken",
+    "featuredTitle": "Beliebte Ausgangspunkte",
+    "demoPreview": "Vorschau",
+    "featuredDemos": [
+      { "name": "Moderne Agentur", "category": "business" },
+      { "name": "Buchungsplattform", "category": "bookings" },
+      { "name": "Dashboard Pro", "category": "admin dashboards" }
+    ],
+    "categories": {
+      "business": { "title": "Business-Websites", "detail": "Fur Agenturen, Berater, lokale Unternehmen und Dienstleistungsmarken." },
+      "bookings": { "title": "Buchungssysteme", "detail": "Fur Salons, Kliniken, Barbiere und terminbasierte Unternehmen." },
+      "ecommerce": { "title": "E-Commerce", "detail": "Fur Online-Shops, Produktmarken und schnell wachsende Handelsideen." },
+      "admin-dashboards": { "title": "Dashboards und Admin-Systeme", "detail": "Fur SaaS-Tools, interne Systeme, Analysen und CRM-Produkte." },
+      "chat-community": { "title": "Chat- und Community-Apps", "detail": "Fur Support-Flows, Mitgliederplattformen und Community-Produkte." },
+      "mobile-ui": { "title": "Mobile-App-UI", "detail": "Fur Startup-Ideen, App-Launches und mobile Produkte." },
+      "ai-tools": { "title": "KI-Tools", "detail": "Fur Automatisierungsprodukte, Assistenten, Generatoren und KI-SaaS." }
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Hauptservice",
+    "title": "Individuelle Web-Apps und Websites",
+    "description": "Das ist das Hauptangebot: schnelle, individuell entwickelte Websites und Web-Apps mit Vorlagen, Live-Demovorschau und direkter Begleitung.",
+    "briefTitle": "Was Sie mitbringen",
+    "briefItems": ["Ihre Unternehmensziele", "Bevorzugte Vorlagenrichtung", "Benotigte Kernfunktionen", "Ihr Zeitplan und Ihre Prioritaten"],
+    "previewTitle": "Was Sie erhalten",
+    "previewFallback": "Sehen Sie Ihre Demovorschau vor dem Entwicklungsstart",
+    "points": [
+      { "title": "Schneller Start mit Vorlagen", "description": "Bewahrte Systeme beschleunigen die Umsetzung ohne Qualitatsverlust." },
+      { "title": "Vorschau vor der Zahlung", "description": "Bestatigen Sie die Designrichtung, bevor die volle Entwicklung beginnt." },
+      { "title": "Bereit fur den Markt", "description": "Websites und Apps werden fur echten Geschaftseinsatz geliefert, nicht nur fur die Prasentation." }
+    ]
+  },
+  "services": {
+    "title": "Alles, was Sie fur Ihr Unternehmenswachstum brauchen",
+    "description": "Ihre Website ist der Einstiegspunkt. Wir unterstutzen auch die Systeme und Wachstumsleistungen rundherum.",
+    "groups": [
+      { "title": "Webentwicklung", "items": ["Websites", "Web-Apps", "Dashboards"] },
+      { "title": "SEO-Optimierung", "items": ["Technisches SEO", "On-Page SEO", "Performance-Optimierung"] },
+      { "title": "Werbung", "items": ["Meta Ads", "TikTok Ads", "Google Ads"] },
+      { "title": "Design", "items": ["UI/UX-Design", "Branding", "Visuelle Inhalte"] }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Ihr vollstandiger digitaler Launch-Partner",
+    "description": "Wir bauen nicht nur Seiten. Wir helfen Unternehmen beim Start mit dem richtigen Produkt, einer starken Basis und Wachstumssupport.",
+    "reasons": [
+      { "title": "Schnelle Entwicklung", "description": "Von der Idee zur Umsetzung mit einem strukturierten vorlagenbasierten Ablauf." },
+      { "title": "Live-Vorschau vor der Zahlung", "description": "Prufen Sie das Konzept, bevor Sie sich fur die volle Entwicklung entscheiden." },
+      { "title": "Marketing-bereite Systeme", "description": "Projekte werden von Anfang an fur SEO, Tracking und bezahlten Traffic vorbereitet." },
+      { "title": "Volle Unterstutzung", "description": "Bleiben Sie nah am Entwickler und halten Sie den Fortschritt von Planung bis Launch aufrecht." }
+    ],
+    "stats": [
+      { "label": "Erstellte Projekte", "target": 500, "suffix": "+" },
+      { "label": "Zufriedene Kunden", "target": 50, "suffix": "+" },
+      { "label": "Projekttransparenz", "target": 100, "prefix": "0-", "suffix": "%" },
+      { "label": "Zufriedenheitsrate", "target": 98, "suffix": "%" }
+    ]
+  },
+  "cta": {
+    "title": "Bereit fur den Start?",
+    "description": "Beginnen Sie mit einem klaren Schritt: Richtung wahlen, Vorschau ansehen und dann aufbauen.",
+    "primary": "Mit Entwickler chatten",
+    "secondary": "Vorlagen ansehen",
+    "trust": "Keine Kreditkarte erforderlich • Kostenlose Beratung • Vorschau vor der Zahlung"
+  },
+  "footer": {
+    "brandDescription": "Bauen Sie mit klarem Prozess, direkter Kommunikation und launchbereiter Lieferung.",
+    "servicesTitle": "Leistungen",
+    "services": ["Webentwicklung", "SEO-Optimierung", "Werbung", "Design", "Support"],
+    "companyTitle": "Unternehmen",
+    "company": ["Uber uns", "Blog", "Karriere", "Kontakt", "Partner"],
+    "legalTitle": "Rechtliches",
+    "legal": ["Datenschutz", "Nutzungsbedingungen", "Cookie-Richtlinie"],
+    "contactTitle": "Kontakt",
+    "rights": "Company Platform. Alle Rechte vorbehalten."
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "header": {
+    "templates": "Templates",
+    "login": "Login",
+    "logout": "Logout",
+    "chat": "Chat with Developer"
+  },
+  "hero": {
+    "title": "Build Your Website in Days - Not Weeks",
+    "subtitle": "See Your Website Before You Pay",
+    "description": "No risk. No guessing. Just a real preview before we build.",
+    "roadmapLabel": "How It Starts",
+    "ctaPrimary": "Start Chat with Developer",
+    "ctaSecondary": "See Templates",
+    "trustedBy": "Trusted by growing teams across Europe",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Choose a Template",
+        "detail": "Pick the closest base for your website, web app, or internal platform."
+      },
+      {
+        "step": "2",
+        "title": "Customize and Preview",
+        "detail": "Review a live preview first so direction, design, and scope are clear before build."
+      },
+      {
+        "step": "3",
+        "title": "Talk to Developer",
+        "detail": "Align on goals, approve the plan, and move straight into execution."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "description": "Three practical steps to go from idea to launch without wasted time.",
+    "cta": "Start the Conversation",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Choose Template",
+        "description": "Browse our template collection and pick the closest starting point for your business."
+      },
+      {
+        "step": "2",
+        "title": "Customize & Preview",
+        "description": "Adjust structure, branding, and features while reviewing the preview before payment."
+      },
+      {
+        "step": "3",
+        "title": "Talk to Developer",
+        "description": "Confirm your direction directly with a developer and move into fast delivery."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Templates That Accelerate Delivery",
+    "description": "Start from a proven foundation and adapt it to your business in less time.",
+    "explore": "Explore",
+    "featuredTitle": "Popular Starting Points",
+    "demoPreview": "Preview",
+    "featuredDemos": [
+      { "name": "Modern Agency", "category": "business" },
+      { "name": "Booking Platform", "category": "bookings" },
+      { "name": "Dashboard Pro", "category": "admin dashboards" }
+    ],
+    "categories": {
+      "business": {
+        "title": "Business Websites",
+        "detail": "For agencies, consultants, local companies, and service brands."
+      },
+      "bookings": {
+        "title": "Booking Systems",
+        "detail": "For salons, clinics, barbers, and appointment-based businesses."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "detail": "For online stores, product brands, and fast-moving retail ideas."
+      },
+      "admin-dashboards": {
+        "title": "Dashboards and Admin Systems",
+        "detail": "For SaaS tools, internal systems, analytics, and CRM products."
+      },
+      "chat-community": {
+        "title": "Chat and Community Apps",
+        "detail": "For support flows, member platforms, and community-driven products."
+      },
+      "mobile-ui": {
+        "title": "Mobile App UI",
+        "detail": "For startup concepts, app launches, and mobile-first products."
+      },
+      "ai-tools": {
+        "title": "AI Tools",
+        "detail": "For automation products, assistants, generators, and AI SaaS ideas."
+      }
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Primary Service",
+    "title": "Custom Websites & Web Apps - Built Fast",
+    "description": "Start from a proven template, preview before development, and launch faster with direct developer collaboration.",
+    "briefTitle": "What You Bring",
+    "briefItems": [
+      "Your business goals",
+      "Preferred template direction",
+      "Core features you need",
+      "Your timeline and priorities"
+    ],
+    "previewTitle": "What You Get Back",
+    "previewFallback": "See your demo preview before development starts",
+    "points": [
+      {
+        "title": "Template-Based Speed",
+        "description": "Use proven template systems to reduce build time."
+      },
+      {
+        "title": "Preview Before Payment",
+        "description": "Validate design direction before full development starts."
+      },
+      {
+        "title": "Direct Developer Workflow",
+        "description": "Work directly with the builder and keep decisions fast."
+      }
+    ]
+  },
+  "services": {
+    "title": "Digital Services That Support Growth",
+    "description": "We do not just build your website - we help you grow it.",
+    "groups": [
+      {
+        "title": "Web Development",
+        "items": ["Websites", "Web Apps", "Dashboards"]
+      },
+      {
+        "title": "SEO Optimization",
+        "items": ["Technical SEO", "On-page SEO", "Performance optimization"]
+      },
+      {
+        "title": "Advertising",
+        "items": ["Meta Ads", "TikTok Ads", "Google Ads"]
+      },
+      {
+        "title": "Design",
+        "items": ["UI/UX Design", "Branding", "Visual content"]
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Your Full Digital Launch Partner",
+    "description": "We do more than build pages. We help businesses launch with the right product, performance foundation, and growth support.",
+    "reasons": [
+      {
+        "title": "Launch Faster Than Traditional Agencies",
+        "description": "Move from idea to delivery quickly with a structured template-first workflow."
+      },
+      {
+        "title": "Live preview before payment",
+        "description": "Review the concept before committing to full development."
+      },
+      {
+        "title": "Marketing-ready systems",
+        "description": "Projects are built to support SEO, tracking, and paid traffic from the start."
+      },
+      {
+        "title": "Direct Communication with Your Developer",
+        "description": "Stay close to decisions and keep momentum from planning to launch."
+      }
+    ],
+    "stats": [
+      { "label": "Projects Built", "target": 500, "suffix": "+" },
+      { "label": "Happy Clients", "target": 50, "suffix": "+" },
+      { "label": "Delivery Time", "target": 14, "prefix": "4-", "suffix": " days" },
+      { "label": "Satisfaction Rate", "target": 98, "suffix": "%" }
+    ]
+  },
+  "cta": {
+    "title": "Start Your Project Today",
+    "description": "See your website before you pay, then build with clear direction.",
+    "primary": "Start Chat with Developer",
+    "secondary": "See Templates",
+    "trust": "No credit card required • Free consultation • Preview before payment"
+  },
+  "footer": {
+    "brandDescription": "Build with a clear process, direct communication, and launch-ready delivery.",
+    "servicesTitle": "Services",
+    "services": ["Web Development", "SEO Optimization", "Advertising", "Design", "Support"],
+    "companyTitle": "Company",
+    "company": ["About Us", "Blog", "Careers", "Contact", "Partners"],
+    "legalTitle": "Legal",
+    "legal": ["Privacy Policy", "Terms of Service", "Cookie Policy"],
+    "contactTitle": "Contact",
+    "rights": "Company Platform. All rights reserved."
+  }
+}

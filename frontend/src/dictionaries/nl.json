@@ -1,0 +1,106 @@
+{
+  "header": {"templates": "Templates", "login": "Inloggen", "logout": "Uitloggen", "chat": "Chat met ontwikkelaar"},
+  "hero": {
+    "title": "Bouw je website in dagen - niet weken",
+    "subtitle": "Bekijk je website voordat je betaalt",
+    "description": "Geen risico. Niet gokken. Eerst een echte preview, daarna bouwen we.",
+    "roadmapLabel": "Hoe het begint",
+    "ctaPrimary": "Start chat met ontwikkelaar",
+    "ctaSecondary": "Bekijk templates",
+    "trustedBy": "Vertrouwd door groeiende teams in Europa",
+    "steps": [
+      {"step": "1", "title": "Kies een template", "detail": "Kies de beste basis voor je website, webapp of intern platform."},
+      {"step": "2", "title": "Pas aan en bekijk", "detail": "Bekijk eerst een live preview zodat design en scope duidelijk zijn."},
+      {"step": "3", "title": "Praat met de ontwikkelaar", "detail": "Stem doelen af, keur het plan goed en ga direct naar uitvoering."}
+    ]
+  },
+  "howItWorks": {
+    "title": "Hoe het werkt",
+    "description": "Drie duidelijke stappen van idee naar livegang zonder tijdverlies.",
+    "cta": "Start het gesprek",
+    "steps": [
+      {"step": "1", "title": "Kies een template", "description": "Blader door onze templates en kies het beste startpunt voor je bedrijf."},
+      {"step": "2", "title": "Pas aan & preview", "description": "Pas structuur, branding en functies aan terwijl je de preview bekijkt voor betaling."},
+      {"step": "3", "title": "Praat met de ontwikkelaar", "description": "Bevestig de richting direct met een ontwikkelaar en ga snel door naar levering."}
+    ]
+  },
+  "templates": {
+    "title": "Templates die je sneller vooruit helpen",
+    "description": "Start met een bewezen basis en pas die snel aan op jouw business.",
+    "explore": "Ontdek",
+    "featuredTitle": "Populaire startpunten",
+    "demoPreview": "Preview",
+    "featuredDemos": [
+      {"name": "Modern Bureau", "category": "business"},
+      {"name": "Boekingsplatform", "category": "bookings"},
+      {"name": "Dashboard Pro", "category": "admin dashboards"}
+    ],
+    "categories": {
+      "business": {"title": "Bedrijfswebsites", "detail": "Voor bureaus, consultants, lokale bedrijven en dienstverleners."},
+      "bookings": {"title": "Boekingssystemen", "detail": "Voor salons, klinieken, kappers en afspraakgerichte bedrijven."},
+      "ecommerce": {"title": "E-commerce", "detail": "Voor webshops, merken en snelgroeiende retail-ideeën."},
+      "admin-dashboards": {"title": "Dashboards en adminsystemen", "detail": "Voor SaaS-tools, interne systemen, analytics en CRM-producten."},
+      "chat-community": {"title": "Chat- en community-apps", "detail": "Voor supportflows, ledenplatforms en communityproducten."},
+      "mobile-ui": {"title": "Mobiele app UI", "detail": "Voor startup-ideeën, applanceringen en mobile-first producten."},
+      "ai-tools": {"title": "AI-tools", "detail": "Voor automatiseringsproducten, assistenten, generators en AI SaaS."}
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Hoofdservice",
+    "title": "Maatwerk websites & webapps - snel gebouwd",
+    "description": "Start met een bewezen template, bekijk de preview voor ontwikkeling en lanceer sneller met direct contact.",
+    "briefTitle": "Wat jij meebrengt",
+    "briefItems": ["Je bedrijfsdoelen", "Gewenste template-richting", "Belangrijkste functies", "Je planning en prioriteiten"],
+    "previewTitle": "Wat je terugkrijgt",
+    "previewFallback": "Bekijk je demo preview voordat de ontwikkeling start",
+    "points": [
+      {"title": "Snelheid met templates", "description": "Start vanuit bewezen systemen zodat levering sneller gaat zonder kwaliteitsverlies."},
+      {"title": "Preview voor betaling", "description": "Bevestig de ontwerp-richting voordat de volledige ontwikkeling begint."},
+      {"title": "Direct contact met ontwikkelaar", "description": "Neem sneller beslissingen en houd vaart in je project."}
+    ]
+  },
+  "services": {
+    "title": "Alles wat je nodig hebt om je bedrijf te laten groeien",
+    "description": "We bouwen niet alleen je website - we helpen je ook groeien.",
+    "groups": [
+      {"title": "Webontwikkeling", "items": ["Websites", "Webapps", "Dashboards"]},
+      {"title": "SEO-optimalisatie", "items": ["Technische SEO", "On-page SEO", "Performance-optimalisatie"]},
+      {"title": "Advertising", "items": ["Meta Ads", "TikTok Ads", "Google Ads"]},
+      {"title": "Design", "items": ["UI/UX Design", "Branding", "Visuele content"]}
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Jouw volledige digitale launchpartner",
+    "description": "We bouwen meer dan alleen pagina's. We helpen bedrijven lanceren met het juiste product, performance-basis en groeiondersteuning.",
+    "reasons": [
+      {"title": "Sneller live dan traditionele bureaus", "description": "Ga snel van idee naar oplevering met een gestructureerde template-first workflow."},
+      {"title": "Live preview voor betaling", "description": "Bekijk het concept voordat je kiest voor volledige ontwikkeling."},
+      {"title": "Marketingklare systemen", "description": "Projecten worden vanaf het begin voorbereid voor SEO, tracking en betaalde campagnes."},
+      {"title": "Direct contact met je ontwikkelaar", "description": "Blijf dicht op beslissingen en behoud vaart van planning tot livegang."}
+    ],
+    "stats": [
+      {"label": "Gebouwde projecten", "target": 500, "suffix": "+"},
+      {"label": "Tevreden klanten", "target": 50, "suffix": "+"},
+      {"label": "Levertijd", "target": 14, "prefix": "4-", "suffix": " dagen"},
+      {"label": "Tevredenheid", "target": 98, "suffix": "%"}
+    ]
+  },
+  "cta": {
+    "title": "Start vandaag met je project",
+    "description": "Bekijk je website voordat je betaalt en bouw daarna met een duidelijke richting.",
+    "primary": "Start chat met ontwikkelaar",
+    "secondary": "Bekijk templates",
+    "trust": "Geen creditcard nodig • Gratis consult • Preview voor betaling"
+  },
+  "footer": {
+    "brandDescription": "Bouw met een duidelijk proces, direct contact en oplevering klaar voor lancering.",
+    "servicesTitle": "Services",
+    "services": ["Webontwikkeling", "SEO-optimalisatie", "Advertising", "Design", "Support"],
+    "companyTitle": "Bedrijf",
+    "company": ["Over ons", "Blog", "Carrières", "Contact", "Partners"],
+    "legalTitle": "Juridisch",
+    "legal": ["Privacybeleid", "Voorwaarden", "Cookiebeleid"],
+    "contactTitle": "Contact",
+    "rights": "Company Platform. Alle rechten voorbehouden."
+  }
+}
