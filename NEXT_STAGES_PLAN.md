@@ -1,33 +1,61 @@
 # Next Stages Plan
 
-## Current Baseline
+## Current Status — April 12, 2026 (evening)
 
-The project is in early Phase 1.
+**We are at Stage 1 — starting now.**
 
-What is already working:
+Stage 0 (auth + design + CMS pipeline) is fully complete and live-tested.
 
-- Next.js frontend routes for landing, auth, dashboard, messages, and templates
-- Express backend with JWT auth endpoints
-- PostgreSQL connection and a users table
-- Protected frontend app shell using the stored JWT session
+---
 
-What is still placeholder-only:
+## What is already working ✅
 
-- chat UI
-- templates data
-- template preview flow
-- dashboard data
-- project tracking
-- scheduling
-- payments
-- uploads
-- AI generation
+- Next.js frontend with `[lang]` routing for 12 locales, full homepage sections
+- Express backend with complete auth system (email, Google, Facebook, Apple OAuth)
+- **Live CMS pipeline**: `getDictionary()` → `GET /content/marketing-homepage?lang=en` → DB → page
+  - Verified: edit `content_json` in pgAdmin → page reflects change immediately
+  - `cache: 'no-store'` in dev, `revalidate: 300` in prod
+  - Server-side fetch uses `INTERNAL_API_URL` (bypasses HTTPS proxy)
+- `002_content.sql` applied — content tables live in Supabase
+- `marketing-homepage` seeded with full English dictionary
+- Dark-themed AuthModal with Google, Facebook, Apple social buttons
+- `AuthContext` global state, full token rotation, email verification, password reset
+- HTTPS local dev with mkcert + Next.js API proxy
+
+## What is still placeholder-only
+
+- chat UI (static)
+- templates data (static)
+- template preview flow (static)
+- dashboard data (static)
+- project tracking (not started)
+- scheduling (not started)
+- payments (not started)
+- uploads (not started)
+- AI generation (not started)
+- Apple Sign In (dev portal setup pending)
+
+---
 
 ## Recommended Build Order
 
-### Stage 1: Finish MVP Foundation
+### Stage 0: Auth & Design Foundation ✅ COMPLETE
 
-Goal: make the existing screens real instead of mocked.
+Completed:
+
+- Full JWT auth with email verification and password reset
+- Google, Facebook, Apple OAuth
+- Dark AuthModal matching app design
+- Complete homepage with animations and SEO
+- HTTPS local dev environment
+- **Live CMS pipeline** — DB → API → Next.js → page (live tested ✅)
+- `content_documents` + `content_localizations` seeded with full English dictionary
+
+---
+
+### Stage 1: Finish MVP Foundation ← **CURRENT STAGE**
+
+Goal: make the existing app screens real instead of mocked.
 
 Build next:
 
@@ -50,6 +78,8 @@ Why this stage comes first:
 - chat depends on persisted users and conversations
 - templates depend on real records and detail pages
 - dashboard depends on projects and message counts
+
+---
 
 ### Stage 2: Real-Time Chat
 
@@ -148,29 +178,22 @@ Build:
 
 Build later:
 
-- multi-language landing pages
-- admin dashboard
-- notifications
+- admin dashboard for content editing (`/admin/content/homepage` — JSON editor, locale switch, save)
+- seed other locales into `content_localizations` (nl, de, fr, it, es)
+- multi-language landing pages (AI-assisted translation)
+- notifications (email + in-app)
 - mobile app for chat and progress
 - full AI UI generation system
+- Apple Sign In (complete developer portal setup)
+- Facebook app Live mode (for public users)
 
-## Best Next Implementation
+---
 
-The strongest next move is:
+## Immediate Next Task List
 
-1. Extend the schema
-2. Build templates API
-3. Build persisted chat API
-
-That order is better than starting with payments or AI because it completes the core funnel first:
-
-ads -> landing -> auth -> templates -> chat -> qualification
-
-## Suggested Immediate Task List
-
-If we continue now, this is the sequence I recommend implementing:
-
-1. Create a new SQL migration for templates, conversations, messages, and projects
-2. Add backend routes for templates list, template detail, conversations list, and send message
-3. Refactor the frontend templates and messages pages to use the new APIs
-4. Upgrade the dashboard to show real counts and recent activity
+1. Create `004_templates_messages.sql` migration (templates, conversations, messages, projects tables)
+2. Add backend routes: `GET /templates`, `GET /templates/:id`, `GET /conversations`, `POST /messages`
+3. Refactor frontend templates page to load from API
+4. Refactor frontend messages page to load from API
+5. Upgrade dashboard to show real counts and recent activity
+6. Admin panel: `/admin/content/homepage` — simple JSON editor + locale switcher

@@ -5,6 +5,7 @@ import { verifyToken } from "./auth.js";
 export type AuthedRequest = Request & {
   userId?: number;
   userEmail?: string;
+  userRole?: string;
 };
 
 export function requireAuth(
@@ -26,8 +27,20 @@ export function requireAuth(
     const payload = verifyToken(token);
     req.userId = Number(payload.sub);
     req.userEmail = payload.email;
+    req.userRole = payload.role;
     next();
   } catch {
     return res.status(401).json({ message: "Invalid or expired token" });
   }
+}
+
+export function requireAdmin(
+  req: AuthedRequest,
+  res: Response,
+  next: NextFunction,
+) {
+  if (req.userRole !== "admin") {
+    return res.status(403).json({ message: "Admin access required" });
+  }
+  next();
 }

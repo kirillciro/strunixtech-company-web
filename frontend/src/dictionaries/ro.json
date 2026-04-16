@@ -1,0 +1,460 @@
+{
+  "header": {
+    "templates": "Șabloane",
+    "login": "Conectare",
+    "logout": "Deconectare",
+    "chat": "Discută cu Dezvoltatorul",
+    "services": "Servicii",
+    "company": "Companie",
+    "legal": "Juridic",
+    "myProfile": "Profilul Meu",
+    "adminDashboard": "Panou Admin",
+    "serviceItems": [
+      "Dezvoltare Web",
+      "Optimizare SEO",
+      "Publicitate",
+      "Design",
+      "Suport"
+    ],
+    "companyItems": [
+      "Despre Noi",
+      "Blog",
+      "Cariere",
+      "Contact",
+      "Parteneri"
+    ],
+    "legalItems": [
+      "Politica de Confidențialitate",
+      "Termeni și Condiții",
+      "Politica de Cookies"
+    ],
+    "translationOn": "Traducere ACTIVĂ",
+    "translationOff": "Traducere INACTIVĂ"
+  },
+  "hero": {
+    "title": "Construiește-ți Site-ul în Zile – Nu Săptămâni",
+    "subtitle": "Vezi Site-ul Tău Înainte de Plată",
+    "description": "Fără riscuri. Fără presupuneri. O previzualizare reală înainte de construire.",
+    "ctaPrimary": "Începe Chat cu Dezvoltatorul",
+    "ctaSecondary": "Vezi Șabloane",
+    "trustedBy": "De încredere pentru echipe în creștere din toată Europa",
+    "companies": [
+      "TechCorp",
+      "StartupX",
+      "Design Co",
+      "WebAgency",
+      "NordSoft",
+      "Studiofy"
+    ]
+  },
+  "positioning": {
+    "whyTitle": "Fără Riscuri. Fără Presupuneri. Doar Claritate.",
+    "whyItems": [
+      "Vedere site-ului înainte de plată",
+      "Știi exact ce vei primi înainte ca dezvoltarea să înceapă",
+      "Lucrezi direct cu dezvoltatorul care construiește proiectul tău",
+      "Fără scop ascuns, fără costuri neașteptate"
+    ],
+    "forTitle": "Construit pentru oamenii care vor să se miște rapid",
+    "forItems": [
+      "Fondatori care lansează idei noi",
+      "Companii care actualizează site-uri învechite",
+      "Agenții care au nevoie de execuție rapidă și de încredere"
+    ],
+    "nextTitle": "De la Idee la Lansare – Simplu și Rapid",
+    "nextSteps": [
+      "Spune-ne ce vrei să construiești",
+      "Te potrivim cu șablonul potrivit",
+      "Revizuiești o previzualizare reală și funcțională",
+      "Construim și lansăm proiectul tău"
+    ],
+    "supportTitle": "Comunicare Directă. Rezultate Mai Rapide.",
+    "supportPoints": [
+      "Vorbești direct cu dezvoltatorul tău la fiecare pas",
+      "Niciun manager de cont sau niveluri inutile",
+      "Răspunsuri rapide și decizii clare",
+      "Construit pentru a menține proiectul tău în mișcare"
+    ]
+  },
+  "howItWorks": {
+    "title": "Cum Funcționează",
+    "description": "Trei pași practici pentru a trece de la idee la lansare fără timp irosit.",
+    "cta": "Începe Conversația",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Alege Șablon",
+        "description": "Răsfoiește colecția noastră de șabloane și alege cel mai apropiat punct de plecare pentru afacerea ta."
+      },
+      {
+        "step": "2",
+        "title": "Personalizează și Previzualizează",
+        "description": "Ajustează structura, brandingul și funcțiile în timp ce revizuiești previzualizarea înainte de plată."
+      },
+      {
+        "step": "3",
+        "title": "Vorbește cu Dezvoltatorul",
+        "description": "Confirmă direcția direct cu un dezvoltator și treci la livrare rapidă."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Șabloane care Accelerează Livrarea",
+    "description": "Începe de la o bază dovedită și adaptează-o afacerii tale în mai puțin timp.",
+    "explore": "Explorează",
+    "featuredTitle": "Puncte de Plecare Populare",
+    "demoPreview": "Previzualizare",
+    "featuredDemos": [
+      {
+        "name": "Agenție Modernă",
+        "category": "business"
+      },
+      {
+        "name": "Platformă de Rezervări",
+        "category": "bookings"
+      },
+      {
+        "name": "Dashboard Pro",
+        "category": "admin dashboards"
+      }
+    ],
+    "categories": {
+      "business": {
+        "title": "Site-uri de Afaceri",
+        "detail": "Pentru agenții, consultanți, companii locale și branduri de servicii."
+      },
+      "bookings": {
+        "title": "Sisteme de Rezervări",
+        "detail": "Pentru saloane, clinici, frizerii și afaceri bazate pe programări."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "detail": "Pentru magazine online, branduri de produse și idei de retail cu mișcare rapidă."
+      },
+      "admin-dashboards": {
+        "title": "Dashboard-uri și sisteme Admin",
+        "detail": "Pentru instrumente SaaS, sisteme interne, analiză și produse CRM."
+      },
+      "chat-community": {
+        "title": "Aplicații de Chat și Comunitate",
+        "detail": "Pentru fluxuri de suport, platforme de membri și produse orientate spre comunitate."
+      },
+      "mobile-ui": {
+        "title": "UI Aplicație Mobilă",
+        "detail": "Pentru concepte de startup, lansări de aplicații și produse mobile-first."
+      },
+      "ai-tools": {
+        "title": "Instrumente AI",
+        "detail": "Pentru produse de automatizare, asistenți, generatoare și idei AI SaaS."
+      },
+      "landing-pages": {
+        "title": "Pagini de Destinație / Pâlnii de Marketing",
+        "detail": "Pentru lansări de produse, generare de lead-uri și campanii axate pe conversie."
+      },
+      "portfolio": {
+        "title": "Site-uri Personale și Portofolii",
+        "detail": "Pentru freelanceri, designeri, dezvoltatori și creativi care își prezintă munca."
+      },
+      "saas-startup": {
+        "title": "SaaS MVP / Kituri de Lansare Startup",
+        "detail": "Pentru fondatori care vor să lanseze rapid, să valideze idei și să lanseze primul produs."
+      }
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Serviciu Principal",
+    "title": "Site-uri și Aplicații Web Personalizate – Construite Rapid",
+    "description": "Începe de la un șablon dovedit, previzualizează înainte de dezvoltare și lansează mai rapid cu colaborare directă cu dezvoltatorul.",
+    "briefTitle": "Ce Aduci Tu",
+    "briefItems": [
+      "Obiectivele afacerii tale",
+      "Direcția de șablon preferată",
+      "Funcționalitățile principale de care ai nevoie",
+      "Calendarul și prioritățile tale"
+    ],
+    "previewTitle": "Ce Primești Înapoi",
+    "previewFallback": "Vezi previzualizarea demo înainte ca dezvoltarea să înceapă",
+    "points": [
+      {
+        "title": "Viteză Bazată pe Șabloane",
+        "description": "Folosește sisteme de șabloane dovedite pentru a reduce timpul de construire."
+      },
+      {
+        "title": "Previzualizare Înainte de Plată",
+        "description": "Validează direcția de design înainte ca dezvoltarea completă să înceapă."
+      },
+      {
+        "title": "Workflow Direct cu Dezvoltatorul",
+        "description": "Lucrează direct cu constructorul și menține deciziile rapide."
+      }
+    ]
+  },
+  "services": {
+    "title": "Servicii Digitale care Sprijină Creșterea",
+    "description": "Nu construim doar site-ul tău – te ajutăm să-l dezvolți.",
+    "groups": [
+      {
+        "title": "Dezvoltare Web",
+        "items": [
+          "Site-uri web",
+          "Aplicații web",
+          "Dashboard-uri"
+        ]
+      },
+      {
+        "title": "Optimizare SEO",
+        "items": [
+          "SEO Tehnic",
+          "SEO On-page",
+          "Optimizare performanță"
+        ]
+      },
+      {
+        "title": "Publicitate",
+        "items": [
+          "Reclame Meta",
+          "Reclame TikTok",
+          "Reclame Google"
+        ]
+      },
+      {
+        "title": "Design",
+        "items": [
+          "Design UI/UX",
+          "Branding",
+          "Conținut vizual"
+        ]
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Partenerul Tău Complet de Lansare Digitală",
+    "description": "Facem mai mult decât să construim pagini. Ajutăm afacerile să lanseze cu produsul potrivit, baza de performanță și suportul de creștere.",
+    "reasons": [
+      {
+        "title": "Lansează Mai Rapid Decât Agențiile Tradiționale",
+        "description": "Treci de la idee la livrare rapid cu un flux de lucru structurat bazat pe șabloane."
+      },
+      {
+        "title": "Previzualizare live înainte de plată",
+        "description": "Revizuiește conceptul înainte de a te angaja la dezvoltare completă."
+      },
+      {
+        "title": "Sisteme gata pentru marketing",
+        "description": "Proiectele sunt construite pentru a sprijini SEO, urmărirea și traficul plătit de la început."
+      },
+      {
+        "title": "Comunicare Directă cu Dezvoltatorul Tău",
+        "description": "Rămâi aproape de decizii și menține impulsul de la planificare la lansare."
+      }
+    ],
+    "stats": [
+      {
+        "label": "Proiecte Construite",
+        "target": 500,
+        "suffix": "+"
+      },
+      {
+        "label": "Clienți Fericiți",
+        "target": 50,
+        "suffix": "+"
+      },
+      {
+        "label": "Timp de Livrare",
+        "target": 14,
+        "prefix": "4-",
+        "suffix": " zile"
+      },
+      {
+        "label": "Rata de Satisfacție",
+        "target": 98,
+        "suffix": "%"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Începe-ți Proiectul Azi",
+    "description": "Vezi site-ul tău înainte de plată, apoi construiește cu direcție clară.",
+    "primary": "Începe Chat cu Dezvoltatorul",
+    "secondary": "Vezi Șabloane",
+    "trust": "Nu e necesar card de credit • Consultație gratuită • Previzualizare înainte de plată"
+  },
+  "footer": {
+    "brandDescription": "Construiește cu un proces clar, comunicare directă și livrare gata de lansare.",
+    "servicesTitle": "Servicii",
+    "services": [
+      "Dezvoltare Web",
+      "Optimizare SEO",
+      "Publicitate",
+      "Design",
+      "Suport"
+    ],
+    "companyTitle": "Companie",
+    "company": [
+      "Despre Noi",
+      "Blog",
+      "Cariere",
+      "Contact",
+      "Parteneri"
+    ],
+    "legalTitle": "Juridic",
+    "legal": [
+      "Politica de Confidențialitate",
+      "Termeni și Condiții",
+      "Politica de Cookies"
+    ],
+    "contactTitle": "Contact",
+    "rights": "Company Platform. Toate drepturile rezervate."
+  },
+  "dashboard": {
+    "myProfile": "Profilul Meu",
+    "backToSite": "Înapoi la site",
+    "tabs": {
+      "overview": "Prezentare generală",
+      "messages": "Mesaje",
+      "templates": "Șabloane",
+      "settings": "Setări"
+    },
+    "overview": {
+      "welcomeBack": "Bine ai revenit",
+      "quickAccess": "Acces Rapid",
+      "emailVerified": "Email verificat",
+      "emailNotVerified": "Email neverificat",
+      "providerAccount": "cont",
+      "links": {
+        "messages": {
+          "label": "Mesaje",
+          "description": "Discută cu echipa"
+        },
+        "templates": {
+          "label": "Șabloane",
+          "description": "Răsfoiește proiectele disponibile"
+        },
+        "settings": {
+          "label": "Setări",
+          "description": "Gestionează-ți contul"
+        }
+      }
+    },
+    "messages": {
+      "title": "Discută cu Dezvoltatorul",
+      "subtitle": "Trimite un mesaj și îți vom răspunde cât mai curând posibil",
+      "online": "Online",
+      "connecting": "Se conectează…",
+      "translationOn": "Traducere ACTIVĂ",
+      "translationOff": "Traducere INACTIVĂ",
+      "emptyTitle": "Cum te putem ajuta?",
+      "emptySubtitle": "Alege un subiect de mai jos pentru a începe, sau scrie propriul tău mesaj.",
+      "inputPlaceholderEmpty": "Sau scrie propriul tău mesaj…",
+      "inputPlaceholderReply": "Răspunde dezvoltatorului…",
+      "inputPlaceholderConnecting": "Se conectează…",
+      "userTag": "Utilizator",
+      "adminTag": "Admin",
+      "translationLabel": "Traducere",
+      "translationDesc": "Traduce automat răspunsurile adminului în limba ta",
+      "faqSuggestions": [
+        "Vreau să construiesc un site – de unde să încep?",
+        "Am nevoie de ajutor pentru a alege șablonul potrivit.",
+        "Am deja o idee – putem discuta despre ea?",
+        "Vreau să văd o previzualizare înainte de a începe.",
+        "Am nevoie de o funcție personalizată – este posibil?",
+        "Cât timp va dura să lansez proiectul meu?"
+      ]
+    },
+    "settings": {
+      "title": "Setări",
+      "subtitle": "Gestionează preferințele contului tău",
+      "verified": "Verificat",
+      "notVerified": "Neverificat",
+      "fieldFullName": "Nume complet",
+      "fieldEmail": "Adresă de email",
+      "fieldSignIn": "Metodă de autentificare",
+      "fieldMemberSince": "Membru din",
+      "signOutTitle": "Deconectare",
+      "signOutSubtitle": "Vei fi redirecționat spre pagina principală.",
+      "signOutButton": "Deconectare"
+    }
+  },
+  "admin": {
+    "title": "Panou de administrare",
+    "backToSite": "Înapoila site",
+    "tabs": {
+      "overview": "Prezentare generală",
+      "users": "Utilizatori",
+      "content": "Conținut",
+      "messages": "Mesaje"
+    },
+    "overview": {
+      "title": "Prezentare generală",
+      "subtitle": "Statisticile platformei dintr-o privire",
+      "statUsers": "Total utilizatori",
+      "statContent": "Documente de conținut",
+      "statLocales": "Limbi active",
+      "errorLoad": "Nu s-au putut încărca statisticile.",
+      "tipsTitle": "Sfaturi rapide",
+      "tip1": "Folosiți fila Utilizatori pentru a acorda sau revoca accesul de administrator.",
+      "tip2": "Folosiți fila Conținut pentru a edita orice secțiune a paginii principale — toate limbile sunt traduse automat prin AI.",
+      "tip3": "Adăugați OPENAI_API_KEY la backend/.env pentru a activa traducerea AI."
+    },
+    "users": {
+      "title": "Utilizatori",
+      "subtitle": "Gestioneze utilizatorii platformei",
+      "searchPlaceholder": "Căutați nume sau e-mail…",
+      "colUser": "Utilizator",
+      "colProvider": "Furnizor",
+      "colStatus": "Stare",
+      "colRole": "Rol",
+      "verified": "Verificat",
+      "pending": "În aşteptare",
+      "makeAdmin": "Face administrator",
+      "removeAdmin": "Elimina administrator",
+      "confirmSure": "Sigur?",
+      "delete": "Şterge",
+      "cancel": "Anulează",
+      "loading": "Se încărcă utilizatorii…",
+      "noUsers": "Nu s-au găsit utilizatori"
+    },
+    "messages": {
+      "title": "Mesaje",
+      "subtitle": "Chat live cu utilizatorii",
+      "newBadge": "nou",
+      "live": "Live",
+      "connecting": "Conectare…",
+      "translationOn": "Traducere ACTIVATĂ",
+      "translationOff": "Traducere DEZACTIVATĂ",
+      "translationLabel": "Traducere",
+      "translationDesc": "Traduce mesajele utilizatorilor în limba ta",
+      "adminTag": "Admin",
+      "userTag": "Utilizator",
+      "noConversations": "Nicio conversație încă",
+      "noUsersMatch": "Niciun utilizator nu corespunde căutării",
+      "selectConversation": "Selectați o conversație",
+      "noMessages": "Niciun mesaj în această conversație.",
+      "searchPlaceholder": "Căutați utilizatori…",
+      "deleteConversation": "Șterge conversația",
+      "deleteConfirm": "Șterge?",
+      "deleteCancel": "Anulează"
+    },
+    "content": {
+      "title": "Editor de conținut",
+      "subtitle": "Editați sursa în engleză — toate limbile sunt traduse automat prin AI",
+      "sectionLabel": "Secțiune:",
+      "sectionHero": "Hero",
+      "sectionPositioning": "Bandă de poziționare",
+      "sectionHowItWorks": "Cum funcționează",
+      "sectionTemplates": "Prezentare şabloane",
+      "sectionCoreOffer": "Oferta principală",
+      "sectionServices": "Servicii",
+      "sectionWhyChooseUs": "De ce să ne alețeti",
+      "sectionCta": "Înded la acțiune",
+      "sectionFooter": "Subsol",
+      "loading": "Se încărcă…",
+      "saving": "Se salvează…",
+      "translating": "Salvat! AI traduce 17 limbi…",
+      "retranslating": "Retraducere a 17 limbi…",
+      "allUpdated": "Toate limbile actualizate!",
+      "save": "Salvați şi Traduceți",
+      "retranslate": "Retraduce totul"
+    }
+  }
+}

@@ -28,8 +28,10 @@ function buildLocalizedPath(pathname: string, lang: AppLanguage): string {
 
 export default function LanguageSwitcher({
   currentLang,
+  scrolled = true,
 }: {
   currentLang: string;
+  scrolled?: boolean;
 }) {
   const router = useRouter();
   const pathname = usePathname();
@@ -57,7 +59,11 @@ export default function LanguageSwitcher({
       <button
         type="button"
         onClick={() => setIsOpen((value) => !value)}
-        className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/85 px-3 py-2 text-sm text-slate-100 transition hover:border-cyan-400 hover:text-white"
+        className={`inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-sm text-slate-100 transition hover:border-cyan-400 hover:text-white ${
+          scrolled
+            ? "border-slate-700 bg-slate-900/85"
+            : "border-transparent bg-transparent hover:bg-white/10"
+        }`}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
         aria-label="Open language selector"
@@ -73,7 +79,10 @@ export default function LanguageSwitcher({
       </button>
 
       {isOpen ? (
-        <div className="absolute right-0 top-full z-60 mt-2 w-65 max-h-80 overflow-y-auto rounded-xl border border-slate-700 bg-slate-950/98 p-2 animate-fadeInUp">
+        <div
+          className="absolute right-0 top-full z-60 mt-2 w-65 max-h-80 overflow-y-auto rounded-xl border border-slate-700 bg-slate-950 p-2 animate-fadeInUp [scrollbar-width:thin] [scrollbar-color:#475569_transparent]"
+          style={{ WebkitOverflowScrolling: "touch" }}
+        >
           <div className="px-3 py-2 text-[11px] uppercase tracking-[0.22em] text-slate-400">
             Languages
           </div>
@@ -90,6 +99,8 @@ export default function LanguageSwitcher({
                   type="button"
                   onClick={() => {
                     setIsOpen(false);
+                    // Persist manual selection in cookie (overrides auto-detect)
+                    document.cookie = `preferred_lang=${option.code};path=/;max-age=${60 * 60 * 24 * 365};samesite=lax`;
                     router.push(buildLocalizedPath(pathname, option.code));
                   }}
                   className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-left transition ${

@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import Sidebar from "@/app/src/components/layout/sidebar";
 import { useAuth } from "@/context/AuthContext";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
@@ -21,18 +20,13 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        Loading...
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center">
+        <div className="w-8 h-8 border-2 border-cyan-500 border-t-transparent rounded-full animate-spin" />
       </div>
     );
   }
 
   if (!user) return null;
 
-  return (
-    <div className="flex">
-      <Sidebar />
-      <main className="flex-1 p-6 bg-gray-50 min-h-screen">{children}</main>
-    </div>
-  );
+  return <>{children}</>;
 }

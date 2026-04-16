@@ -11,6 +11,12 @@ export const languageOptions = [
   { code: "et", label: "Estonia", flag: "🇪🇪" },
   { code: "lv", label: "Latvia", flag: "🇱🇻" },
   { code: "fi", label: "Finland", flag: "🇫🇮" },
+  { code: "sv", label: "Sweden", flag: "🇸🇪" },
+  { code: "da", label: "Denmark", flag: "🇩🇰" },
+  { code: "no", label: "Norway", flag: "🇳🇴" },
+  { code: "cs", label: "Czech Republic", flag: "🇨🇿" },
+  { code: "hu", label: "Hungary", flag: "🇭🇺" },
+  { code: "el", label: "Greece", flag: "🇬🇷" },
 ] as const;
 
 export const languages = languageOptions.map(

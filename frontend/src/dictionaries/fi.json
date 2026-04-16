@@ -1,0 +1,460 @@
+{
+  "header": {
+    "templates": "Mallit",
+    "login": "Kirjaudu sisään",
+    "logout": "Kirjaudu ulos",
+    "chat": "Jutustele Kehittäjän kanssa",
+    "services": "Palvelut",
+    "company": "Yritys",
+    "legal": "Juridinen",
+    "myProfile": "Profiilini",
+    "adminDashboard": "Hallintapaneeli",
+    "serviceItems": [
+      "Verkkokehitys",
+      "SEO-optimointi",
+      "Mainonta",
+      "Suunnittelu",
+      "Tuki"
+    ],
+    "companyItems": [
+      "Meistä",
+      "Blogi",
+      "Ura",
+      "Yhteystiedot",
+      "Kumppanit"
+    ],
+    "legalItems": [
+      "Tietosuojakäytäntö",
+      "Käyttöehdot",
+      "Evästekäytäntö"
+    ],
+    "translationOn": "Käännös PÄÄLLÄ",
+    "translationOff": "Käännös POIS"
+  },
+  "hero": {
+    "title": "Rakenna Sivustosi Päivissä – Ei Viikoissa",
+    "subtitle": "Näe Sivustosi Ennen Maksamista",
+    "description": "Ei riskiä. Ei arvailua. Todellinen esikatselu ennen rakentamista.",
+    "ctaPrimary": "Aloita Jutustelu Kehittäjän kanssa",
+    "ctaSecondary": "Katso Malleja",
+    "trustedBy": "Kasvavien tiimien luottama ympäri Euroopan",
+    "companies": [
+      "TechCorp",
+      "StartupX",
+      "Design Co",
+      "WebAgency",
+      "NordSoft",
+      "Studiofy"
+    ]
+  },
+  "positioning": {
+    "whyTitle": "Ei Riskiä. Ei Arvailua. Vain Selkeyttä.",
+    "whyItems": [
+      "Näe sivusto ennen maksamista",
+      "Tiedä tarkalleen mitä saat ennen kuin kehitys alkaa",
+      "Työskentelee suoraan kehittäjän kanssa joka rakentaa projektisi",
+      "Ei piilotettuja alueita, ei yllättäviä kuluja"
+    ],
+    "forTitle": "Rakennettu ihmisille jotka haluavat edetä nopeasti",
+    "forItems": [
+      "Perustajat jotka lanseeraavat uusia ideoita",
+      "Yritykset jotka päivittävät vanhentuneita sivustoja",
+      "Toimistot jotka tarvitsevat nopeaa ja luotettavaa toteutusta"
+    ],
+    "nextTitle": "Ideasta Julkaisuun – Yksinkertaisesti ja Nopeasti",
+    "nextSteps": [
+      "Kerro meille mitä haluat rakentaa",
+      "Sovitamme sinut oikeaan malliin",
+      "Tarkistelet todellisen toimivan esikatselun",
+      "Rakennamme ja julkaisemme projektisi"
+    ],
+    "supportTitle": "Suora Viestintä. Nopeammat Tulokset.",
+    "supportPoints": [
+      "Puhu suoraan kehittäjäsi kanssa joka askeleella",
+      "Ei tilinhoitajia tai tarpeettomia tasoja",
+      "Nopeat vastaukset ja selkeät päätökset",
+      "Rakennettu pitämään projektisi liikkeessä"
+    ]
+  },
+  "howItWorks": {
+    "title": "Miten Se Toimii",
+    "description": "Kolme käytännön vaihetta ideasta julkaisuun ilman ajan hukkaamista.",
+    "cta": "Aloita Keskustelu",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Valitse Malli",
+        "description": "Selaa mallikokoelmiamme ja valitse yrityksesi läheisin lähtökohta."
+      },
+      {
+        "step": "2",
+        "title": "Mukauta ja Esikatsele",
+        "description": "Säädä rakennetta, brändiä ja toiminnallisuuksia tarkistellen esikatselua ennen maksamista."
+      },
+      {
+        "step": "3",
+        "title": "Puhu Kehittäjälle",
+        "description": "Vahvista suunta suoraan kehittäjän kanssa ja siirry nopeaan toimitukseen."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Mallit jotka Nopeuttavat Toimitusta",
+    "description": "Aloita todistetusta perustasta ja mukauta se yrityksellesi vähemmässä ajassa.",
+    "explore": "Tutustu",
+    "featuredTitle": "Suositut Lähtökohdat",
+    "demoPreview": "Esikatselu",
+    "featuredDemos": [
+      {
+        "name": "Moderni Toimisto",
+        "category": "business"
+      },
+      {
+        "name": "Varauspalvelu",
+        "category": "bookings"
+      },
+      {
+        "name": "Dashboard Pro",
+        "category": "admin dashboards"
+      }
+    ],
+    "categories": {
+      "business": {
+        "title": "Yritysten Verkkosivut",
+        "detail": "Toimistoille, konsulteille, paikallisille yrityksille ja palvelubrändeille."
+      },
+      "bookings": {
+        "title": "Varausjärjestelmät",
+        "detail": "Salongeille, klinikoille, parturiille ja aikataulupohjaisille yrityksille."
+      },
+      "ecommerce": {
+        "title": "Verkkokauppa",
+        "detail": "Verkkokaupoille, tuotebrändeille ja nopeasti liikkuville vähittäiskauppaideoille."
+      },
+      "admin-dashboards": {
+        "title": "Hallintapaneelit ja Järjestelmät",
+        "detail": "SaaS-työkaluille, sisäisille järjestelmille, analytiikalle ja CRM-tuotteille."
+      },
+      "chat-community": {
+        "title": "Chat- ja Yhteisösovellukset",
+        "detail": "Tukivirroille, jäsenplatformeille ja yhteisölähtöisille tuotteille."
+      },
+      "mobile-ui": {
+        "title": "Mobiilisovelluksen UI",
+        "detail": "Startup-konsepteille, sovellusten lanseerauksille ja mobile-first-tuotteille."
+      },
+      "ai-tools": {
+        "title": "AI-työkalut",
+        "detail": "Automaatiotuotteille, avustajille, generaattoreille ja AI SaaS -ideoille."
+      },
+      "landing-pages": {
+        "title": "Laskeutumissivut / Markkinointisuppiloita",
+        "detail": "Tuotelanseerauksille, liidien generointiin ja konversiolähtöisille kampanjoille."
+      },
+      "portfolio": {
+        "title": "Henkilökohtaiset ja Portfoliosivustot",
+        "detail": "Freelancereille, suunnittelijoille, kehittäjille ja luoville tekijöille."
+      },
+      "saas-startup": {
+        "title": "SaaS MVP / Startup Lanseerauspaketit",
+        "detail": "Perustajille jotka haluavat lanseerata nopeasti, validoida ideoita ja julkaista ensimmäisen tuotteen."
+      }
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Pääpalvelu",
+    "title": "Räätälöidyt Verkkosivut ja Sovellukset – Rakennettu Nopeasti",
+    "description": "Aloita todistetusta mallista, esikatsele ennen kehitystä ja julkaise nopeammin suoran kehittäjäyhteistyön avulla.",
+    "briefTitle": "Mitä Sinä Tuot",
+    "briefItems": [
+      "Liiketoimintasi tavoitteet",
+      "Suosittu mallien suunta",
+      "Tarvitsemasi ydintoiminnallisuudet",
+      "Aikataulusi ja prioriteettisi"
+    ],
+    "previewTitle": "Mitä Saat Takaisin",
+    "previewFallback": "Katso demo-esikatselu ennen kuin kehitys alkaa",
+    "points": [
+      {
+        "title": "Mallipohjainen Nopeus",
+        "description": "Käytä todistettuja mallijärjestelmiä rakennusajan lyhentämiseksi."
+      },
+      {
+        "title": "Esikatselu Ennen Maksamista",
+        "description": "Validoi suunnittelun suunta ennen kuin täysi kehitys alkaa."
+      },
+      {
+        "title": "Suora Työnkulku Kehittäjän kanssa",
+        "description": "Työskentelee suoraan rakentajan kanssa ja pitää päätökset nopeina."
+      }
+    ]
+  },
+  "services": {
+    "title": "Digitaaliset Palvelut jotka Tukevat Kasvua",
+    "description": "Emme vain rakenna sivustoasi – autamme sitä kasvamaan.",
+    "groups": [
+      {
+        "title": "Verkkokehitys",
+        "items": [
+          "Verkkosivustot",
+          "Verkkosovellukset",
+          "Hallintapaneelit"
+        ]
+      },
+      {
+        "title": "SEO-optimointi",
+        "items": [
+          "Tekninen SEO",
+          "Sivun SEO",
+          "Suorituskyvyn optimointi"
+        ]
+      },
+      {
+        "title": "Mainonta",
+        "items": [
+          "Meta-mainokset",
+          "TikTok-mainokset",
+          "Google-mainokset"
+        ]
+      },
+      {
+        "title": "Suunnittelu",
+        "items": [
+          "UI/UX-suunnittelu",
+          "Bränding",
+          "Visuaalinen sisältö"
+        ]
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Täydellinen Digitaalisen Julkaisun Kumppanisi",
+    "description": "Teemme enemmän kuin vain rakentaa sivuja. Autamme yrityksiä julkaisemaan oikealla tuotteella, suorituskyvyn perustalla ja kasvun tuella.",
+    "reasons": [
+      {
+        "title": "Julkaise Nopeammin kuin Perinteiset Toimistot",
+        "description": "Siirry ideasta toimitukseen nopeasti strukturoidun mallipohjaisen työnkulun avulla."
+      },
+      {
+        "title": "Live-esikatselu ennen maksamista",
+        "description": "Tarkistele konseptia ennen kuin sitoudut täyteen kehitykseen."
+      },
+      {
+        "title": "Markkinointiin valmiit järjestelmät",
+        "description": "Projektit rakennetaan SEO:n, seurannan ja maksullisen liikenteen tuella alusta alkaen."
+      },
+      {
+        "title": "Suora Viestintä Kehittäjäsi kanssa",
+        "description": "Pysy lähellä päätöksiä ja ylläpidä vauhtia suunnittelusta julkaisuun."
+      }
+    ],
+    "stats": [
+      {
+        "label": "Rakennettuja Projekteja",
+        "target": 500,
+        "suffix": "+"
+      },
+      {
+        "label": "Tyytyväisiä Asiakkaita",
+        "target": 50,
+        "suffix": "+"
+      },
+      {
+        "label": "Toimitusaika",
+        "target": 14,
+        "prefix": "4-",
+        "suffix": " päivää"
+      },
+      {
+        "label": "Tyytyväisyysaste",
+        "target": 98,
+        "suffix": "%"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Aloita Projektisi Tänään",
+    "description": "Näe sivustosi ennen maksamista, sitten rakenna selkeällä suunnalla.",
+    "primary": "Aloita Jutustelu Kehittäjän kanssa",
+    "secondary": "Katso Malleja",
+    "trust": "Luottokorttia ei tarvita • Ilmainen konsultaatio • Esikatselu ennen maksamista"
+  },
+  "footer": {
+    "brandDescription": "Rakenna selkeällä prosessilla, suoralla viestinnällä ja julkaisuvalmiilla toimituksella.",
+    "servicesTitle": "Palvelut",
+    "services": [
+      "Verkkokehitys",
+      "SEO-optimointi",
+      "Mainonta",
+      "Suunnittelu",
+      "Tuki"
+    ],
+    "companyTitle": "Yritys",
+    "company": [
+      "Meistä",
+      "Blogi",
+      "Ura",
+      "Yhteystiedot",
+      "Kumppanit"
+    ],
+    "legalTitle": "Juridinen",
+    "legal": [
+      "Tietosuojakäytäntö",
+      "Käyttöehdot",
+      "Evästekäytäntö"
+    ],
+    "contactTitle": "Yhteystiedot",
+    "rights": "Company Platform. Kaikki oikeudet pidätetään."
+  },
+  "dashboard": {
+    "myProfile": "Profiilini",
+    "backToSite": "Takaisin sivustolle",
+    "tabs": {
+      "overview": "Yleiskatsaus",
+      "messages": "Viestit",
+      "templates": "Mallit",
+      "settings": "Asetukset"
+    },
+    "overview": {
+      "welcomeBack": "Tervetuloa takaisin",
+      "quickAccess": "Pikakäyttö",
+      "emailVerified": "Sähköposti vahvistettu",
+      "emailNotVerified": "Sähköpostia ei vahvistettu",
+      "providerAccount": "tili",
+      "links": {
+        "messages": {
+          "label": "Viestit",
+          "description": "Jutustele tiimin kanssa"
+        },
+        "templates": {
+          "label": "Mallit",
+          "description": "Selaa saatavilla olevia projekteja"
+        },
+        "settings": {
+          "label": "Asetukset",
+          "description": "Hallinnoi tiliäsi"
+        }
+      }
+    },
+    "messages": {
+      "title": "Jutustele Kehittäjän kanssa",
+      "subtitle": "Lähetä viesti ja vastaamme mahdollisimman pian",
+      "online": "Online",
+      "connecting": "Yhdistetään…",
+      "translationOn": "Käännös PÄÄLLÄ",
+      "translationOff": "Käännös POIS",
+      "translationDesc": "Käännä ylläpidon vastaukset automaattisesti",
+      "emptyTitle": "Kuinka voimme auttaa?",
+      "emptySubtitle": "Valitse aihe alta aloittaaksesi, tai kirjoita oma viestisi.",
+      "inputPlaceholderEmpty": "Tai kirjoita oma viestisi…",
+      "inputPlaceholderReply": "Vastaa kehittäjälle…",
+      "inputPlaceholderConnecting": "Yhdistetään…",
+      "userTag": "Käyttäjä",
+      "adminTag": "Admin",
+      "translationLabel": "Käännös",
+      "faqSuggestions": [
+        "Haluan rakentaa sivuston – mistä aloitan?",
+        "Tarvitsen apua oikean mallin valinnassa.",
+        "Minulla on jo idea – voidaanko siitä keskustella?",
+        "Haluan nähdä esikatselun ennen aloittamista.",
+        "Tarvitsen mukautetun ominaisuuden – onko se mahdollista?",
+        "Kuinka kauan projektini julkaiseminen kestää?"
+      ]
+    },
+    "settings": {
+      "title": "Asetukset",
+      "subtitle": "Hallinnoi tilisi asetuksia",
+      "verified": "Vahvistettu",
+      "notVerified": "Ei vahvistettu",
+      "fieldFullName": "Koko nimi",
+      "fieldEmail": "Sähköpostiosoite",
+      "fieldSignIn": "Kirjautumismenetelmä",
+      "fieldMemberSince": "Jäsen alkaen",
+      "signOutTitle": "Kirjaudu ulos",
+      "signOutSubtitle": "Sinut ohjataan pääsivulle.",
+      "signOutButton": "Kirjaudu ulos"
+    }
+  },
+  "admin": {
+    "title": "Hallintapaneeli",
+    "backToSite": "Takaisin sivustolle",
+    "tabs": {
+      "overview": "Yleiskatsaus",
+      "users": "Käyttäjät",
+      "content": "Sisältö",
+      "messages": "Viestit"
+    },
+    "overview": {
+      "title": "Yleiskatsaus",
+      "subtitle": "Alustan tilastot yhdellä silmäyksellä",
+      "statUsers": "Käyttäjiä yhteensä",
+      "statContent": "Sisältödokumentit",
+      "statLocales": "Aktiiviset kielet",
+      "errorLoad": "Tilastoja ei voitu ladata.",
+      "tipsTitle": "Pikavinkit",
+      "tip1": "Käytä Käyttäjät-välilehteä admin-oikeuksien myöntämiseen tai peruuttamiseen.",
+      "tip2": "Käytä Sisältö-välilehteä etusivun osioiden muokkaamiseen — kaikki kielet käännetään automaattisesti tekoälyn avulla.",
+      "tip3": "Lisää OPENAI_API_KEY tiedostoon backend/.env tekoälykäännösten käyttöönottamiseksi."
+    },
+    "users": {
+      "title": "Käyttäjät",
+      "subtitle": "Hallinnoi alustan käyttäjiä",
+      "searchPlaceholder": "Hae nimeä tai sähköpostia…",
+      "colUser": "Käyttäjä",
+      "colProvider": "Palveluntarjoaja",
+      "colStatus": "Tila",
+      "colRole": "Rooli",
+      "verified": "Vahvistettu",
+      "pending": "Odottaa",
+      "makeAdmin": "Tee admin",
+      "removeAdmin": "Poista admin",
+      "confirmSure": "Varma?",
+      "delete": "Poista",
+      "cancel": "Peruuta",
+      "loading": "Ladataan käyttäjiä…",
+      "noUsers": "Käyttäjiä ei löydy"
+    },
+    "messages": {
+      "title": "Viestit",
+      "subtitle": "Live-chat käyttäjien kanssa",
+      "newBadge": "uusi",
+      "live": "Live",
+      "connecting": "Yhdistetään…",
+      "translationOn": "Käännös PÄÄLLÄ",
+      "translationOff": "Käännös POIS",
+      "translationLabel": "Käännös",
+      "translationDesc": "Käännä käyttäjäviestit kielellesi",
+      "adminTag": "Admin",
+      "userTag": "Käyttäjä",
+      "noConversations": "Ei vielä keskusteluja",
+      "noUsersMatch": "Ei käyttäjiä, jotka vastaavat hakuasi",
+      "selectConversation": "Valitse keskustelu",
+      "noMessages": "Ei vielä viestejä tässä keskustelussa.",
+      "searchPlaceholder": "Hae käyttäjiä…",
+      "deleteConversation": "Poista keskustelu",
+      "deleteConfirm": "Poista?",
+      "deleteCancel": "Peruuta"
+    },
+    "content": {
+      "title": "Sisältöeditori",
+      "subtitle": "Muokkaa englanninkielista lähdettä — kaikki kielet käännetään automaattisesti tekoälyn avulla",
+      "sectionLabel": "Osio:",
+      "sectionHero": "Hero",
+      "sectionPositioning": "Sijaintirivi",
+      "sectionHowItWorks": "Kuinka se toimii",
+      "sectionTemplates": "Mallien esittely",
+      "sectionCoreOffer": "Perustarjous",
+      "sectionServices": "Palvelut",
+      "sectionWhyChooseUs": "Miksi valita meidät",
+      "sectionCta": "Toimintakutsu",
+      "sectionFooter": "Alatunniste",
+      "loading": "Ladataan…",
+      "saving": "Tallennetaan…",
+      "translating": "Tallennettu! Tekoäly kääntää 17 kieltä…",
+      "retranslating": "Uudelleenkäännetään 17 kieltä…",
+      "allUpdated": "Kaikki kielet päivitetty!",
+      "save": "Tallenna ja Käännä",
+      "retranslate": "Käännä kaikki uudelleen"
+    }
+  }
+}

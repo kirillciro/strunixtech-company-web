@@ -1,0 +1,460 @@
+{
+  "header": {
+    "templates": "Szablony",
+    "login": "Zaloguj się",
+    "logout": "Wyloguj się",
+    "chat": "Porozmawiaj z Deweloperem",
+    "services": "Usługi",
+    "company": "Firma",
+    "legal": "Prawne",
+    "myProfile": "Mój Profil",
+    "adminDashboard": "Panel Admina",
+    "serviceItems": [
+      "Tworzenie Stron WWW",
+      "Optymalizacja SEO",
+      "Reklama",
+      "Design",
+      "Wsparcie"
+    ],
+    "companyItems": [
+      "O Nas",
+      "Blog",
+      "Kariera",
+      "Kontakt",
+      "Partnerzy"
+    ],
+    "legalItems": [
+      "Polityka Prywatności",
+      "Warunki Użytkowania",
+      "Polityka Cookies"
+    ],
+    "translationOn": "Tłumaczenie WŁĄCZONE",
+    "translationOff": "Tłumaczenie WYŁĄCZONE"
+  },
+  "hero": {
+    "title": "Stwórz swoją stronę w dni – nie tygodnie",
+    "subtitle": "Zobacz swoją stronę przed zapłatą",
+    "description": "Zero ryzyka. Zero zgadywania. Prawdziwy podgląd przed budową.",
+    "ctaPrimary": "Rozpocznij chat z Deweloperem",
+    "ctaSecondary": "Zobacz Szablony",
+    "trustedBy": "Zaufany przez rosnące zespoły w całej Europie",
+    "companies": [
+      "TechCorp",
+      "StartupX",
+      "Design Co",
+      "WebAgency",
+      "NordSoft",
+      "Studiofy"
+    ]
+  },
+  "positioning": {
+    "whyTitle": "Zero ryzyka. Zero zgadywania. Tylko jasność.",
+    "whyItems": [
+      "Zobacz swoją stronę przed zapłatą",
+      "Wiedz dokładnie, co dostaniesz, zanim rozpocznie się projekt",
+      "Pracuj bezpośrednio z deweloperem budującym Twój projekt",
+      "Brak ukrytego zakresu, brak niespodziewanych kosztów"
+    ],
+    "forTitle": "Zbudowane dla ludzi, którzy chcą działać szybko",
+    "forItems": [
+      "Założyciele uruchamiający nowe pomysły",
+      "Firmy modernizujące przestarzałe strony",
+      "Agencje potrzebujące szybkiego i niezawodnego wykonania"
+    ],
+    "nextTitle": "Od pomysłu do uruchomienia – prosto i szybko",
+    "nextSteps": [
+      "Powiedz nam, co chcesz zbudować",
+      "Dopasujemy Cię do właściwego szablonu",
+      "Przeglądasz prawdziwy, działający podgląd",
+      "Budujemy i uruchamiamy Twój projekt"
+    ],
+    "supportTitle": "Bezpośrednia komunikacja. Szybsze wyniki.",
+    "supportPoints": [
+      "Rozmawiaj bezpośrednio ze swoim deweloperem na każdym kroku",
+      "Żadnych account managerów ani zbędnych warstw",
+      "Szybkie odpowiedzi i jasne decyzje",
+      "Zbudowane, by utrzymać Twój projekt w ruchu"
+    ]
+  },
+  "howItWorks": {
+    "title": "Jak to działa",
+    "description": "Trzy praktyczne kroki od pomysłu do uruchomienia bez marnowania czasu.",
+    "cta": "Rozpocznij rozmowę",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Wybierz szablon",
+        "description": "Przeglądaj naszą kolekcję szablonów i wybierz punkt startowy najbliższy Twojej firmie."
+      },
+      {
+        "step": "2",
+        "title": "Dostosuj i podejrzyj",
+        "description": "Dostosuj strukturę, branding i funkcje podczas przeglądania podglądu przed płatnością."
+      },
+      {
+        "step": "3",
+        "title": "Porozmawiaj z Deweloperem",
+        "description": "Potwierdź kierunek bezpośrednio z deweloperem i przejdź do szybkiej realizacji."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Szablony przyspieszające realizację",
+    "description": "Zacznij od sprawdzonej podstawy i dostosuj ją do swojej firmy w krótszym czasie.",
+    "explore": "Eksploruj",
+    "featuredTitle": "Popularne punkty startowe",
+    "demoPreview": "Podgląd",
+    "featuredDemos": [
+      {
+        "name": "Nowoczesna Agencja",
+        "category": "business"
+      },
+      {
+        "name": "Platforma Rezerwacji",
+        "category": "bookings"
+      },
+      {
+        "name": "Dashboard Pro",
+        "category": "admin dashboards"
+      }
+    ],
+    "categories": {
+      "business": {
+        "title": "Strony firmowe",
+        "detail": "Dla agencji, konsultantów, lokalnych firm i marek usługowych."
+      },
+      "bookings": {
+        "title": "Systemy rezerwacji",
+        "detail": "Dla salonów, klinik, fryzjerów i firm opartych na umawianiu wizyt."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "detail": "Dla sklepów internetowych, marek produktów i szybko rozwijającego się handlu detalicznego."
+      },
+      "admin-dashboards": {
+        "title": "Dashboardy i systemy admina",
+        "detail": "Dla narzędzi SaaS, systemów wewnętrznych, analityki i produktów CRM."
+      },
+      "chat-community": {
+        "title": "Aplikacje czat i społeczność",
+        "detail": "Dla przepływów wsparcia, platform dla członków i produktów społecznościowych."
+      },
+      "mobile-ui": {
+        "title": "UI aplikacji mobilnej",
+        "detail": "Dla konceptów startupów, uruchomień aplikacji i produktów mobile-first."
+      },
+      "ai-tools": {
+        "title": "Narzędzia AI",
+        "detail": "Dla produktów automatyzacji, asystentów, generatorów i pomysłów AI SaaS."
+      },
+      "landing-pages": {
+        "title": "Strony docelowe / Lejki marketingowe",
+        "detail": "Dla uruchomień produktów, generowania leadów i kampanii skoncentrowanych na konwersji."
+      },
+      "portfolio": {
+        "title": "Strony osobiste i portfolio",
+        "detail": "Dla freelancerów, designerów, deweloperów i twórców prezentujących swoją pracę."
+      },
+      "saas-startup": {
+        "title": "SaaS MVP / Zestawy startowe",
+        "detail": "Dla założycieli chcących szybko uruchomić, walidować pomysły i wydać pierwszy produkt."
+      }
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Główna usługa",
+    "title": "Customowe strony i aplikacje webowe – budowane szybko",
+    "description": "Zacznij od sprawdzonego szablonu, podejrzyj przed projektem i uruchom szybciej dzięki bezpośredniej współpracy z deweloperem.",
+    "briefTitle": "Co wnosisz",
+    "briefItems": [
+      "Cele Twojej firmy",
+      "Preferowany kierunek szablonu",
+      "Podstawowe funkcje, których potrzebujesz",
+      "Twój harmonogram i priorytety"
+    ],
+    "previewTitle": "Co otrzymujesz",
+    "previewFallback": "Zobacz podgląd demo przed rozpoczęciem projektu",
+    "points": [
+      {
+        "title": "Szybkość oparta na szablonach",
+        "description": "Używaj sprawdzonych systemów szablonów, by skrócić czas budowy."
+      },
+      {
+        "title": "Podgląd przed płatnością",
+        "description": "Zatwierdź kierunek projektu przed pełnym rozwojem."
+      },
+      {
+        "title": "Bezpośredni workflow z deweloperem",
+        "description": "Pracuj bezpośrednio z budowniczym i utrzymuj szybkie decyzje."
+      }
+    ]
+  },
+  "services": {
+    "title": "Usługi cyfrowe wspierające wzrost",
+    "description": "Nie tylko budujemy Twoją stronę – pomagamy Ci ją rozwijać.",
+    "groups": [
+      {
+        "title": "Tworzenie Stron WWW",
+        "items": [
+          "Strony internetowe",
+          "Aplikacje webowe",
+          "Dashboardy"
+        ]
+      },
+      {
+        "title": "Optymalizacja SEO",
+        "items": [
+          "Techniczne SEO",
+          "SEO on-page",
+          "Optymalizacja wydajności"
+        ]
+      },
+      {
+        "title": "Reklama",
+        "items": [
+          "Reklamy Meta",
+          "Reklamy TikTok",
+          "Reklamy Google"
+        ]
+      },
+      {
+        "title": "Design",
+        "items": [
+          "Design UI/UX",
+          "Branding",
+          "Treści wizualne"
+        ]
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Twój kompleksowy partner cyfrowego uruchomienia",
+    "description": "Robimy więcej niż budujemy strony. Pomagamy firmom uruchomić właściwy produkt, bazę wydajnościową i wsparcie wzrostu.",
+    "reasons": [
+      {
+        "title": "Uruchom szybciej niż tradycyjne agencje",
+        "description": "Przejdź od pomysłu do realizacji szybko dzięki strukturalizowanemu przepływowi pracy opartemu na szablonach."
+      },
+      {
+        "title": "Podgląd na żywo przed płatnością",
+        "description": "Przejrzyj koncepcję przed zaangażowaniem się w pełny projekt."
+      },
+      {
+        "title": "Systemy gotowe na marketing",
+        "description": "Projekty są budowane do obsługi SEO, śledzenia i płatnego ruchu od samego początku."
+      },
+      {
+        "title": "Bezpośrednia komunikacja z Deweloperem",
+        "description": "Bądź blisko decyzji i utrzymaj momentum od planowania do uruchomienia."
+      }
+    ],
+    "stats": [
+      {
+        "label": "Zbudowane projekty",
+        "target": 500,
+        "suffix": "+"
+      },
+      {
+        "label": "Zadowoleni klienci",
+        "target": 50,
+        "suffix": "+"
+      },
+      {
+        "label": "Czas realizacji",
+        "target": 14,
+        "prefix": "4-",
+        "suffix": " dni"
+      },
+      {
+        "label": "Wskaźnik zadowolenia",
+        "target": 98,
+        "suffix": "%"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Rozpocznij swój projekt dziś",
+    "description": "Zobacz swoją stronę przed zapłatą, a następnie buduj z jasnym kierunkiem.",
+    "primary": "Rozpocznij chat z Deweloperem",
+    "secondary": "Zobacz Szablony",
+    "trust": "Karta kredytowa nie jest wymagana • Bezpłatna konsultacja • Podgląd przed płatnością"
+  },
+  "footer": {
+    "brandDescription": "Buduj z jasnym procesem, bezpośrednią komunikacją i realizacją gotową do uruchomienia.",
+    "servicesTitle": "Usługi",
+    "services": [
+      "Tworzenie Stron WWW",
+      "Optymalizacja SEO",
+      "Reklama",
+      "Design",
+      "Wsparcie"
+    ],
+    "companyTitle": "Firma",
+    "company": [
+      "O Nas",
+      "Blog",
+      "Kariera",
+      "Kontakt",
+      "Partnerzy"
+    ],
+    "legalTitle": "Prawne",
+    "legal": [
+      "Polityka Prywatności",
+      "Warunki Użytkowania",
+      "Polityka Cookies"
+    ],
+    "contactTitle": "Kontakt",
+    "rights": "Company Platform. Wszelkie prawa zastrzeżone."
+  },
+  "dashboard": {
+    "myProfile": "Mój Profil",
+    "backToSite": "Wróć do strony",
+    "tabs": {
+      "overview": "Przegląd",
+      "messages": "Wiadomości",
+      "templates": "Szablony",
+      "settings": "Ustawienia"
+    },
+    "overview": {
+      "welcomeBack": "Witamy z powrotem",
+      "quickAccess": "Szybki dostęp",
+      "emailVerified": "Email zweryfikowany",
+      "emailNotVerified": "Email niezweryfikowany",
+      "providerAccount": "konto",
+      "links": {
+        "messages": {
+          "label": "Wiadomości",
+          "description": "Czatuj z zespołem"
+        },
+        "templates": {
+          "label": "Szablony",
+          "description": "Przeglądaj dostępne projekty"
+        },
+        "settings": {
+          "label": "Ustawienia",
+          "description": "Zarządzaj swoim kontem"
+        }
+      }
+    },
+    "messages": {
+      "title": "Porozmawiaj z Deweloperem",
+      "subtitle": "Wyślij wiadomość, a odpowiemy tak szybko, jak to możliwe",
+      "online": "Online",
+      "connecting": "Łączenie…",
+      "translationOn": "Tłumaczenie WŁĄCZONE",
+      "translationOff": "Tłumaczenie WYŁĄCZONE",
+      "translationDesc": "Automatycznie tłumacz odpowiedzi admina",
+      "emptyTitle": "Jak możemy pomóc?",
+      "emptySubtitle": "Wybierz temat poniżej, aby rozpocząć, lub napisz własną wiadomość.",
+      "inputPlaceholderEmpty": "Lub napisz własną wiadomość…",
+      "inputPlaceholderReply": "Odpowiedz deweloperowi…",
+      "inputPlaceholderConnecting": "Łączenie…",
+      "userTag": "Użytkownik",
+      "adminTag": "Admin",
+      "translationLabel": "Tłumaczenie",
+      "faqSuggestions": [
+        "Chcę zbudować stronę – od czego zacząć?",
+        "Potrzebuję pomocy w wyborze właściwego szablonu.",
+        "Mam już pomysł – czy możemy go omówić?",
+        "Chcę zobaczyć podgląd przed rozpoczęciem.",
+        "Potrzebuję niestandardowej funkcji – czy to jest możliwe?",
+        "Ile czasu zajmie uruchomienie mojego projektu?"
+      ]
+    },
+    "settings": {
+      "title": "Ustawienia",
+      "subtitle": "Zarządzaj preferencjami konta",
+      "verified": "Zweryfikowany",
+      "notVerified": "Niezweryfikowany",
+      "fieldFullName": "Imię i nazwisko",
+      "fieldEmail": "Adres e-mail",
+      "fieldSignIn": "Metoda logowania",
+      "fieldMemberSince": "Członek od",
+      "signOutTitle": "Wyloguj się",
+      "signOutSubtitle": "Zostaniesz przekierowany na stronę główną.",
+      "signOutButton": "Wyloguj się"
+    }
+  },
+  "admin": {
+    "title": "Panel administracyjny",
+    "backToSite": "Powrót do strony",
+    "tabs": {
+      "overview": "Przegląd",
+      "users": "Użytkownicy",
+      "content": "Treści",
+      "messages": "Wiadomości"
+    },
+    "overview": {
+      "title": "Przegląd",
+      "subtitle": "Statystyki platformy w skrócie",
+      "statUsers": "Łączna liczba użytkowników",
+      "statContent": "Dokumenty treści",
+      "statLocales": "Aktywne języki",
+      "errorLoad": "Nie udało się załadować statystyk.",
+      "tipsTitle": "Szybkie wskazówki",
+      "tip1": "Użyj zakładki Użytkownicy, aby przyznać lub cofnąć dostęp administratora.",
+      "tip2": "Użyj zakładki Treści, aby edytować dowolno sekcję strony głównej — wszystkie języki są automatycznie tłumaczone przez AI.",
+      "tip3": "Dodaj OPENAI_API_KEY do backend/.env, aby włączyć tłumaczenie AI."
+    },
+    "users": {
+      "title": "Użytkownicy",
+      "subtitle": "Zarządzaj użytkownikami platformy",
+      "searchPlaceholder": "Szukaj nazwy lub e-maila…",
+      "colUser": "Użytkownik",
+      "colProvider": "Dostawca",
+      "colStatus": "Status",
+      "colRole": "Rola",
+      "verified": "Zweryfikowany",
+      "pending": "Oczekujący",
+      "makeAdmin": "Ustaw administratorem",
+      "removeAdmin": "Usuń administratora",
+      "confirmSure": "Na pewno?",
+      "delete": "Usuń",
+      "cancel": "Anuluj",
+      "loading": "Ładowanie użytkowników…",
+      "noUsers": "Nie znaleziono użytkowników"
+    },
+    "messages": {
+      "title": "Wiadomości",
+      "subtitle": "Czat na żywo z użytkownikami",
+      "newBadge": "nowe",
+      "live": "Na żywo",
+      "connecting": "Łączenie…",
+      "translationOn": "Tłumaczenie WŁ",
+      "translationOff": "Tłumaczenie WYŁ",
+      "translationLabel": "Tłumaczenie",
+      "translationDesc": "Automatycznie tłumacz wiadomości użytkowników na twój język",
+      "adminTag": "Admin",
+      "userTag": "Użytkownik",
+      "noConversations": "Brak rozmów",
+      "noUsersMatch": "Brak użytkowników pasujących do wyszukiwania",
+      "selectConversation": "Wybierz rozmów",
+      "noMessages": "Brak wiadomości w tej rozmówie.",
+      "searchPlaceholder": "Szukaj użytkowników…",
+      "deleteConversation": "Usuń rozmowę",
+      "deleteConfirm": "Usunąć?",
+      "deleteCancel": "Anuluj"
+    },
+    "content": {
+      "title": "Edytor treści",
+      "subtitle": "Edytuj źródło angielskie — wszystkie języki są automatycznie tłumaczone przez AI",
+      "sectionLabel": "Sekcja:",
+      "sectionHero": "Hero",
+      "sectionPositioning": "Pasek pozycjonowania",
+      "sectionHowItWorks": "Jak to działa",
+      "sectionTemplates": "Prezentacja szablonów",
+      "sectionCoreOffer": "Główna oferta",
+      "sectionServices": "Usługi",
+      "sectionWhyChooseUs": "Dlaczego nas wybrać",
+      "sectionCta": "Wezwanie do działania",
+      "sectionFooter": "Stopka",
+      "loading": "Ładowanie…",
+      "saving": "Zapisywanie…",
+      "translating": "Zapisano! AI tłumaczy 17 języków…",
+      "retranslating": "Ponowne tłumaczenie 17 języków…",
+      "allUpdated": "Wszystkie języki zaktualizowane!",
+      "save": "Zapisz i Przetłumacz",
+      "retranslate": "Przetłumacz wszystko ponownie"
+    }
+  }
+}

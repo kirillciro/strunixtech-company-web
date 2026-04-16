@@ -1,0 +1,460 @@
+{
+  "header": {
+    "templates": "Skabeloner",
+    "login": "Log ind",
+    "logout": "Log ud",
+    "chat": "Chat med Udvikleren",
+    "services": "Tjenester",
+    "company": "Virksomhed",
+    "legal": "Juridisk",
+    "myProfile": "Min Profil",
+    "adminDashboard": "Admin Dashboard",
+    "serviceItems": [
+      "Webudvikling",
+      "SEO-optimering",
+      "Annoncering",
+      "Design",
+      "Support"
+    ],
+    "companyItems": [
+      "Om Os",
+      "Blog",
+      "Karriere",
+      "Kontakt",
+      "Partnere"
+    ],
+    "legalItems": [
+      "Privatlivspolitik",
+      "Vilkår og Betingelser",
+      "Cookiepolitik"
+    ],
+    "translationOn": "Oversættelse TIL",
+    "translationOff": "Oversættelse FRA"
+  },
+  "hero": {
+    "title": "Byg Dit Website på Dage – Ikke Uger",
+    "subtitle": "Se Dit Website Før Du Betaler",
+    "description": "Ingen risiko. Ingen gætteri. En reel forhåndsvisning før bygning.",
+    "ctaPrimary": "Start Chat med Udvikleren",
+    "ctaSecondary": "Se Skabeloner",
+    "trustedBy": "Betroet af voksende teams i hele Europa",
+    "companies": [
+      "TechCorp",
+      "StartupX",
+      "Design Co",
+      "WebAgency",
+      "NordSoft",
+      "Studiofy"
+    ]
+  },
+  "positioning": {
+    "whyTitle": "Ingen Risiko. Ingen Gætteri. Kun Klarhed.",
+    "whyItems": [
+      "Se websitet før betaling",
+      "Ved præcis hvad du får inden udvikling begynder",
+      "Arbejd direkte med udvikleren der bygger dit projekt",
+      "Ingen skjulte omfang, ingen uventede omkostninger"
+    ],
+    "forTitle": "Bygget til folk der vil bevæge sig hurtigt",
+    "forItems": [
+      "Grundlæggere der lancerer nye ideer",
+      "Virksomheder der opdaterer forældede websites",
+      "Bureauer der har brug for hurtig og pålidelig udførelse"
+    ],
+    "nextTitle": "Fra Idé til Lancering – Enkelt og Hurtigt",
+    "nextSteps": [
+      "Fortæl os hvad du vil bygge",
+      "Vi matcher dig med den rigtige skabelon",
+      "Gennemgå en reel fungerende forhåndsvisning",
+      "Vi bygger og lancerer dit projekt"
+    ],
+    "supportTitle": "Direkte Kommunikation. Hurtigere Resultater.",
+    "supportPoints": [
+      "Tal direkte med din udvikler ved hvert trin",
+      "Ingen kontoadministratorer eller unødvendige lag",
+      "Hurtige svar og klare beslutninger",
+      "Bygget til at holde dit projekt i bevægelse"
+    ]
+  },
+  "howItWorks": {
+    "title": "Sådan Fungerer Det",
+    "description": "Tre praktiske trin til at komme fra idé til lancering uden spildt tid.",
+    "cta": "Start Samtalen",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Vælg Skabelon",
+        "description": "Gennemse vores skabelonsamling og vælg det nærmeste udgangspunkt for din virksomhed."
+      },
+      {
+        "step": "2",
+        "title": "Tilpas og Forhåndsvisning",
+        "description": "Juster struktur, branding og funktioner mens du gennemgår forhåndsvisningen før betaling."
+      },
+      {
+        "step": "3",
+        "title": "Tal med Udvikleren",
+        "description": "Bekræft retningen direkte med en udvikler og gå til hurtig levering."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Skabeloner der Accelererer Levering",
+    "description": "Start fra et gennemprøvet fundament og tilpas det til din virksomhed på kortere tid.",
+    "explore": "Udforsk",
+    "featuredTitle": "Populære Udgangspunkter",
+    "demoPreview": "Forhåndsvisning",
+    "featuredDemos": [
+      {
+        "name": "Moderne Bureau",
+        "category": "business"
+      },
+      {
+        "name": "Bookingplatform",
+        "category": "bookings"
+      },
+      {
+        "name": "Dashboard Pro",
+        "category": "admin dashboards"
+      }
+    ],
+    "categories": {
+      "business": {
+        "title": "Forretningswebsites",
+        "detail": "Til bureauer, konsulenter, lokale virksomheder og servicemærker."
+      },
+      "bookings": {
+        "title": "Bookingsystemer",
+        "detail": "Til saloner, klinikker, frisører og aftalebaserede virksomheder."
+      },
+      "ecommerce": {
+        "title": "E-handel",
+        "detail": "Til netbutikker, produktmærker og hurtigtbevægende detailideer."
+      },
+      "admin-dashboards": {
+        "title": "Dashboards og Admin-systemer",
+        "detail": "Til SaaS-værktøjer, interne systemer, analyse og CRM-produkter."
+      },
+      "chat-community": {
+        "title": "Chat- og Fællesskabsapps",
+        "detail": "Til supportstrømme, medlemsplatforme og fællesskabsorienterede produkter."
+      },
+      "mobile-ui": {
+        "title": "Mobil App UI",
+        "detail": "Til startup-koncepter, app-lanceringer og mobile-first-produkter."
+      },
+      "ai-tools": {
+        "title": "AI-værktøjer",
+        "detail": "Til automatiseringsprodukter, assistenter, generatorer og AI SaaS-ideer."
+      },
+      "landing-pages": {
+        "title": "Landingssider / Marketingtragter",
+        "detail": "Til produktlanceringer, leadgenerering og konversionsfokuserede kampagner."
+      },
+      "portfolio": {
+        "title": "Personlige og Portfoliowebsites",
+        "detail": "Til freelancere, designere, udviklere og kreative der præsenterer deres arbejde."
+      },
+      "saas-startup": {
+        "title": "SaaS MVP / Startup Lanceringssæt",
+        "detail": "Til grundlæggere der vil lancere hurtigt, validere ideer og udgive det første produkt."
+      }
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Kernetilbud",
+    "title": "Tilpassede Websites og Webapps – Bygget Hurtigt",
+    "description": "Start fra en gennemprøvet skabelon, forhåndsvis inden udvikling og lancér hurtigere med direkte udviklingssamarbejde.",
+    "briefTitle": "Hvad Du Bringer",
+    "briefItems": [
+      "Dine forretningsmål",
+      "Foretrukket skabelonretning",
+      "De kernefunktioner du har brug for",
+      "Din tidslinje og prioriteter"
+    ],
+    "previewTitle": "Hvad Du Får Tilbage",
+    "previewFallback": "Se demo-forhåndsvisning inden udvikling begynder",
+    "points": [
+      {
+        "title": "Skabelonbaseret Hastighed",
+        "description": "Brug gennemprøvede skabelonsystemer til at reducere byggetiden."
+      },
+      {
+        "title": "Forhåndsvisning Før Betaling",
+        "description": "Valider designretningen inden fuld udvikling begynder."
+      },
+      {
+        "title": "Direkte Arbejdsflow med Udvikleren",
+        "description": "Arbejd direkte med bygmesteren og hold beslutningerne hurtige."
+      }
+    ]
+  },
+  "services": {
+    "title": "Digitale Tjenester der Støtter Vækst",
+    "description": "Vi bygger ikke bare dit website – vi hjælper det med at vokse.",
+    "groups": [
+      {
+        "title": "Webudvikling",
+        "items": [
+          "Websites",
+          "Webapplikationer",
+          "Dashboards"
+        ]
+      },
+      {
+        "title": "SEO-optimering",
+        "items": [
+          "Teknisk SEO",
+          "On-page SEO",
+          "Performanceoptimering"
+        ]
+      },
+      {
+        "title": "Annoncering",
+        "items": [
+          "Meta-annoncer",
+          "TikTok-annoncer",
+          "Google-annoncer"
+        ]
+      },
+      {
+        "title": "Design",
+        "items": [
+          "UI/UX-design",
+          "Branding",
+          "Visuelt indhold"
+        ]
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Din Komplette Digitale Lanceringpartner",
+    "description": "Vi gør mere end at bygge sider. Vi hjælper virksomheder med at lancere med det rigtige produkt, performancefundament og vækststøtte.",
+    "reasons": [
+      {
+        "title": "Lancér Hurtigere end Traditionelle Bureauer",
+        "description": "Gå fra idé til levering hurtigt med et struktureret skabelonbaseret arbejdsflow."
+      },
+      {
+        "title": "Live forhåndsvisning inden betaling",
+        "description": "Gennemgå konceptet inden du forpligter dig til fuld udvikling."
+      },
+      {
+        "title": "Marketingklare systemer",
+        "description": "Projekter bygges med SEO, tracking og betalt trafiksupport fra starten."
+      },
+      {
+        "title": "Direkte Kommunikation med Din Udvikler",
+        "description": "Hold dig tæt på beslutninger og oprethold momentum fra planlægning til lancering."
+      }
+    ],
+    "stats": [
+      {
+        "label": "Byggede Projekter",
+        "target": 500,
+        "suffix": "+"
+      },
+      {
+        "label": "Tilfredse Kunder",
+        "target": 50,
+        "suffix": "+"
+      },
+      {
+        "label": "Leveringstid",
+        "target": 14,
+        "prefix": "4-",
+        "suffix": " dage"
+      },
+      {
+        "label": "Tilfredshedsrate",
+        "target": 98,
+        "suffix": "%"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start Dit Projekt I Dag",
+    "description": "Se dit website inden betaling, byg derefter med klar retning.",
+    "primary": "Start Chat med Udvikleren",
+    "secondary": "Se Skabeloner",
+    "trust": "Intet kreditkort krævet • Gratis konsultation • Forhåndsvisning inden betaling"
+  },
+  "footer": {
+    "brandDescription": "Byg med en klar proces, direkte kommunikation og lanceringsklar levering.",
+    "servicesTitle": "Tjenester",
+    "services": [
+      "Webudvikling",
+      "SEO-optimering",
+      "Annoncering",
+      "Design",
+      "Support"
+    ],
+    "companyTitle": "Virksomhed",
+    "company": [
+      "Om Os",
+      "Blog",
+      "Karriere",
+      "Kontakt",
+      "Partnere"
+    ],
+    "legalTitle": "Juridisk",
+    "legal": [
+      "Privatlivspolitik",
+      "Vilkår og Betingelser",
+      "Cookiepolitik"
+    ],
+    "contactTitle": "Kontakt",
+    "rights": "Company Platform. Alle rettigheder forbeholdes."
+  },
+  "dashboard": {
+    "myProfile": "Min Profil",
+    "backToSite": "Tilbage til websitet",
+    "tabs": {
+      "overview": "Oversigt",
+      "messages": "Beskeder",
+      "templates": "Skabeloner",
+      "settings": "Indstillinger"
+    },
+    "overview": {
+      "welcomeBack": "Velkommen tilbage",
+      "quickAccess": "Hurtig Adgang",
+      "emailVerified": "E-mail verificeret",
+      "emailNotVerified": "E-mail ikke verificeret",
+      "providerAccount": "konto",
+      "links": {
+        "messages": {
+          "label": "Beskeder",
+          "description": "Chat med teamet"
+        },
+        "templates": {
+          "label": "Skabeloner",
+          "description": "Gennemse tilgængelige projekter"
+        },
+        "settings": {
+          "label": "Indstillinger",
+          "description": "Administrer din konto"
+        }
+      }
+    },
+    "messages": {
+      "title": "Chat med Udvikleren",
+      "subtitle": "Send en besked og vi vender tilbage hurtigst muligt",
+      "online": "Online",
+      "connecting": "Forbinder…",
+      "translationOn": "Oversættelse TIL",
+      "translationOff": "Oversættelse FRA",
+      "translationDesc": "Oversæt automatisk adminens svar",
+      "emptyTitle": "Hvordan kan vi hjælpe?",
+      "emptySubtitle": "Vælg et emne nedenfor for at starte, eller skriv din egen besked.",
+      "inputPlaceholderEmpty": "Eller skriv din egen besked…",
+      "inputPlaceholderReply": "Svar til udvikleren…",
+      "inputPlaceholderConnecting": "Forbinder…",
+      "userTag": "Bruger",
+      "adminTag": "Admin",
+      "translationLabel": "Oversættelse",
+      "faqSuggestions": [
+        "Jeg vil bygge et website – hvor starter jeg?",
+        "Jeg har brug for hjælp til at vælge den rigtige skabelon.",
+        "Jeg har allerede en idé – kan vi diskutere den?",
+        "Jeg vil se en forhåndsvisning inden jeg starter.",
+        "Jeg har brug for en brugerdefineret funktion – er det muligt?",
+        "Hvor lang tid tager det at lancere mit projekt?"
+      ]
+    },
+    "settings": {
+      "title": "Indstillinger",
+      "subtitle": "Administrer dine kontopræferencer",
+      "verified": "Verificeret",
+      "notVerified": "Ikke verificeret",
+      "fieldFullName": "Fulde navn",
+      "fieldEmail": "E-mailadresse",
+      "fieldSignIn": "Login-metode",
+      "fieldMemberSince": "Medlem siden",
+      "signOutTitle": "Log ud",
+      "signOutSubtitle": "Du vil blive omdirigeret til hovedsiden.",
+      "signOutButton": "Log ud"
+    }
+  },
+  "admin": {
+    "title": "Administrationspanel",
+    "backToSite": "Tilbage til webstedet",
+    "tabs": {
+      "overview": "Oversigt",
+      "users": "Brugere",
+      "content": "Indhold",
+      "messages": "Beskeder"
+    },
+    "overview": {
+      "title": "Oversigt",
+      "subtitle": "Platformstatistik på et øjeblik",
+      "statUsers": "Samlede brugere",
+      "statContent": "Indholdsdokumenter",
+      "statLocales": "Aktive sprog",
+      "errorLoad": "Kunne ikke indlæse statistik.",
+      "tipsTitle": "Hurtige tips",
+      "tip1": "Brug fanen Brugere til at tildele eller afhæve administratoradgang.",
+      "tip2": "Brug fanen Indhold til at redigere enhver sektion på forsiden — alle sprog oversættes automatisk via AI.",
+      "tip3": "Tilføj OPENAI_API_KEY til backend/.env for at aktivere AI-oversættelse."
+    },
+    "users": {
+      "title": "Brugere",
+      "subtitle": "Administrer platformsbrugere",
+      "searchPlaceholder": "Søg navn eller e-mail…",
+      "colUser": "Bruger",
+      "colProvider": "Udbyder",
+      "colStatus": "Status",
+      "colRole": "Rolle",
+      "verified": "Verificeret",
+      "pending": "Afventer",
+      "makeAdmin": "Gør til admin",
+      "removeAdmin": "Fjern admin",
+      "confirmSure": "Sikker?",
+      "delete": "Slet",
+      "cancel": "Annuller",
+      "loading": "Indlæser brugere…",
+      "noUsers": "Ingen brugere fundet"
+    },
+    "messages": {
+      "title": "Beskeder",
+      "subtitle": "Live chat med brugere",
+      "newBadge": "ny",
+      "live": "Live",
+      "connecting": "Forbinder…",
+      "translationOn": "Oversættelse TIL",
+      "translationOff": "Oversættelse FRA",
+      "translationLabel": "Oversættelse",
+      "translationDesc": "Oversæt brugerbeskeder til dit sprog",
+      "adminTag": "Admin",
+      "userTag": "Bruger",
+      "noConversations": "Ingen samtaler endnu",
+      "noUsersMatch": "Ingen brugere matcher din søgning",
+      "selectConversation": "Vælg en samtale",
+      "noMessages": "Ingen beskeder i denne samtale endnu.",
+      "searchPlaceholder": "Søg brugere…",
+      "deleteConversation": "Slet samtale",
+      "deleteConfirm": "Slette?",
+      "deleteCancel": "Annuller"
+    },
+    "content": {
+      "title": "Indholdredaktør",
+      "subtitle": "Rediger engelsk kilde — alle sprog oversættes automatisk via AI",
+      "sectionLabel": "Sektion:",
+      "sectionHero": "Hero",
+      "sectionPositioning": "Positioneringsstribe",
+      "sectionHowItWorks": "Hvordan det virker",
+      "sectionTemplates": "Skabelonvisning",
+      "sectionCoreOffer": "Kernetilbud",
+      "sectionServices": "Tjenester",
+      "sectionWhyChooseUs": "Hvorfor vælge os",
+      "sectionCta": "Opfordring til handling",
+      "sectionFooter": "Sidefod",
+      "loading": "Indlæser…",
+      "saving": "Gemmer…",
+      "translating": "Gemt! AI oversætter 17 sprog…",
+      "retranslating": "Genoversætter 17 sprog…",
+      "allUpdated": "Alle sprog opdateret!",
+      "save": "Gem og Oversæt",
+      "retranslate": "Genoversæt alt"
+    }
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "header": {
+    "templates": "Mallar",
+    "login": "Logga in",
+    "logout": "Logga ut",
+    "chat": "Chatta med Utvecklaren",
+    "services": "Tjänster",
+    "company": "Företag",
+    "legal": "Juridiskt",
+    "myProfile": "Min Profil",
+    "adminDashboard": "Adminpanel",
+    "serviceItems": [
+      "Webbutveckling",
+      "SEO-optimering",
+      "Annonsering",
+      "Design",
+      "Support"
+    ],
+    "companyItems": [
+      "Om oss",
+      "Blogg",
+      "Karriär",
+      "Kontakt",
+      "Partners"
+    ],
+    "legalItems": [
+      "Integritetspolicy",
+      "Användarvillkor",
+      "Cookiepolicy"
+    ],
+    "translationOn": "Översättning PÅ",
+    "translationOff": "Översättning AV"
+  },
+  "hero": {
+    "title": "Bygg din webbplats på dagar – inte veckor",
+    "subtitle": "Se din webbplats innan du betalar",
+    "description": "Ingen risk. Inga gissningar. En riktig förhandsvisning innan vi bygger.",
+    "ctaPrimary": "Starta chatt med Utvecklaren",
+    "ctaSecondary": "Se mallar",
+    "trustedBy": "Betrodd av växande team i hela Europa",
+    "companies": [
+      "TechCorp",
+      "StartupX",
+      "Design Co",
+      "WebAgency",
+      "NordSoft",
+      "Studiofy"
+    ]
+  },
+  "positioning": {
+    "whyTitle": "Ingen risk. Inga gissningar. Bara klarhet.",
+    "whyItems": [
+      "Se din webbplats innan du betalar",
+      "Vet exakt vad du får innan utvecklingen börjar",
+      "Arbeta direkt med utvecklaren som bygger ditt projekt",
+      "Inget dolt scope, inga oväntade kostnader"
+    ],
+    "forTitle": "Byggt för människor som vill röra sig snabbt",
+    "forItems": [
+      "Grundare som lanserar nya idéer",
+      "Företag som uppgraderar föråldrade webbplatser",
+      "Byråer som behöver snabb och pålitlig leverans"
+    ],
+    "nextTitle": "Från idé till lansering – enkelt och snabbt",
+    "nextSteps": [
+      "Berätta vad du vill bygga",
+      "Vi matchar dig med rätt mall",
+      "Du granskar en riktig förhandsvisning",
+      "Vi bygger och lanserar ditt projekt"
+    ],
+    "supportTitle": "Direkt kommunikation. Snabbare resultat.",
+    "supportPoints": [
+      "Prata direkt med din utvecklare i varje steg",
+      "Inga kontoansvariga eller onödiga lager",
+      "Snabba svar och tydliga beslut",
+      "Byggt för att hålla ditt projekt i rörelse"
+    ]
+  },
+  "howItWorks": {
+    "title": "Hur det fungerar",
+    "description": "Tre praktiska steg från idé till lansering utan bortkastade timmar.",
+    "cta": "Starta konversationen",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Välj mall",
+        "description": "Bläddra i vår mallsamling och välj den närmaste startpunkten för ditt företag."
+      },
+      {
+        "step": "2",
+        "title": "Anpassa & förhandsgranska",
+        "description": "Justera struktur, varumärke och funktioner medan du granskar förhandsvisningen innan betalning."
+      },
+      {
+        "step": "3",
+        "title": "Prata med Utvecklaren",
+        "description": "Bekräfta din riktning direkt med en utvecklare och gå in i snabb leverans."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Mallar som påskyndar leveransen",
+    "description": "Börja från en beprövad grund och anpassa den till ditt företag på kortare tid.",
+    "explore": "Utforska",
+    "featuredTitle": "Populära startpunkter",
+    "demoPreview": "Förhandsgranska",
+    "featuredDemos": [
+      {
+        "name": "Modern byrå",
+        "category": "business"
+      },
+      {
+        "name": "Bokningsplattform",
+        "category": "bookings"
+      },
+      {
+        "name": "Dashboard Pro",
+        "category": "admin dashboards"
+      }
+    ],
+    "categories": {
+      "business": {
+        "title": "Företagswebbplatser",
+        "detail": "För byråer, konsulter, lokala företag och servicemärken."
+      },
+      "bookings": {
+        "title": "Bokningssystem",
+        "detail": "För salonger, kliniker, frisörer och mötesbaserade företag."
+      },
+      "ecommerce": {
+        "title": "E-handel",
+        "detail": "För nätbutiker, produktmärken och snabbrörliga detaljhandelsidéer."
+      },
+      "admin-dashboards": {
+        "title": "Dashboards och adminsystem",
+        "detail": "För SaaS-verktyg, interna system, analyser och CRM-produkter."
+      },
+      "chat-community": {
+        "title": "Chatt- och community-appar",
+        "detail": "För supportflöden, medlemsplattformar och community-drivna produkter."
+      },
+      "mobile-ui": {
+        "title": "Mobil app-UI",
+        "detail": "För startupkoncept, app-lanseringar och mobilfokuserade produkter."
+      },
+      "ai-tools": {
+        "title": "AI-verktyg",
+        "detail": "För automatiseringsprodukter, assistenter, generatorer och AI SaaS-idéer."
+      },
+      "landing-pages": {
+        "title": "Landningssidor / Marknadsföringsfunnlar",
+        "detail": "För produktlanseringar, leadgenerering och konverteringsfokuserade kampanjer."
+      },
+      "portfolio": {
+        "title": "Personliga webbplatser & portfolios",
+        "detail": "För frilansare, designers, utvecklare och kreatörer som visar sitt arbete."
+      },
+      "saas-startup": {
+        "title": "SaaS MVP / Startupkit",
+        "detail": "För grundare som vill lansera snabbt, validera idéer och lansera sin första produkt."
+      }
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Primär tjänst",
+    "title": "Anpassade webbplatser & webbappar – byggs snabbt",
+    "description": "Börja från en beprövad mall, förhandsgranska innan utveckling och lansera snabbare med direkt samarbete med utvecklaren.",
+    "briefTitle": "Vad du tar med dig",
+    "briefItems": [
+      "Dina affärsmål",
+      "Önskad mallinriktning",
+      "Kärnfunktioner du behöver",
+      "Din tidslinje och prioriteringar"
+    ],
+    "previewTitle": "Vad du får tillbaka",
+    "previewFallback": "Se din demoförhandsvisning innan utvecklingen börjar",
+    "points": [
+      {
+        "title": "Mallbaserad hastighet",
+        "description": "Använd beprövade mallsystem för att minska byggtiden."
+      },
+      {
+        "title": "Förhandsgranska innan betalning",
+        "description": "Validera designriktningen innan full utveckling börjar."
+      },
+      {
+        "title": "Direkt utvecklarworkflow",
+        "description": "Arbeta direkt med byggaren och håll besluten snabba."
+      }
+    ]
+  },
+  "services": {
+    "title": "Digitala tjänster som stöder tillväxt",
+    "description": "Vi bygger inte bara din webbplats – vi hjälper dig att växa den.",
+    "groups": [
+      {
+        "title": "Webbutveckling",
+        "items": [
+          "Webbplatser",
+          "Webbappar",
+          "Dashboards"
+        ]
+      },
+      {
+        "title": "SEO-optimering",
+        "items": [
+          "Teknisk SEO",
+          "On-page SEO",
+          "Prestandaoptimering"
+        ]
+      },
+      {
+        "title": "Annonsering",
+        "items": [
+          "Meta Ads",
+          "TikTok Ads",
+          "Google Ads"
+        ]
+      },
+      {
+        "title": "Design",
+        "items": [
+          "UI/UX Design",
+          "Varumärkesbyggande",
+          "Visuellt innehåll"
+        ]
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Din kompletta digitala lanspartner",
+    "description": "Vi gör mer än att bygga sidor. Vi hjälper företag att lansera med rätt produkt, prestandagrund och tillväxtstöd.",
+    "reasons": [
+      {
+        "title": "Lansera snabbare än traditionella byråer",
+        "description": "Gå från idé till leverans snabbt med ett strukturerat mallförst-workflow."
+      },
+      {
+        "title": "Liveförhandsvisning innan betalning",
+        "description": "Granska konceptet innan du förbinder dig till full utveckling."
+      },
+      {
+        "title": "Marknadsföringsfärdiga system",
+        "description": "Projekt byggs för att stödja SEO, spårning och betald trafik från start."
+      },
+      {
+        "title": "Direkt kommunikation med din Utvecklare",
+        "description": "Håll dig nära besluten och behåll momentum från planering till lansering."
+      }
+    ],
+    "stats": [
+      {
+        "label": "Byggda projekt",
+        "target": 500,
+        "suffix": "+"
+      },
+      {
+        "label": "Nöjda kunder",
+        "target": 50,
+        "suffix": "+"
+      },
+      {
+        "label": "Leveranstid",
+        "target": 14,
+        "prefix": "4-",
+        "suffix": " dagar"
+      },
+      {
+        "label": "Nöjdhetsgrad",
+        "target": 98,
+        "suffix": "%"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Starta ditt projekt idag",
+    "description": "Se din webbplats innan du betalar, bygg sedan med tydlig riktning.",
+    "primary": "Starta chatt med Utvecklaren",
+    "secondary": "Se mallar",
+    "trust": "Inget kreditkort krävs • Gratis konsultation • Förhandsgranska innan betalning"
+  },
+  "footer": {
+    "brandDescription": "Bygg med en tydlig process, direkt kommunikation och leveransklar leverans.",
+    "servicesTitle": "Tjänster",
+    "services": [
+      "Webbutveckling",
+      "SEO-optimering",
+      "Annonsering",
+      "Design",
+      "Support"
+    ],
+    "companyTitle": "Företag",
+    "company": [
+      "Om oss",
+      "Blogg",
+      "Karriär",
+      "Kontakt",
+      "Partners"
+    ],
+    "legalTitle": "Juridiskt",
+    "legal": [
+      "Integritetspolicy",
+      "Användarvillkor",
+      "Cookiepolicy"
+    ],
+    "contactTitle": "Kontakt",
+    "rights": "Company Platform. Alla rättigheter förbehållna."
+  },
+  "dashboard": {
+    "myProfile": "Min Profil",
+    "backToSite": "Tillbaka till webbplatsen",
+    "tabs": {
+      "overview": "Översikt",
+      "messages": "Meddelanden",
+      "templates": "Mallar",
+      "settings": "Inställningar"
+    },
+    "overview": {
+      "welcomeBack": "Välkommen tillbaka",
+      "quickAccess": "Snabb åtkomst",
+      "emailVerified": "E-post verifierad",
+      "emailNotVerified": "E-post ej verifierad",
+      "providerAccount": "konto",
+      "links": {
+        "messages": {
+          "label": "Meddelanden",
+          "description": "Chatta med teamet"
+        },
+        "templates": {
+          "label": "Mallar",
+          "description": "Bläddra bland tillgängliga projekt"
+        },
+        "settings": {
+          "label": "Inställningar",
+          "description": "Hantera ditt konto"
+        }
+      }
+    },
+    "messages": {
+      "title": "Chatta med Utvecklaren",
+      "subtitle": "Skicka ett meddelande så återkommer vi så snart som möjligt",
+      "online": "Online",
+      "connecting": "Ansluter…",
+      "translationOn": "Översättning PÅ",
+      "translationOff": "Översättning AV",
+      "translationDesc": "Översätt adminens svar automatiskt",
+      "emptyTitle": "Hur kan vi hjälpa dig?",
+      "emptySubtitle": "Välj ett ämne nedan för att komma igång, eller skriv ditt eget meddelande.",
+      "inputPlaceholderEmpty": "Eller skriv ditt eget meddelande…",
+      "inputPlaceholderReply": "Svara till utvecklaren…",
+      "inputPlaceholderConnecting": "Ansluter…",
+      "userTag": "Användare",
+      "adminTag": "Admin",
+      "translationLabel": "Översättning",
+      "faqSuggestions": [
+        "Jag vill bygga en webbplats – var börjar jag?",
+        "Jag behöver hjälp att välja rätt mall.",
+        "Jag har redan en idé – kan vi diskutera den?",
+        "Jag vill se en förhandsvisning innan vi börjar.",
+        "Jag behöver en anpassad funktion – är det möjligt?",
+        "Hur lång tid tar det att lansera mitt projekt?"
+      ]
+    },
+    "settings": {
+      "title": "Inställningar",
+      "subtitle": "Hantera dina kontoinställningar",
+      "verified": "Verifierad",
+      "notVerified": "Ej verifierad",
+      "fieldFullName": "Fullständigt namn",
+      "fieldEmail": "E-postadress",
+      "fieldSignIn": "Inloggningsmetod",
+      "fieldMemberSince": "Medlem sedan",
+      "signOutTitle": "Logga ut",
+      "signOutSubtitle": "Du kommer att omdirigeras till startsidan.",
+      "signOutButton": "Logga ut"
+    }
+  },
+  "admin": {
+    "title": "Administrationspanel",
+    "backToSite": "Tillbaka till sidan",
+    "tabs": {
+      "overview": "Översikt",
+      "users": "Användare",
+      "content": "Innehåll",
+      "messages": "Meddelanden"
+    },
+    "overview": {
+      "title": "Översikt",
+      "subtitle": "Plattformsstatistik i korthet",
+      "statUsers": "Totalt antal användare",
+      "statContent": "Innehållsdokument",
+      "statLocales": "Aktiva språk",
+      "errorLoad": "Det gick inte att ladda statistik.",
+      "tipsTitle": "Snabbtips",
+      "tip1": "Använd fliken Användare för att bevilja eller återkalla administratörsåtkomst.",
+      "tip2": "Använd fliken Innehåll för att redigera valfri sektion på startsidan — alla språk översätts automatiskt via AI.",
+      "tip3": "Lägg till OPENAI_API_KEY i backend/.env för att aktivera AI-översättning."
+    },
+    "users": {
+      "title": "Användare",
+      "subtitle": "Hantera plattformsanvändare",
+      "searchPlaceholder": "Sök namn eller e-post…",
+      "colUser": "Användare",
+      "colProvider": "Leverantör",
+      "colStatus": "Status",
+      "colRole": "Roll",
+      "verified": "Verifierad",
+      "pending": "Väntande",
+      "makeAdmin": "Gör till admin",
+      "removeAdmin": "Ta bort admin",
+      "confirmSure": "Säker?",
+      "delete": "Ta bort",
+      "cancel": "Avbryt",
+      "loading": "Laddar användare…",
+      "noUsers": "Inga användare hittades"
+    },
+    "messages": {
+      "title": "Meddelanden",
+      "subtitle": "Livechatt med användare",
+      "newBadge": "ny",
+      "live": "Live",
+      "connecting": "Ansluter…",
+      "translationOn": "Översättning PÅ",
+      "translationOff": "Översättning AV",
+      "translationLabel": "Översättning",
+      "translationDesc": "Översätt användarmeddelanden till ditt språk",
+      "adminTag": "Admin",
+      "userTag": "Användare",
+      "noConversations": "Inga konversationer ännu",
+      "noUsersMatch": "Inga användare matchar din sökning",
+      "selectConversation": "Välj en konversation",
+      "noMessages": "Inga meddelanden ännu i den här konversationen.",
+      "searchPlaceholder": "Sök användare…",
+      "deleteConversation": "Ta bort konversation",
+      "deleteConfirm": "Ta bort?",
+      "deleteCancel": "Avbryt"
+    },
+    "content": {
+      "title": "Innehållsredigerare",
+      "subtitle": "Redigera engelsk källa — alla språk översätts automatiskt via AI",
+      "sectionLabel": "Avsnitt:",
+      "sectionHero": "Hero",
+      "sectionPositioning": "Positioneringsremsa",
+      "sectionHowItWorks": "Hur det fungerar",
+      "sectionTemplates": "Mallvisning",
+      "sectionCoreOffer": "Kärnerbjudande",
+      "sectionServices": "Tjänster",
+      "sectionWhyChooseUs": "Varför välja oss",
+      "sectionCta": "Uppmaning till handling",
+      "sectionFooter": "Sidfot",
+      "loading": "Laddar…",
+      "saving": "Sparar…",
+      "translating": "Sparat! AI översätter 17 språk…",
+      "retranslating": "Omöversätter 17 språk…",
+      "allUpdated": "Alla språk uppdaterade!",
+      "save": "Spara och Översätt",
+      "retranslate": "Omöversätt allt"
+    }
+  }
+}

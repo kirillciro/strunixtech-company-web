@@ -1,0 +1,460 @@
+{
+  "header": {
+    "templates": "Sablonok",
+    "login": "Bejelentkezés",
+    "logout": "Kijelentkezés",
+    "chat": "Chattelj a Fejlesztővel",
+    "services": "Szolgáltatások",
+    "company": "Vállalat",
+    "legal": "Jogi",
+    "myProfile": "Profilom",
+    "adminDashboard": "Admin Irányítópult",
+    "serviceItems": [
+      "Webfejlesztés",
+      "SEO Optimalizálás",
+      "Hirdetés",
+      "Tervezés",
+      "Támogatás"
+    ],
+    "companyItems": [
+      "Rólunk",
+      "Blog",
+      "Karrier",
+      "Kapcsolat",
+      "Partnerek"
+    ],
+    "legalItems": [
+      "Adatvédelmi Irányelvek",
+      "Felhasználási Feltételek",
+      "Cookie Irányelvek"
+    ],
+    "translationOn": "Fordítás BE",
+    "translationOff": "Fordítás KI"
+  },
+  "hero": {
+    "title": "Építsd Meg Weboldaladat Napok Alatt – Nem Hetek Alatt",
+    "subtitle": "Lásd Weboldaladat Mielőtt Fizetsz",
+    "description": "Nincs kockázat. Nincs találgatás. Valódi előnézet az építés előtt.",
+    "ctaPrimary": "Indítsa el a Chatet a Fejlesztővel",
+    "ctaSecondary": "Sablonok Megtekintése",
+    "trustedBy": "Megbízható növekvő csapatoknak szerte Európában",
+    "companies": [
+      "TechCorp",
+      "StartupX",
+      "Design Co",
+      "WebAgency",
+      "NordSoft",
+      "Studiofy"
+    ]
+  },
+  "positioning": {
+    "whyTitle": "Nincs Kockázat. Nincs Találgatás. Csak Tisztaság.",
+    "whyItems": [
+      "Lásd a weboldalt a fizetés előtt",
+      "Pontosan tudja, mit kap, mielőtt a fejlesztés elkezdődne",
+      "Közvetlenül dolgozzon a fejlesztővel, aki megépíti a projektjét",
+      "Nincsenek rejtett hatókörök, nincsenek váratlan költségek"
+    ],
+    "forTitle": "Azoknak készült, akik gyorsan akarnak haladni",
+    "forItems": [
+      "Alapítók, akik új ötleteket indítanak el",
+      "Vállalatok, amelyek elavult weboldalakat frissítenek",
+      "Ügynökségek, amelyeknek gyors és megbízható végrehajtásra van szükségük"
+    ],
+    "nextTitle": "Ötlettől az Indításig – Egyszerűen és Gyorsan",
+    "nextSteps": [
+      "Mondja el nekünk, mit szeretne megépíteni",
+      "Megszüntetjük a megfelelő sablonnal",
+      "Valódi működő előnézetet tekint meg",
+      "Megépítjük és elindítjuk a projektjét"
+    ],
+    "supportTitle": "Közvetlen Kommunikáció. Gyorsabb Eredmények.",
+    "supportPoints": [
+      "Minden lépésnél közvetlenül a fejlesztőjével beszél",
+      "Nincsenek fiókkezelők vagy felesleges szintek",
+      "Gyors válaszok és egyértelmű döntések",
+      "Arra tervezték, hogy a projektje mozgásban maradjon"
+    ]
+  },
+  "howItWorks": {
+    "title": "Hogyan Működik",
+    "description": "Három gyakorlati lépés az ötlettől az indításig elpazarolt idő nélkül.",
+    "cta": "Indítsa el a Beszélgetést",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Válasszon Sablont",
+        "description": "Böngésszen sablongyűjteményünkben, és válassza a legközelebbi kiindulópontot vállalkozása számára."
+      },
+      {
+        "step": "2",
+        "title": "Testreszabás és Előnézet",
+        "description": "Állítsa be a struktúrát, a márkát és a funkciókat, miközben felülvizsgálja az előnézetet a fizetés előtt."
+      },
+      {
+        "step": "3",
+        "title": "Beszéljen a Fejlesztővel",
+        "description": "Erősítse meg az irányt közvetlenül egy fejlesztővel, és lépjen a gyors szállítás felé."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Sablonok, amelyek Felgyorsítják a Szállítást",
+    "description": "Kezdje egy bevált alapból, és igazítsa vállalkozásához rövidebb idő alatt.",
+    "explore": "Felfedezés",
+    "featuredTitle": "Népszerű Kiindulópontok",
+    "demoPreview": "Előnézet",
+    "featuredDemos": [
+      {
+        "name": "Modern Ügynökség",
+        "category": "business"
+      },
+      {
+        "name": "Foglalási Platform",
+        "category": "bookings"
+      },
+      {
+        "name": "Dashboard Pro",
+        "category": "admin dashboards"
+      }
+    ],
+    "categories": {
+      "business": {
+        "title": "Üzleti Weboldalak",
+        "detail": "Ügynökségek, tanácsadók, helyi vállalkozások és szolgáltatási márkák számára."
+      },
+      "bookings": {
+        "title": "Foglalási Rendszerek",
+        "detail": "Szalonok, klinikák, borbélyüzletek és időpontálapon működő vállalkozások számára."
+      },
+      "ecommerce": {
+        "title": "E-kereskedelem",
+        "detail": "Online áruházak, termékmárkák és gyorsan mozgó kiskereskedelmi ötletek számára."
+      },
+      "admin-dashboards": {
+        "title": "Irányítópultok és Admin Rendszerek",
+        "detail": "SaaS eszközök, belső rendszerek, elemzés és CRM termékek számára."
+      },
+      "chat-community": {
+        "title": "Chat és Közösségi Alkalmazások",
+        "detail": "Támogatási folyamatokhoz, tagsági platformokhoz és közösség-orientált termékekhez."
+      },
+      "mobile-ui": {
+        "title": "Mobilalkalmazás UI",
+        "detail": "Startup-konceptekhez, alkalmazásindításhoz és mobile-first termékekhez."
+      },
+      "ai-tools": {
+        "title": "AI Eszközök",
+        "detail": "Automatizálási termékekhez, asszisztensekhez, generátorokhoz és AI SaaS ötletekhez."
+      },
+      "landing-pages": {
+        "title": "Céloldalak / Marketing Tölcsérek",
+        "detail": "Terméklansírozáshoz, lead-generáláshoz és konverzióközpontú kampányokhoz."
+      },
+      "portfolio": {
+        "title": "Személyes és Portfólió Weboldalak",
+        "detail": "Szabadúszóknak, tervezőknek, fejlesztőknek és alkotóknak, akik bemutatják munkájukat."
+      },
+      "saas-startup": {
+        "title": "SaaS MVP / Startup Indítókészletek",
+        "detail": "Alapítók számára, akik gyorsan szeretnének indítani, ötleteket validálni és kiadni az első terméket."
+      }
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Alapszolgáltatás",
+    "title": "Egyedi Weboldalak és Webalkalmazások – Gyorsan Megépítve",
+    "description": "Kezdje egy bevált sablonból, tekintse meg az előnézetet a fejlesztés előtt, és indítsa el gyorsabban közvetlen fejlesztői együttműködéssel.",
+    "briefTitle": "Mit Hoz Ön",
+    "briefItems": [
+      "Vállalkozása céljait",
+      "Preferált sablon irányt",
+      "A szükséges alapvető funkciókat",
+      "Az idővonalát és prioritásait"
+    ],
+    "previewTitle": "Mit Kap Vissza",
+    "previewFallback": "Tekintse meg a demo előnézetet, mielőtt a fejlesztés megkezdődne",
+    "points": [
+      {
+        "title": "Sablon alapú Sebesség",
+        "description": "Használjon bevált sablonrendszereket az építési idő csökkentéséhez."
+      },
+      {
+        "title": "Előnézet Fizetés Előtt",
+        "description": "Érvényesítse a tervezési irányt, mielőtt a teljes fejlesztés elkezdődne."
+      },
+      {
+        "title": "Közvetlen Munkafolyamat a Fejlesztővel",
+        "description": "Közvetlenül az építővel dolgozzon, és tartsa gyorsan a döntéseket."
+      }
+    ]
+  },
+  "services": {
+    "title": "Digitális Szolgáltatások, amelyek Támogatják a Növekedést",
+    "description": "Nemcsak megépítjük a weboldalát – segítünk növekedni.",
+    "groups": [
+      {
+        "title": "Webfejlesztés",
+        "items": [
+          "Weboldalak",
+          "Webalkalmazások",
+          "Irányítópultok"
+        ]
+      },
+      {
+        "title": "SEO Optimalizálás",
+        "items": [
+          "Technikai SEO",
+          "Oldalon lévő SEO",
+          "Teljesítmény optimalizálás"
+        ]
+      },
+      {
+        "title": "Hirdetés",
+        "items": [
+          "Meta hirdetések",
+          "TikTok hirdetések",
+          "Google hirdetések"
+        ]
+      },
+      {
+        "title": "Tervezés",
+        "items": [
+          "UI/UX tervezés",
+          "Márkaépítés",
+          "Vizuális tartalom"
+        ]
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Teljes Digitális Indítási Partnere",
+    "description": "Többet teszünk, mint csak oldalakat építeni. Segítünk vállalkozásoknak elindulni a megfelelő termékkel, teljesítmény-alappal és növekedési támogatással.",
+    "reasons": [
+      {
+        "title": "Indítson Gyorsabban, mint a Hagyományos Ügynökségek",
+        "description": "Lépjen ötlettől szállításig gyorsan strukturált sablon-alapú munkafolyamattal."
+      },
+      {
+        "title": "Élő előnézet a fizetés előtt",
+        "description": "Tekintse meg a koncepciót, mielőtt teljes fejlesztésre kötelezi magát."
+      },
+      {
+        "title": "Marketingre kész rendszerek",
+        "description": "A projektek SEO, nyomkövetési és fizetett forgalom támogatásával kezdettől fogva épülnek."
+      },
+      {
+        "title": "Közvetlen Kommunikáció a Fejlesztőjével",
+        "description": "Maradjon közel a döntésekhez, és tartsa fenn a lendületet a tervezéstől az indításig."
+      }
+    ],
+    "stats": [
+      {
+        "label": "Megépített Projektek",
+        "target": 500,
+        "suffix": "+"
+      },
+      {
+        "label": "Elégedett Ügyfelek",
+        "target": 50,
+        "suffix": "+"
+      },
+      {
+        "label": "Szállítási Idő",
+        "target": 14,
+        "prefix": "4-",
+        "suffix": " nap"
+      },
+      {
+        "label": "Elégedettségi Arány",
+        "target": 98,
+        "suffix": "%"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Kezdje el Projektjét Ma",
+    "description": "Tekintse meg weboldalát a fizetés előtt, majd építse egyértelmű iránnyal.",
+    "primary": "Indítsa el a Chatet a Fejlesztővel",
+    "secondary": "Sablonok Megtekintése",
+    "trust": "Nem szükséges hitelkártya • Ingyenes konzultáció • Előnézet fizetés előtt"
+  },
+  "footer": {
+    "brandDescription": "Építsen egyértelmű folyamattal, közvetlen kommunikációval és indításra kész szállítással.",
+    "servicesTitle": "Szolgáltatások",
+    "services": [
+      "Webfejlesztés",
+      "SEO Optimalizálás",
+      "Hirdetés",
+      "Tervezés",
+      "Támogatás"
+    ],
+    "companyTitle": "Vállalat",
+    "company": [
+      "Rólunk",
+      "Blog",
+      "Karrier",
+      "Kapcsolat",
+      "Partnerek"
+    ],
+    "legalTitle": "Jogi",
+    "legal": [
+      "Adatvédelmi Irányelvek",
+      "Felhasználási Feltételek",
+      "Cookie Irányelvek"
+    ],
+    "contactTitle": "Kapcsolat",
+    "rights": "Company Platform. Minden jog fenntartva."
+  },
+  "dashboard": {
+    "myProfile": "Profilom",
+    "backToSite": "Vissza a weboldalra",
+    "tabs": {
+      "overview": "Áttekintés",
+      "messages": "Üzenetek",
+      "templates": "Sablonok",
+      "settings": "Beállítások"
+    },
+    "overview": {
+      "welcomeBack": "Üdv újra",
+      "quickAccess": "Gyors Hozzáférés",
+      "emailVerified": "E-mail ellenőrzött",
+      "emailNotVerified": "E-mail nem ellenőrzött",
+      "providerAccount": "fiók",
+      "links": {
+        "messages": {
+          "label": "Üzenetek",
+          "description": "Chatelje a csapattal"
+        },
+        "templates": {
+          "label": "Sablonok",
+          "description": "Böngésszen az elérhető projektekben"
+        },
+        "settings": {
+          "label": "Beállítások",
+          "description": "Kezelje fiókját"
+        }
+      }
+    },
+    "messages": {
+      "title": "Chat a Fejlesztővel",
+      "subtitle": "Küldjön üzenetet, és a lehető leghamarabb válaszolunk",
+      "online": "Online",
+      "connecting": "Csatlakozás…",
+      "translationOn": "Fordítás BE",
+      "translationOff": "Fordítás KI",
+      "translationDesc": "Admin válaszainak automatikus fordítása",
+      "emptyTitle": "Hogyan segíthetünk?",
+      "emptySubtitle": "Válasszon témát alább a kezdéshez, vagy írja saját üzenetét.",
+      "inputPlaceholderEmpty": "Vagy írja saját üzenetét…",
+      "inputPlaceholderReply": "Válaszoljon a fejlesztőnek…",
+      "inputPlaceholderConnecting": "Csatlakozás…",
+      "userTag": "Felhasználó",
+      "adminTag": "Admin",
+      "translationLabel": "Fordítás",
+      "faqSuggestions": [
+        "Weboldalt szeretnék építeni – hol kezdjem?",
+        "Segítségre van szükségem a megfelelő sablon kiválasztásában.",
+        "Már van ötletem – megbeszélhetjük?",
+        "Előnézetet szeretnék látni a kezdés előtt.",
+        "Egyedi funkcióra van szükségem – lehetséges?",
+        "Mennyi ideig tart a projektem elindítása?"
+      ]
+    },
+    "settings": {
+      "title": "Beállítások",
+      "subtitle": "Kezelje fiókja beállításait",
+      "verified": "Ellenőrzött",
+      "notVerified": "Nem ellenőrzött",
+      "fieldFullName": "Teljes név",
+      "fieldEmail": "E-mail cím",
+      "fieldSignIn": "Bejelentkezési módszer",
+      "fieldMemberSince": "Tag azóta",
+      "signOutTitle": "Kijelentkezés",
+      "signOutSubtitle": "A főoldalra lesz átirányítva.",
+      "signOutButton": "Kijelentkezés"
+    }
+  },
+  "admin": {
+    "title": "Adminisztrátori panel",
+    "backToSite": "Vissza a webhelyre",
+    "tabs": {
+      "overview": "Áttekintés",
+      "users": "Felhasználók",
+      "content": "Tartalom",
+      "messages": "Üzenetek"
+    },
+    "overview": {
+      "title": "Áttekintés",
+      "subtitle": "Platform statisztikák egy pillantásra",
+      "statUsers": "Összes felhasználó",
+      "statContent": "Tartalom dokumentumok",
+      "statLocales": "Aktív nyelvek",
+      "errorLoad": "Nem sikerült betölteni a statisztikákat.",
+      "tipsTitle": "Gyors tippek",
+      "tip1": "Használja a Felhasználók lapot az adminisztrátori hozzáférés megadásához vagy visszavonásához.",
+      "tip2": "Használja a Tartalom lapot bármely kezdőlap szakasz szerkesztéséhez — minden nyelvet automatikusan fordít az AI.",
+      "tip3": "Adja hozzá az OPENAI_API_KEY-t a backend/.env fájlhoz az AI fordítás engedélyezéséhez."
+    },
+    "users": {
+      "title": "Felhasználók",
+      "subtitle": "Platform felhasználók kezelése",
+      "searchPlaceholder": "Keresés név vagy e-mail alapján…",
+      "colUser": "Felhasználó",
+      "colProvider": "Szolgáltató",
+      "colStatus": "Állapot",
+      "colRole": "Szerep",
+      "verified": "Hitelesített",
+      "pending": "Függőben",
+      "makeAdmin": "Admin kineveezése",
+      "removeAdmin": "Admin eltávolítása",
+      "confirmSure": "Biztos?",
+      "delete": "Törlés",
+      "cancel": "Mégse",
+      "loading": "Felhasználók betöltése…",
+      "noUsers": "Nem találhatók felhasználók"
+    },
+    "messages": {
+      "title": "Üzenetek",
+      "subtitle": "Élő chat felhasználókkal",
+      "newBadge": "új",
+      "live": "Élő",
+      "connecting": "Csatlakozás…",
+      "translationOn": "Fordítás BE",
+      "translationOff": "Fordítás KI",
+      "translationLabel": "Fordítás",
+      "translationDesc": "Felhasználók üzeneteinek fordítása a te nyelvedre",
+      "adminTag": "Admin",
+      "userTag": "Felhasználó",
+      "noConversations": "Még nincsenek beszélgetések",
+      "noUsersMatch": "Egyetlen felhasználó sem felel meg a keresésnek",
+      "selectConversation": "Válasszon egy beszélgetést",
+      "noMessages": "Még nincsenek üzenetek ebben a beszélgetésben.",
+      "searchPlaceholder": "Felhasználók keresése…",
+      "deleteConversation": "Társalgás törlése",
+      "deleteConfirm": "Törölni?",
+      "deleteCancel": "Mégse"
+    },
+    "content": {
+      "title": "Tartalomszerkesztő",
+      "subtitle": "Az angol forrás szerkesztése — minden nyelvet automatikusan lefordít az AI",
+      "sectionLabel": "Szakasz:",
+      "sectionHero": "Hero",
+      "sectionPositioning": "Pozicionálási sáv",
+      "sectionHowItWorks": "Hogyan működik",
+      "sectionTemplates": "Sablonbemutato",
+      "sectionCoreOffer": "Alapajánlat",
+      "sectionServices": "Szolgáltatások",
+      "sectionWhyChooseUs": "Miért minket válasszon",
+      "sectionCta": "Cselekvésre felhívás",
+      "sectionFooter": "Lábléc",
+      "loading": "Betöltés…",
+      "saving": "Mentés…",
+      "translating": "Mentve! AI fordítja a 17 nyelvet…",
+      "retranslating": "17 nyelv újrafordítása…",
+      "allUpdated": "Minden nyelv frissítve!",
+      "save": "Mentés és Fordítás",
+      "retranslate": "Mindent újrafordít"
+    }
+  }
+}

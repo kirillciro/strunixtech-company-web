@@ -3,14 +3,16 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import crypto from "crypto";
 import express from "express";
+import { createServer } from "http";
 import jwt from "jsonwebtoken";
 import { z } from "zod";
 import { pool } from "./db.js";
 import { generateTokens, hashToken, verifyRefreshToken } from "./auth.js";
-import { requireAuth, type AuthedRequest } from "./middleware.js";
+import { requireAuth, requireAdmin, type AuthedRequest } from "./middleware.js";
 import { OAuth2Client } from "google-auth-library";
 import { sendVerificationEmail, sendPasswordResetEmail } from "./email.js";
 import type { SafeUser } from "./types.js";
+import { initChatSocket } from "./chat.js";
 
 const app = express();
 
@@ -100,6 +102,12 @@ const languageSchema = z.enum([
   "et",
   "lv",
   "fi",
+  "sv",
+  "da",
+  "no",
+  "cs",
+  "hu",
+  "el",
 ]);
 
 const sourceContentSchema = z.object({
@@ -689,12 +697,10 @@ app.post("/auth/facebook", async (req, res) => {
     const { id: facebookId, name, email } = fbUser;
 
     if (!email) {
-      return res
-        .status(400)
-        .json({
-          message:
-            "Email permission is required. Please allow email access when signing in with Facebook.",
-        });
+      return res.status(400).json({
+        message:
+          "Email permission is required. Please allow email access when signing in with Facebook.",
+      });
     }
 
     const existing = await pool.query(
@@ -824,12 +830,10 @@ app.post("/auth/apple", async (req, res) => {
         setRefreshCookie(res, tokens.refreshToken);
         return res.json({ accessToken: tokens.accessToken, user });
       }
-      return res
-        .status(400)
-        .json({
-          message:
-            "Email permission is required for new Apple accounts. Please sign in again.",
-        });
+      return res.status(400).json({
+        message:
+          "Email permission is required for new Apple accounts. Please sign in again.",
+      });
     }
 
     const existing = await pool.query(
@@ -1109,9 +1113,492 @@ app.get(
   },
 );
 
+// ── Admin: Stats ───────────────────────────────────────────────────────────
+
+app.get(
+  "/admin/stats",
+  requireAuth,
+  requireAdmin,
+  async (_req: AuthedRequest, res) => {
+    try {
+      const [users, docs, locs] = await Promise.all([
+        pool.query("SELECT COUNT(*) AS count FROM users"),
+        pool.query("SELECT COUNT(*) AS count FROM content_documents"),
+        pool.query(
+          "SELECT COUNT(DISTINCT locale) AS count FROM content_localizations WHERE translation_status = 'up_to_date'",
+        ),
+      ]);
+      return res.json({
+        totalUsers: Number(users.rows[0].count),
+        totalContent: Number(docs.rows[0].count),
+        liveLocales: Number(locs.rows[0].count),
+      });
+    } catch {
+      return res.status(500).json({ message: "Could not fetch stats" });
+    }
+  },
+);
+
+// ── Admin: List users ──────────────────────────────────────────────────────
+
+app.get(
+  "/admin/users",
+  requireAuth,
+  requireAdmin,
+  async (req: AuthedRequest, res) => {
+    const search = (req.query.search as string) ?? "";
+    try {
+      const result = await pool.query(
+        `SELECT id, full_name, email, role, is_verified, provider, created_at
+         FROM users
+         WHERE ($1 = '' OR full_name ILIKE $2 OR email ILIKE $2)
+         ORDER BY created_at DESC LIMIT 100`,
+        [search, `%${search}%`],
+      );
+      return res.json({ users: result.rows.map(mapUser) });
+    } catch {
+      return res.status(500).json({ message: "Could not fetch users" });
+    }
+  },
+);
+
+// ── Admin: Update user role ────────────────────────────────────────────────
+
+const roleUpdateSchema = z.object({ role: z.enum(["admin", "user"]) });
+
+app.patch(
+  "/admin/users/:id/role",
+  requireAuth,
+  requireAdmin,
+  async (req: AuthedRequest, res) => {
+    const userId = Number(req.params.id);
+    if (!userId || isNaN(userId)) {
+      return res.status(400).json({ message: "Invalid user ID" });
+    }
+    const parsed = roleUpdateSchema.safeParse(req.body);
+    if (!parsed.success) {
+      return res.status(400).json({ message: "Invalid role" });
+    }
+    try {
+      const result = await pool.query(
+        `UPDATE users SET role = $1 WHERE id = $2
+         RETURNING id, full_name, email, role, is_verified, provider, created_at`,
+        [parsed.data.role, userId],
+      );
+      if (!result.rowCount || result.rowCount === 0) {
+        return res.status(404).json({ message: "User not found" });
+      }
+      return res.json({ success: true, user: mapUser(result.rows[0]) });
+    } catch {
+      return res.status(500).json({ message: "Could not update role" });
+    }
+  },
+);
+
+app.delete(
+  "/admin/users/:id",
+  requireAuth,
+  requireAdmin,
+  async (req: AuthedRequest, res) => {
+    const userId = Number(req.params.id);
+    if (!userId || isNaN(userId)) {
+      return res.status(400).json({ message: "Invalid user ID" });
+    }
+    // Prevent an admin from deleting themselves
+    if (userId === req.userId) {
+      return res
+        .status(400)
+        .json({ message: "Cannot delete your own account" });
+    }
+    try {
+      const result = await pool.query(
+        "DELETE FROM users WHERE id = $1 RETURNING id",
+        [userId],
+      );
+      if (!result.rowCount || result.rowCount === 0) {
+        return res.status(404).json({ message: "User not found" });
+      }
+      return res.json({ success: true });
+    } catch {
+      return res.status(500).json({ message: "Could not delete user" });
+    }
+  },
+);
+
+// ── Admin: Content section editor + AI translation ─────────────────────────
+
+const sectionUpdateSchema = z.object({
+  sectionKey: z.string().min(1).max(80),
+  data: z.record(z.string(), z.unknown()),
+});
+
+const TRANSLATION_LOCALES = [
+  "nl",
+  "de",
+  "fr",
+  "it",
+  "es",
+  "pt",
+  "pl",
+  "ro",
+  "et",
+  "lv",
+  "fi",
+  "sv",
+  "da",
+  "no",
+  "cs",
+  "hu",
+  "el",
+];
+
+const LOCALE_NAMES: Record<string, string> = {
+  nl: "Dutch",
+  de: "German",
+  fr: "French",
+  it: "Italian",
+  es: "Spanish",
+  pt: "Portuguese",
+  pl: "Polish",
+  ro: "Romanian",
+  et: "Estonian",
+  lv: "Latvian",
+  fi: "Finnish",
+  sv: "Swedish",
+  da: "Danish",
+  no: "Norwegian",
+  cs: "Czech",
+  hu: "Hungarian",
+  el: "Greek",
+};
+
+function flattenContent(obj: unknown, prefix = ""): Record<string, string> {
+  const result: Record<string, string> = {};
+  if (typeof obj === "string") {
+    if (prefix) result[prefix] = obj;
+    return result;
+  }
+  if (Array.isArray(obj)) {
+    obj.forEach((item, i) => {
+      Object.assign(
+        result,
+        flattenContent(item, prefix ? `${prefix}.${i}` : String(i)),
+      );
+    });
+    return result;
+  }
+  if (obj && typeof obj === "object") {
+    for (const [k, v] of Object.entries(obj as Record<string, unknown>)) {
+      Object.assign(result, flattenContent(v, prefix ? `${prefix}.${k}` : k));
+    }
+  }
+  return result;
+}
+
+function reconstructContent(
+  original: unknown,
+  flatMap: Record<string, string>,
+  prefix = "",
+): unknown {
+  if (typeof original === "string") return flatMap[prefix] ?? original;
+  if (Array.isArray(original)) {
+    return original.map((item, i) =>
+      reconstructContent(item, flatMap, prefix ? `${prefix}.${i}` : String(i)),
+    );
+  }
+  if (original && typeof original === "object") {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(original as Record<string, unknown>)) {
+      out[k] = reconstructContent(v, flatMap, prefix ? `${prefix}.${k}` : k);
+    }
+    return out;
+  }
+  return original;
+}
+
+async function translateFlatContent(
+  flatContent: Record<string, string>,
+  targetLocale: string,
+  apiKey: string,
+): Promise<Record<string, string>> {
+  const lang = LOCALE_NAMES[targetLocale] ?? targetLocale;
+  const keys = Object.keys(flatContent);
+  const response = await fetch("https://api.openai.com/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      model: "gpt-4o-mini",
+      messages: [
+        {
+          role: "system",
+          content: `You are a professional website translator. You will receive a flat JSON object where keys use dot-notation (e.g. "hero.title", "companies.0") and values are English strings. Translate every value into ${lang}. Rules:\n- Return a flat JSON object with the EXACT same keys — do NOT nest them\n- Keep all ${keys.length} keys present in the output\n- Do not translate proper nouns, brand names, or URLs\n- Return valid JSON only, no extra text`,
+        },
+        { role: "user", content: JSON.stringify(flatContent) },
+      ],
+      response_format: { type: "json_object" },
+      temperature: 0.2,
+    }),
+  });
+  if (!response.ok) throw new Error(`OpenAI ${response.status}`);
+  const r = (await response.json()) as {
+    choices: Array<{ message: { content: string } }>;
+  };
+  return JSON.parse(r.choices[0].message.content) as Record<string, string>;
+}
+
+async function translateLocale(
+  locale: string,
+  englishContent: Record<string, unknown>,
+  documentId: number,
+  sourceVersion: number,
+  apiKey: string,
+): Promise<void> {
+  const translatedContent: Record<string, unknown> = {};
+  for (const [sectionKey, sectionData] of Object.entries(englishContent)) {
+    const flat = flattenContent(sectionData);
+    if (Object.keys(flat).length === 0) {
+      translatedContent[sectionKey] = sectionData;
+      continue;
+    }
+    const translated = await translateFlatContent(flat, locale, apiKey);
+    const missing = Object.keys(flat).filter((k) => !(k in translated));
+    if (missing.length > 0) {
+      console.warn(
+        `[cms] ${locale}/${sectionKey}: GPT missing keys — ${missing.join(", ")}. Using English fallback for those.`,
+      );
+    }
+    translatedContent[sectionKey] = reconstructContent(sectionData, translated);
+  }
+  await pool.query(
+    `INSERT INTO content_localizations
+       (document_id, locale, is_source, translation_status, content_json,
+        source_version, translated_from_version, last_translated_at, updated_at)
+     VALUES ($1, $2, FALSE, 'up_to_date', $3::jsonb, $4, $4, NOW(), NOW())
+     ON CONFLICT (document_id, locale) DO UPDATE SET
+       translation_status = 'up_to_date', content_json = EXCLUDED.content_json,
+       source_version = EXCLUDED.source_version,
+       translated_from_version = EXCLUDED.translated_from_version,
+       last_translated_at = NOW(), last_error = NULL, updated_at = NOW()`,
+    [documentId, locale, JSON.stringify(translatedContent), sourceVersion],
+  );
+  console.log(`[cms] ✓ ${locale}`);
+}
+
+async function triggerTranslations(
+  documentId: number,
+  sourceVersion: number,
+  englishContent: Record<string, unknown>,
+): Promise<void> {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey) {
+    console.warn("[cms] OPENAI_API_KEY not set — translations skipped");
+    return;
+  }
+  // Translate all locales in parallel so no locale is blocked by another
+  const results = await Promise.allSettled(
+    TRANSLATION_LOCALES.map((locale) =>
+      translateLocale(
+        locale,
+        englishContent,
+        documentId,
+        sourceVersion,
+        apiKey,
+      ),
+    ),
+  );
+  for (let i = 0; i < results.length; i++) {
+    const result = results[i];
+    const locale = TRANSLATION_LOCALES[i];
+    if (result.status === "rejected") {
+      const errMsg =
+        result.reason instanceof Error
+          ? result.reason.message
+          : String(result.reason);
+      console.error(`[cms] ✗ ${locale}:`, errMsg);
+      await pool
+        .query(
+          `INSERT INTO content_localizations
+             (document_id, locale, is_source, translation_status, source_version, updated_at, last_error)
+           VALUES ($1, $2, FALSE, 'failed', $3, NOW(), $4)
+           ON CONFLICT (document_id, locale) DO UPDATE SET
+             translation_status = 'failed', last_error = EXCLUDED.last_error, updated_at = NOW()`,
+          [documentId, locale, sourceVersion, errMsg],
+        )
+        .catch(() => {});
+    }
+  }
+}
+
+function deepMerge(
+  base: Record<string, unknown>,
+  patch: Record<string, unknown>,
+): Record<string, unknown> {
+  const result = { ...base };
+  for (const [k, v] of Object.entries(patch)) {
+    if (
+      v &&
+      typeof v === "object" &&
+      !Array.isArray(v) &&
+      result[k] &&
+      typeof result[k] === "object" &&
+      !Array.isArray(result[k])
+    ) {
+      result[k] = deepMerge(
+        result[k] as Record<string, unknown>,
+        v as Record<string, unknown>,
+      );
+    } else {
+      result[k] = v;
+    }
+  }
+  return result;
+}
+
+app.put(
+  "/admin/content/:contentKey/section",
+  requireAuth,
+  requireAdmin,
+  async (req: AuthedRequest, res) => {
+    const { contentKey } = req.params;
+    const parsed = sectionUpdateSchema.safeParse(req.body);
+    if (!parsed.success) {
+      return res
+        .status(400)
+        .json({ message: "Invalid input", issues: parsed.error.issues });
+    }
+    const { sectionKey, data } = parsed.data;
+    const client = await pool.connect();
+    try {
+      await client.query("BEGIN");
+      const docResult = await client.query(
+        "SELECT id, version FROM content_documents WHERE content_key = $1 LIMIT 1",
+        [contentKey],
+      );
+      let documentId: number;
+      let nextVersion: number;
+      let currentContent: Record<string, unknown> = {};
+      if (!docResult.rowCount || docResult.rowCount === 0) {
+        const ins = await client.query(
+          `INSERT INTO content_documents (content_key, source_locale, status) VALUES ($1, 'en', 'published') RETURNING id, version`,
+          [contentKey],
+        );
+        documentId = ins.rows[0].id as number;
+        nextVersion = ins.rows[0].version as number;
+      } else {
+        documentId = docResult.rows[0].id as number;
+        nextVersion = Number(docResult.rows[0].version) + 1;
+        const locResult = await client.query(
+          "SELECT content_json FROM content_localizations WHERE document_id = $1 AND locale = 'en' LIMIT 1",
+          [documentId],
+        );
+        if (locResult.rowCount && locResult.rowCount > 0) {
+          currentContent = locResult.rows[0].content_json as Record<
+            string,
+            unknown
+          >;
+        }
+        await client.query(
+          "UPDATE content_documents SET version = $1, updated_at = NOW() WHERE id = $2",
+          [nextVersion, documentId],
+        );
+      }
+      const existing =
+        (currentContent[sectionKey] as Record<string, unknown> | undefined) ??
+        {};
+      const updatedContent: Record<string, unknown> = {
+        ...currentContent,
+        [sectionKey]: deepMerge(existing, data),
+      };
+      await client.query(
+        `INSERT INTO content_localizations
+           (document_id, locale, is_source, translation_status, content_json,
+            source_version, translated_from_version, last_translated_at, updated_at)
+         VALUES ($1, 'en', TRUE, 'up_to_date', $2::jsonb, $3, $3, NOW(), NOW())
+         ON CONFLICT (document_id, locale) DO UPDATE SET
+           is_source = TRUE, translation_status = 'up_to_date',
+           content_json = EXCLUDED.content_json, source_version = EXCLUDED.source_version,
+           translated_from_version = EXCLUDED.translated_from_version,
+           last_translated_at = NOW(), updated_at = NOW(), last_error = NULL`,
+        [documentId, JSON.stringify(updatedContent), nextVersion],
+      );
+      await client.query(
+        `UPDATE content_localizations SET translation_status = 'pending', source_version = $1, updated_at = NOW()
+         WHERE document_id = $2 AND locale <> 'en'`,
+        [nextVersion, documentId],
+      );
+      await client.query("COMMIT");
+      triggerTranslations(documentId, nextVersion, updatedContent).catch(
+        (err) => console.error("[cms] triggerTranslations:", err),
+      );
+      return res.json({
+        contentKey,
+        sectionKey,
+        sourceVersion: nextVersion,
+        translating: true,
+      });
+    } catch (err) {
+      await client.query("ROLLBACK");
+      console.error("[cms] section update:", err);
+      return res.status(500).json({ message: "Could not update section" });
+    } finally {
+      client.release();
+    }
+  },
+);
+
+// ── Admin: Retranslate all languages ────────────────────────────────────────
+
+app.post(
+  "/admin/content/:contentKey/retranslate",
+  requireAuth,
+  requireAdmin,
+  async (req: AuthedRequest, res) => {
+    const { contentKey } = req.params;
+    try {
+      const docResult = await pool.query(
+        `SELECT d.id, d.version, l.content_json
+         FROM content_documents d
+         JOIN content_localizations l ON l.document_id = d.id AND l.locale = 'en'
+         WHERE d.content_key = $1 LIMIT 1`,
+        [contentKey],
+      );
+      if (!docResult.rowCount || docResult.rowCount === 0) {
+        return res
+          .status(404)
+          .json({ message: "No content found. Save content first." });
+      }
+      const documentId = docResult.rows[0].id as number;
+      const version = Number(docResult.rows[0].version);
+      const englishContent = docResult.rows[0].content_json as Record<
+        string,
+        unknown
+      >;
+
+      triggerTranslations(documentId, version, englishContent).catch((err) =>
+        console.error("[cms] retranslate:", err),
+      );
+
+      return res.json({
+        message: "Retranslation started for all languages",
+        locales: TRANSLATION_LOCALES,
+      });
+    } catch (err) {
+      console.error("[cms] retranslate error:", err);
+      return res.status(500).json({ message: "Could not start retranslation" });
+    }
+  },
+);
+
 // ── Start server ───────────────────────────────────────────────────────────
 
 const port = Number(process.env.PORT ?? 4000);
-app.listen(port, () => {
+const server = createServer(app);
+
+initChatSocket(server, allowedOrigins);
+
+server.listen(port, () => {
   console.log(`API listening on http://localhost:${port}`);
 });

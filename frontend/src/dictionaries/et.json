@@ -1,0 +1,460 @@
+{
+  "header": {
+    "templates": "Mallid",
+    "login": "Logi sisse",
+    "logout": "Logi välja",
+    "chat": "Vestle arendajaga",
+    "services": "Teenused",
+    "company": "Ettevõte",
+    "legal": "Juriidiline",
+    "myProfile": "Minu Profiil",
+    "adminDashboard": "Administraatori paneel",
+    "serviceItems": [
+      "Veebiarendus",
+      "SEO optimeerimine",
+      "Reklaam",
+      "Disain",
+      "Tugi"
+    ],
+    "companyItems": [
+      "Meist",
+      "Blogi",
+      "Karjäär",
+      "Kontakt",
+      "Partnerid"
+    ],
+    "legalItems": [
+      "Privaatsuspoliitika",
+      "Kasutustingimused",
+      "Küpsisepoliitika"
+    ],
+    "translationOn": "Tõlge SEES",
+    "translationOff": "Tõlge VÄLJAS"
+  },
+  "hero": {
+    "title": "Ehita oma veebisait päevadega – mitte nädalatega",
+    "subtitle": "Vaata oma veebisaiti enne maksmist",
+    "description": "Null riski. Null arvamist. Tõeline eelvaade enne ehitamist.",
+    "ctaPrimary": "Alusta vestlust arendajaga",
+    "ctaSecondary": "Vaata malle",
+    "trustedBy": "Usaldusväärne kasvavate meeskondade seas üle Euroopa",
+    "companies": [
+      "TechCorp",
+      "StartupX",
+      "Design Co",
+      "WebAgency",
+      "NordSoft",
+      "Studiofy"
+    ]
+  },
+  "positioning": {
+    "whyTitle": "Null riski. Null arvamist. Ainult selgus.",
+    "whyItems": [
+      "Vaata oma veebisaiti enne maksmist",
+      "Tea täpselt, mida saad enne arenduse algust",
+      "Tööta otse arendajaga, kes sinu projekti ehitab",
+      "Peidetud ulatus puudub, ootamatuid kulusid pole"
+    ],
+    "forTitle": "Ehitatud inimestele, kes tahavad kiiresti liikuda",
+    "forItems": [
+      "Asutajad, kes käivitavad uusi ideid",
+      "Ettevõtted, kes uuendavad vananenud veebisaite",
+      "Agentuurid, kes vajavad kiiret ja usaldusväärset täitmist"
+    ],
+    "nextTitle": "Ideest käivitamiseni – lihtne ja kiire",
+    "nextSteps": [
+      "Ütle meile, mida ehitada soovid",
+      "Sobitame sind õige malliga",
+      "Vaatad üle tõelise töötava eelvaate",
+      "Ehitame ja käivitame sinu projekti"
+    ],
+    "supportTitle": "Otsene suhtlus. Kiiremad tulemused.",
+    "supportPoints": [
+      "Räägi otse oma arendajaga igal sammul",
+      "Kontohaldureid ega mittevajalikke kihte pole",
+      "Kiired vastused ja selged otsused",
+      "Ehitatud sinu projekti liikumist toetama"
+    ]
+  },
+  "howItWorks": {
+    "title": "Kuidas see töötab",
+    "description": "Kolm praktilist sammu ideest käivitamiseni ilma raiskamata ajata.",
+    "cta": "Alusta vestlust",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Vali mall",
+        "description": "Sirvi meie mallikogumit ja vali oma ettevõttele lähim lähtepunkt."
+      },
+      {
+        "step": "2",
+        "title": "Kohanda ja eelvaade",
+        "description": "Kohandage struktuuri, brändingut ja funktsioone, vaadates eelvaadet enne maksmist üle."
+      },
+      {
+        "step": "3",
+        "title": "Räägi arendajaga",
+        "description": "Kinnita oma suund otse arendajaga ja liigu kiire tarne poole."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Mallid, mis kiirendavad tarnimist",
+    "description": "Alusta tõestatud alusest ja kohanda seda oma ettevõttele lühema ajaga.",
+    "explore": "Uuri",
+    "featuredTitle": "Populaarsed lähtepunktid",
+    "demoPreview": "Eelvaade",
+    "featuredDemos": [
+      {
+        "name": "Kaasaegne agentuur",
+        "category": "business"
+      },
+      {
+        "name": "Broneerimisplatvorm",
+        "category": "bookings"
+      },
+      {
+        "name": "Dashboard Pro",
+        "category": "admin dashboards"
+      }
+    ],
+    "categories": {
+      "business": {
+        "title": "Ettevõtete veebisaidid",
+        "detail": "Agentuuridele, konsultantidele, kohalikele ettevõtetele ja teenindusbrändidele."
+      },
+      "bookings": {
+        "title": "Broneerimissüsteemid",
+        "detail": "Salongidele, kliinikutele, juuksuritele ja kohtumispõhistele ettevõtetele."
+      },
+      "ecommerce": {
+        "title": "E-kaubandus",
+        "detail": "Veebipoodidele, tootebrändidele ja kiirliikuvatele jaemüügiideedele."
+      },
+      "admin-dashboards": {
+        "title": "Töölauad ja adminsüsteemid",
+        "detail": "SaaS-tööriistadele, sisesüsteemidele, analüütikale ja CRM-toodetele."
+      },
+      "chat-community": {
+        "title": "Vestlus- ja kogukondlikud rakendused",
+        "detail": "Toetusvoogudele, liikmesplatvormidele ja kogukonnakesksetele toodetele."
+      },
+      "mobile-ui": {
+        "title": "Mobiilirakenduse UI",
+        "detail": "Idufirmade kontseptsioonidele, rakenduste käivitamistele ja mobiilipõhistele toodetele."
+      },
+      "ai-tools": {
+        "title": "AI tööriistad",
+        "detail": "Automatiseerimistoodetele, assistentidele, generaatoritele ja AI SaaS-ideedele."
+      },
+      "landing-pages": {
+        "title": "Maandumislehed / turunduslehtrid",
+        "detail": "Tootete käivitamiseks, liidide genereerimiseks ja konversioonikeskseteks kampaaniateks."
+      },
+      "portfolio": {
+        "title": "Isiklikud ja portfoolio veebisaidid",
+        "detail": "Vabakutselistele, disaineritele, arendajatele ja loovjatele, kes esitlevad oma tööd."
+      },
+      "saas-startup": {
+        "title": "SaaS MVP / Käivituskomplektid",
+        "detail": "Asutajatele, kes soovivad kiiresti käivitada, ideid valideerida ja esimese toote välja anda."
+      }
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Esmane teenus",
+    "title": "Kohandatud veebisaidid ja veebirakendused – ehitatakse kiiresti",
+    "description": "Alusta tõestatud mallist, eelvaade enne arendust ja käivita kiiremini otsese koostööga arendajaga.",
+    "briefTitle": "Mida sa kaasa tood",
+    "briefItems": [
+      "Sinu äri eesmärgid",
+      "Eelistatud mallisuund",
+      "Vajalikud põhifunktsioonid",
+      "Sinu ajakava ja prioriteedid"
+    ],
+    "previewTitle": "Mida sa tagasi saad",
+    "previewFallback": "Vaata oma demoeelvaadet enne arenduse algust",
+    "points": [
+      {
+        "title": "Mallipõhine kiirus",
+        "description": "Kasuta tõestatud mallisüsteeme ehitusaja vähendamiseks."
+      },
+      {
+        "title": "Eelvaade enne maksmist",
+        "description": "Valideeri disainisuund enne täielikku arendust."
+      },
+      {
+        "title": "Otsene arendajatöövoog",
+        "description": "Tööta otse ehitajaga ja hoia otsused kiired."
+      }
+    ]
+  },
+  "services": {
+    "title": "Digitaalteenused, mis toetavad kasvu",
+    "description": "Me ei ehita ainult sinu veebisaiti – aitame sul seda kasvatada.",
+    "groups": [
+      {
+        "title": "Veebiarendus",
+        "items": [
+          "Veebisaidid",
+          "Veebirakendused",
+          "Töölauad"
+        ]
+      },
+      {
+        "title": "SEO optimeerimine",
+        "items": [
+          "Tehniline SEO",
+          "Lehe SEO",
+          "Jõudluse optimeerimine"
+        ]
+      },
+      {
+        "title": "Reklaam",
+        "items": [
+          "Meta reklaamid",
+          "TikTok reklaamid",
+          "Google reklaamid"
+        ]
+      },
+      {
+        "title": "Disain",
+        "items": [
+          "UI/UX disain",
+          "Brändingud",
+          "Visuaalne sisu"
+        ]
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Sinu täielik digitaalne käivituspartner",
+    "description": "Me teeme rohkem kui lehti ehitada. Aitame ettevõtetel käivitada õige toote, jõudlusealuse ja kasvutoega.",
+    "reasons": [
+      {
+        "title": "Käivita kiiremini kui traditsioonilised agentuurid",
+        "description": "Liigu ideest tarneni kiiresti struktureeritud malli-esmase töövooguga."
+      },
+      {
+        "title": "Reaalajas eelvaade enne maksmist",
+        "description": "Vaata kontseptsiooni üle enne täielikule arendusele pühendumist."
+      },
+      {
+        "title": "Turunduskõlblikud süsteemid",
+        "description": "Projektid on ehitatud SEO, jälgimise ja tasulist liiklust toetama algusest peale."
+      },
+      {
+        "title": "Otsene suhtlus oma arendajaga",
+        "description": "Püsi otsuste lähedal ja säilita hoog planeerimisest käivitamiseni."
+      }
+    ],
+    "stats": [
+      {
+        "label": "Ehitatud projektid",
+        "target": 500,
+        "suffix": "+"
+      },
+      {
+        "label": "Rahulolekud kliendid",
+        "target": 50,
+        "suffix": "+"
+      },
+      {
+        "label": "Tarneaeg",
+        "target": 14,
+        "prefix": "4-",
+        "suffix": " päeva"
+      },
+      {
+        "label": "Rahulolumäär",
+        "target": 98,
+        "suffix": "%"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Alusta oma projekti täna",
+    "description": "Vaata oma veebisaiti enne maksmist, seejärel ehita selge suunaga.",
+    "primary": "Alusta vestlust arendajaga",
+    "secondary": "Vaata malle",
+    "trust": "Krediitkaarti ei nõuta • Tasuta konsultatsioon • Eelvaade enne maksmist"
+  },
+  "footer": {
+    "brandDescription": "Ehita selge protsessiga, otse suhtlemisega ja käivitamisvalmis tarnimisega.",
+    "servicesTitle": "Teenused",
+    "services": [
+      "Veebiarendus",
+      "SEO optimeerimine",
+      "Reklaam",
+      "Disain",
+      "Tugi"
+    ],
+    "companyTitle": "Ettevõte",
+    "company": [
+      "Meist",
+      "Blogi",
+      "Karjäär",
+      "Kontakt",
+      "Partnerid"
+    ],
+    "legalTitle": "Juriidiline",
+    "legal": [
+      "Privaatsuspoliitika",
+      "Kasutustingimused",
+      "Küpsisepoliitika"
+    ],
+    "contactTitle": "Kontakt",
+    "rights": "Company Platform. Kõik õigused kaitstud."
+  },
+  "dashboard": {
+    "myProfile": "Minu Profiil",
+    "backToSite": "Tagasi saidile",
+    "tabs": {
+      "overview": "Ülevaade",
+      "messages": "Sõnumid",
+      "templates": "Mallid",
+      "settings": "Seaded"
+    },
+    "overview": {
+      "welcomeBack": "Tere tulemast tagasi",
+      "quickAccess": "Kiire juurdepääs",
+      "emailVerified": "E-post kinnitatud",
+      "emailNotVerified": "E-post kinnitamata",
+      "providerAccount": "konto",
+      "links": {
+        "messages": {
+          "label": "Sõnumid",
+          "description": "Vestle meeskonnaga"
+        },
+        "templates": {
+          "label": "Mallid",
+          "description": "Sirvi saadaolevaid projekte"
+        },
+        "settings": {
+          "label": "Seaded",
+          "description": "Halda oma kontot"
+        }
+      }
+    },
+    "messages": {
+      "title": "Vestle arendajaga",
+      "subtitle": "Saada sõnum ja vastame niipea kui võimalik",
+      "online": "Online",
+      "connecting": "Ühendub…",
+      "translationOn": "Tõlge SEES",
+      "translationOff": "Tõlge VÄLJAS",
+      "translationDesc": "Tõlgi administraatori vastused automaatselt",
+      "emptyTitle": "Kuidas saame aidata?",
+      "emptySubtitle": "Vali allpool teema, et alustada, või kirjuta oma sõnum.",
+      "inputPlaceholderEmpty": "Või kirjuta oma sõnum…",
+      "inputPlaceholderReply": "Vasta arendajale…",
+      "inputPlaceholderConnecting": "Ühendub…",
+      "userTag": "Kasutaja",
+      "adminTag": "Admin",
+      "translationLabel": "Tõlge",
+      "faqSuggestions": [
+        "Tahan ehitada veebisaidi – kust alustada?",
+        "Vajan abi õige malli valimisel.",
+        "Mul on juba idee – kas saame seda arutada?",
+        "Tahan näha eelvaadet enne alustamist.",
+        "Vajan kohandatud funktsiooni – kas see on võimalik?",
+        "Kui kaua võtab minu projekti käivitamine aega?"
+      ]
+    },
+    "settings": {
+      "title": "Seaded",
+      "subtitle": "Halda oma konto eelistusi",
+      "verified": "Kinnitatud",
+      "notVerified": "Kinnitamata",
+      "fieldFullName": "Täisnimi",
+      "fieldEmail": "E-posti aadress",
+      "fieldSignIn": "Sisselogimismeetod",
+      "fieldMemberSince": "Liige alates",
+      "signOutTitle": "Logi välja",
+      "signOutSubtitle": "Sind suunatakse avalehele.",
+      "signOutButton": "Logi välja"
+    }
+  },
+  "admin": {
+    "title": "Administraatoripaneel",
+    "backToSite": "Tagasi saidile",
+    "tabs": {
+      "overview": "Ülevaade",
+      "users": "Kasutajad",
+      "content": "Sisu",
+      "messages": "Sõnumid"
+    },
+    "overview": {
+      "title": "Ülevaade",
+      "subtitle": "Platvormi statistika ühel pilgul",
+      "statUsers": "Kasutajaid kokku",
+      "statContent": "Sisudokumendid",
+      "statLocales": "Aktiivsed keeled",
+      "errorLoad": "Statistikat ei saanud laadida.",
+      "tipsTitle": "Kiired näpunäited",
+      "tip1": "Kasutage vahekaarti Kasutajad administraatori juurde pääsu andmiseks või tühistatmiseks.",
+      "tip2": "Kasutage vahekaarti Sisu mõne avalehe sektsiooni muutmiseks — kõik keeled tõlgitakse automaatselt AI abil.",
+      "tip3": "Lisage OPENAI_API_KEY backend/.env-i AI tõlke lubamiseks."
+    },
+    "users": {
+      "title": "Kasutajad",
+      "subtitle": "Platvormi kasutajate haldamine",
+      "searchPlaceholder": "Otsi nime või e-posti…",
+      "colUser": "Kasutaja",
+      "colProvider": "Pakkuja",
+      "colStatus": "Olek",
+      "colRole": "Roll",
+      "verified": "Kinnitatud",
+      "pending": "Ootel",
+      "makeAdmin": "Tee administraatoriks",
+      "removeAdmin": "Eemalda administraator",
+      "confirmSure": "Kindel?",
+      "delete": "Kustuta",
+      "cancel": "Tühista",
+      "loading": "Kasutajate laadimine…",
+      "noUsers": "Kasutajaid ei leitud"
+    },
+    "messages": {
+      "title": "Sõnumid",
+      "subtitle": "Reaalajas vestlus kasutajatega",
+      "newBadge": "uus",
+      "live": "Live",
+      "connecting": "Ühendamine…",
+      "translationOn": "Tõlge SEES",
+      "translationOff": "Tõlge VÄLJAS",
+      "translationLabel": "Tõlge",
+      "translationDesc": "Tõlgi kasutajate sõnumid sinu keelde",
+      "adminTag": "Admin",
+      "userTag": "Kasutaja",
+      "noConversations": "Vestlusi pole veel",
+      "noUsersMatch": "Ükski kasutaja ei vasta otsingule",
+      "selectConversation": "Vali vestlus",
+      "noMessages": "Selles vestluses pole veel sõnumeid.",
+      "searchPlaceholder": "Otsi kasutajaid…",
+      "deleteConversation": "Kustuta vestlus",
+      "deleteConfirm": "Kustutada?",
+      "deleteCancel": "Tühista"
+    },
+    "content": {
+      "title": "Sisuredaktor",
+      "subtitle": "Muuda ingliskeelset allikat — kõik keeled tõlgitakse automaatselt AI abil",
+      "sectionLabel": "Jaotis:",
+      "sectionHero": "Hero",
+      "sectionPositioning": "Positsioneerimisriba",
+      "sectionHowItWorks": "Kuidas see töötab",
+      "sectionTemplates": "Mallide tutvustus",
+      "sectionCoreOffer": "Põhipakkumine",
+      "sectionServices": "Teenused",
+      "sectionWhyChooseUs": "Miks meid valida",
+      "sectionCta": "Tegevusele kutsumine",
+      "sectionFooter": "Jalus",
+      "loading": "Laadimine…",
+      "saving": "Salvestamine…",
+      "translating": "Salvestatud! AI tõlgib 17 keelt…",
+      "retranslating": "17 keele ümbertonıkimine…",
+      "allUpdated": "Kõik keeled uuendatud!",
+      "save": "Salvesta ja Tõlgi",
+      "retranslate": "Tõlgi kõik uuesti"
+    }
+  }
+}

@@ -3,23 +3,37 @@ export type HeaderContent = {
   login: string;
   logout: string;
   chat: string;
-};
-
-export type HeroStepContent = {
-  step: string;
-  title: string;
-  detail: string;
+  services: string;
+  company: string;
+  legal: string;
+  myProfile: string;
+  adminDashboard: string;
+  serviceItems: string[];
+  companyItems: string[];
+  legalItems: string[];
+  translationOn: string;
+  translationOff: string;
 };
 
 export type HeroContent = {
   title: string;
   subtitle: string;
   description: string;
-  roadmapLabel: string;
   ctaPrimary: string;
   ctaSecondary: string;
   trustedBy: string;
-  steps: HeroStepContent[];
+  companies: string[];
+};
+
+export type PositioningContent = {
+  whyTitle: string;
+  whyItems: string[];
+  forTitle: string;
+  forItems: string[];
+  nextTitle: string;
+  nextSteps: string[];
+  supportTitle: string;
+  supportPoints: string[];
 };
 
 export type HowItWorksStepContent = {
@@ -121,9 +135,142 @@ export type FooterContent = {
   rights: string;
 };
 
+export type DashboardDictionary = {
+  myProfile: string;
+  backToSite: string;
+  tabs: {
+    overview: string;
+    messages: string;
+    templates: string;
+    settings: string;
+  };
+  overview: {
+    welcomeBack: string;
+    quickAccess: string;
+    emailVerified: string;
+    emailNotVerified: string;
+    providerAccount: string;
+    links: {
+      messages: { label: string; description: string };
+      templates: { label: string; description: string };
+      settings: { label: string; description: string };
+    };
+  };
+  messages: {
+    title: string;
+    subtitle: string;
+    online: string;
+    connecting: string;
+    translationOn: string;
+    translationOff: string;
+    translationDesc: string;
+    emptyTitle: string;
+    emptySubtitle: string;
+    inputPlaceholderEmpty: string;
+    inputPlaceholderReply: string;
+    inputPlaceholderConnecting: string;
+    userTag: string;
+    adminTag: string;
+    translationLabel: string;
+    faqSuggestions: string[];
+  };
+  settings: {
+    title: string;
+    subtitle: string;
+    verified: string;
+    notVerified: string;
+    fieldFullName: string;
+    fieldEmail: string;
+    fieldSignIn: string;
+    fieldMemberSince: string;
+    signOutTitle: string;
+    signOutSubtitle: string;
+    signOutButton: string;
+  };
+};
+
+export type AdminDictionary = {
+  title: string;
+  backToSite: string;
+  tabs: { overview: string; users: string; content: string; messages: string };
+  overview: {
+    title: string;
+    subtitle: string;
+    statUsers: string;
+    statContent: string;
+    statLocales: string;
+    errorLoad: string;
+    tipsTitle: string;
+    tip1: string;
+    tip2: string;
+    tip3: string;
+  };
+  users: {
+    title: string;
+    subtitle: string;
+    searchPlaceholder: string;
+    colUser: string;
+    colProvider: string;
+    colStatus: string;
+    colRole: string;
+    verified: string;
+    pending: string;
+    makeAdmin: string;
+    removeAdmin: string;
+    confirmSure: string;
+    delete: string;
+    cancel: string;
+    loading: string;
+    noUsers: string;
+  };
+  messages: {
+    title: string;
+    subtitle: string;
+    newBadge: string;
+    live: string;
+    connecting: string;
+    translationOn: string;
+    translationOff: string;
+    translationLabel: string;
+    translationDesc: string;
+    adminTag: string;
+    userTag: string;
+    noConversations: string;
+    noUsersMatch: string;
+    selectConversation: string;
+    noMessages: string;
+    searchPlaceholder: string;
+    deleteConversation: string;
+    deleteConfirm: string;
+    deleteCancel: string;
+  };
+  content: {
+    title: string;
+    subtitle: string;
+    sectionLabel: string;
+    sectionHero: string;
+    sectionPositioning: string;
+    sectionHowItWorks: string;
+    sectionTemplates: string;
+    sectionCoreOffer: string;
+    sectionServices: string;
+    sectionWhyChooseUs: string;
+    sectionCta: string;
+    sectionFooter: string;
+    loading: string;
+    saving: string;
+    translating: string;
+    retranslating: string;
+    allUpdated: string;
+    save: string;
+    retranslate: string;
+  };
+};
+
 export type MarketingDictionary = {
   header: HeaderContent;
   hero: HeroContent;
+  positioning: PositioningContent;
   howItWorks: HowItWorksContent;
   templates: TemplatesContent;
   coreOffer: CoreOfferContent;
@@ -131,6 +278,8 @@ export type MarketingDictionary = {
   whyChooseUs: WhyChooseUsContent;
   cta: CallToActionContent;
   footer: FooterContent;
+  dashboard: DashboardDictionary;
+  admin: AdminDictionary;
 };
 
 export type TranslationEntry = {

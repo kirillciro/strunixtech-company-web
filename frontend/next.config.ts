@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
   },
   async rewrites() {
     return [
+      // REST API proxy
       {
         source: "/api/:path*",
         destination: "http://localhost:4000/:path*",

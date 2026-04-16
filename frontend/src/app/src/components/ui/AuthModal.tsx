@@ -263,12 +263,11 @@ export default function AuthModal() {
         <div className="px-6 pt-6 pb-4">
           <div className="flex items-center justify-between mb-5">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-linear-to-br from-cyan-400 to-blue-600 flex items-center justify-center shrink-0">
-                <span className="text-sm font-bold text-white">CP</span>
-              </div>
-              <span className="text-base font-semibold text-white">
-                Company Platform
-              </span>
+              <img
+                src="/StrunixTechLogo.svg"
+                alt="Strunix Tech"
+                className="h-9 w-auto object-contain shrink-0"
+              />
             </div>
             <button
               onClick={closeAuth}
@@ -664,9 +663,15 @@ function SocialBtn({
             : "border-slate-700 text-slate-300 hover:bg-slate-800 hover:text-white"
         }`}
     >
-      <span className="w-5 flex items-center justify-center shrink-0">{icon}</span>
+      <span className="w-5 flex items-center justify-center shrink-0">
+        {icon}
+      </span>
       <span className="flex-1 text-center">{label}</span>
-      {soon && <span className="w-5 text-right text-xs text-slate-600 shrink-0">Soon</span>}
+      {soon && (
+        <span className="w-5 text-right text-xs text-slate-600 shrink-0">
+          Soon
+        </span>
+      )}
     </button>
   );
 }

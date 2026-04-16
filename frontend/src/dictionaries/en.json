@@ -3,32 +3,77 @@
     "templates": "Templates",
     "login": "Login",
     "logout": "Logout",
-    "chat": "Chat with Developer"
+    "chat": "Chat with Developer",
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "myProfile": "My Profile",
+    "adminDashboard": "Admin Dashboard",
+    "serviceItems": [
+      "Web Development",
+      "SEO Optimization",
+      "Advertising",
+      "Design",
+      "Support"
+    ],
+    "companyItems": [
+      "About Us",
+      "Blog",
+      "Careers",
+      "Contact",
+      "Partners"
+    ],
+    "legalItems": [
+      "Privacy Policy",
+      "Terms of Service",
+      "Cookie Policy"
+    ],
+    "translationOn": "Translation ON",
+    "translationOff": "Translation OFF"
   },
   "hero": {
     "title": "Build Your Website in Days - Not Weeks",
     "subtitle": "See Your Website Before You Pay",
     "description": "No risk. No guessing. Just a real preview before we build.",
-    "roadmapLabel": "How It Starts",
     "ctaPrimary": "Start Chat with Developer",
     "ctaSecondary": "See Templates",
     "trustedBy": "Trusted by growing teams across Europe",
-    "steps": [
-      {
-        "step": "1",
-        "title": "Choose a Template",
-        "detail": "Pick the closest base for your website, web app, or internal platform."
-      },
-      {
-        "step": "2",
-        "title": "Customize and Preview",
-        "detail": "Review a live preview first so direction, design, and scope are clear before build."
-      },
-      {
-        "step": "3",
-        "title": "Talk to Developer",
-        "detail": "Align on goals, approve the plan, and move straight into execution."
-      }
+    "companies": [
+      "TechCorp",
+      "StartupX",
+      "Design Co",
+      "WebAgency",
+      "NordSoft",
+      "Studiofy"
+    ]
+  },
+  "positioning": {
+    "whyTitle": "No Risk. No Guessing. Just Clarity.",
+    "whyItems": [
+      "See your website before you pay",
+      "Know exactly what you'll get before development starts",
+      "Work directly with the developer building your project",
+      "No hidden scope, no unexpected costs"
+    ],
+    "forTitle": "Built for People That Want to Move Fast",
+    "forItems": [
+      "Founders launching new ideas",
+      "Businesses upgrading outdated websites",
+      "Agencies that need fast and reliable execution"
+    ],
+    "nextTitle": "From Idea to Launch — Simple and Fast",
+    "nextSteps": [
+      "Tell us what you want to build",
+      "We match you with the right template",
+      "You review a real working preview",
+      "We build and launch your project"
+    ],
+    "supportTitle": "Direct Communication. Faster Results.",
+    "supportPoints": [
+      "Talk directly with your developer at every step",
+      "No account managers or unnecessary layers",
+      "Fast responses and clear decisions",
+      "Built to keep your project moving forward"
     ]
   },
   "howItWorks": {
@@ -60,9 +105,18 @@
     "featuredTitle": "Popular Starting Points",
     "demoPreview": "Preview",
     "featuredDemos": [
-      { "name": "Modern Agency", "category": "business" },
-      { "name": "Booking Platform", "category": "bookings" },
-      { "name": "Dashboard Pro", "category": "admin dashboards" }
+      {
+        "name": "Modern Agency",
+        "category": "business"
+      },
+      {
+        "name": "Booking Platform",
+        "category": "bookings"
+      },
+      {
+        "name": "Dashboard Pro",
+        "category": "admin dashboards"
+      }
     ],
     "categories": {
       "business": {
@@ -92,6 +146,18 @@
       "ai-tools": {
         "title": "AI Tools",
         "detail": "For automation products, assistants, generators, and AI SaaS ideas."
+      },
+      "landing-pages": {
+        "title": "Landing Pages / Marketing Funnels",
+        "detail": "For product launches, lead generation, and conversion-focused campaigns."
+      },
+      "portfolio": {
+        "title": "Personal & Portfolio Websites",
+        "detail": "For freelancers, designers, developers, and creatives showcasing their work."
+      },
+      "saas-startup": {
+        "title": "SaaS MVP / Startup Launch Kits",
+        "detail": "For founders looking to ship fast, validate ideas, and launch their first product."
       }
     }
   },
@@ -129,19 +195,35 @@
     "groups": [
       {
         "title": "Web Development",
-        "items": ["Websites", "Web Apps", "Dashboards"]
+        "items": [
+          "Websites",
+          "Web Apps",
+          "Dashboards"
+        ]
       },
       {
         "title": "SEO Optimization",
-        "items": ["Technical SEO", "On-page SEO", "Performance optimization"]
+        "items": [
+          "Technical SEO",
+          "On-page SEO",
+          "Performance optimization"
+        ]
       },
       {
         "title": "Advertising",
-        "items": ["Meta Ads", "TikTok Ads", "Google Ads"]
+        "items": [
+          "Meta Ads",
+          "TikTok Ads",
+          "Google Ads"
+        ]
       },
       {
         "title": "Design",
-        "items": ["UI/UX Design", "Branding", "Visual content"]
+        "items": [
+          "UI/UX Design",
+          "Branding",
+          "Visual content"
+        ]
       }
     ]
   },
@@ -167,10 +249,27 @@
       }
     ],
     "stats": [
-      { "label": "Projects Built", "target": 500, "suffix": "+" },
-      { "label": "Happy Clients", "target": 50, "suffix": "+" },
-      { "label": "Delivery Time", "target": 14, "prefix": "4-", "suffix": " days" },
-      { "label": "Satisfaction Rate", "target": 98, "suffix": "%" }
+      {
+        "label": "Projects Built",
+        "target": 500,
+        "suffix": "+"
+      },
+      {
+        "label": "Happy Clients",
+        "target": 50,
+        "suffix": "+"
+      },
+      {
+        "label": "Delivery Time",
+        "target": 14,
+        "prefix": "4-",
+        "suffix": " days"
+      },
+      {
+        "label": "Satisfaction Rate",
+        "target": 98,
+        "suffix": "%"
+      }
     ]
   },
   "cta": {
@@ -183,12 +282,179 @@
   "footer": {
     "brandDescription": "Build with a clear process, direct communication, and launch-ready delivery.",
     "servicesTitle": "Services",
-    "services": ["Web Development", "SEO Optimization", "Advertising", "Design", "Support"],
+    "services": [
+      "Web Development",
+      "SEO Optimization",
+      "Advertising",
+      "Design",
+      "Support"
+    ],
     "companyTitle": "Company",
-    "company": ["About Us", "Blog", "Careers", "Contact", "Partners"],
+    "company": [
+      "About Us",
+      "Blog",
+      "Careers",
+      "Contact",
+      "Partners"
+    ],
     "legalTitle": "Legal",
-    "legal": ["Privacy Policy", "Terms of Service", "Cookie Policy"],
+    "legal": [
+      "Privacy Policy",
+      "Terms of Service",
+      "Cookie Policy"
+    ],
     "contactTitle": "Contact",
     "rights": "Company Platform. All rights reserved."
+  },
+  "dashboard": {
+    "myProfile": "My Profile",
+    "backToSite": "Back to site",
+    "tabs": {
+      "overview": "Overview",
+      "messages": "Messages",
+      "templates": "Templates",
+      "settings": "Settings"
+    },
+    "overview": {
+      "welcomeBack": "Welcome back",
+      "quickAccess": "Quick Access",
+      "emailVerified": "Email verified",
+      "emailNotVerified": "Email not verified",
+      "providerAccount": "account",
+      "links": {
+        "messages": {
+          "label": "Messages",
+          "description": "Chat with the team"
+        },
+        "templates": {
+          "label": "Templates",
+          "description": "Browse available projects"
+        },
+        "settings": {
+          "label": "Settings",
+          "description": "Manage your account"
+        }
+      }
+    },
+    "messages": {
+      "title": "Chat with Developer",
+      "subtitle": "Send a message and we'll get back to you as soon as possible",
+      "online": "Online",
+      "connecting": "Connecting…",
+      "translationOn": "Translation ON",
+      "translationOff": "Translation OFF",
+      "translationDesc": "Auto-translate admin replies to your language",
+      "emptyTitle": "How can we help you?",
+      "emptySubtitle": "Choose a topic below to get started, or write your own message.",
+      "inputPlaceholderEmpty": "Or write your own message…",
+      "inputPlaceholderReply": "Reply to developer…",
+      "inputPlaceholderConnecting": "Connecting…",
+      "userTag": "User",
+      "adminTag": "Admin",
+      "translationLabel": "Translation",
+      "faqSuggestions": [
+        "I want to build a website — where do I start?",
+        "I need help choosing the right template.",
+        "I already have an idea — can we discuss it?",
+        "I want to see a preview before starting.",
+        "I need a custom feature — is that possible?",
+        "How long will it take to launch my project?"
+      ]
+    },
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Manage your account preferences",
+      "verified": "Verified",
+      "notVerified": "Not verified",
+      "fieldFullName": "Full name",
+      "fieldEmail": "Email address",
+      "fieldSignIn": "Sign-in method",
+      "fieldMemberSince": "Member since",
+      "signOutTitle": "Sign out",
+      "signOutSubtitle": "You will be redirected to the homepage.",
+      "signOutButton": "Sign out"
+    }
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "backToSite": "Back to site",
+    "tabs": {
+      "overview": "Overview",
+      "users": "Users",
+      "content": "Content",
+      "messages": "Messages"
+    },
+    "overview": {
+      "title": "Overview",
+      "subtitle": "Platform stats at a glance",
+      "statUsers": "Total Users",
+      "statContent": "Content Documents",
+      "statLocales": "Live Locales",
+      "errorLoad": "Could not load stats.",
+      "tipsTitle": "Quick Tips",
+      "tip1": "Use the Users tab to grant or revoke admin access.",
+      "tip2": "Use the Content tab to edit any homepage section — all languages auto-translate via AI.",
+      "tip3": "Add OPENAI_API_KEY to backend/.env to enable AI translation."
+    },
+    "users": {
+      "title": "Users",
+      "subtitle": "Manage platform users",
+      "searchPlaceholder": "Search name or email…",
+      "colUser": "User",
+      "colProvider": "Provider",
+      "colStatus": "Status",
+      "colRole": "Role",
+      "verified": "Verified",
+      "pending": "Pending",
+      "makeAdmin": "Make Admin",
+      "removeAdmin": "Remove Admin",
+      "confirmSure": "Sure?",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "loading": "Loading users…",
+      "noUsers": "No users found"
+    },
+    "messages": {
+      "title": "Messages",
+      "subtitle": "Live chat with users",
+      "newBadge": "new",
+      "live": "Live",
+      "connecting": "Connecting…",
+      "translationOn": "Translation ON",
+      "translationOff": "Translation OFF",
+      "translationLabel": "Translation",
+      "translationDesc": "Auto-translate user messages to your language",
+      "adminTag": "Admin",
+      "userTag": "User",
+      "noConversations": "No conversations yet",
+      "noUsersMatch": "No users match your search",
+      "selectConversation": "Select a conversation",
+      "noMessages": "No messages yet in this conversation.",
+      "searchPlaceholder": "Search users…",
+      "deleteConversation": "Delete conversation",
+      "deleteConfirm": "Delete?",
+      "deleteCancel": "Cancel"
+    },
+    "content": {
+      "title": "Content Editor",
+      "subtitle": "Edit English source — all languages auto-translate via AI",
+      "sectionLabel": "Section:",
+      "sectionHero": "Hero",
+      "sectionPositioning": "Positioning Strip",
+      "sectionHowItWorks": "How It Works",
+      "sectionTemplates": "Templates Showcase",
+      "sectionCoreOffer": "Core Offer",
+      "sectionServices": "Services",
+      "sectionWhyChooseUs": "Why Choose Us",
+      "sectionCta": "Call to Action",
+      "sectionFooter": "Footer",
+      "loading": "Loading…",
+      "saving": "Saving…",
+      "translating": "Saved! AI translating all 17 languages…",
+      "retranslating": "Retranslating all 17 languages…",
+      "allUpdated": "All languages updated!",
+      "save": "Save & Translate",
+      "retranslate": "Retranslate All"
+    }
   }
 }

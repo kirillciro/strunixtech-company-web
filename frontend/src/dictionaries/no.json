@@ -1,0 +1,460 @@
+{
+  "header": {
+    "templates": "Maler",
+    "login": "Logg inn",
+    "logout": "Logg ut",
+    "chat": "Chat med Utvikleren",
+    "services": "Tjenester",
+    "company": "Selskap",
+    "legal": "Juridisk",
+    "myProfile": "Min Profil",
+    "adminDashboard": "Admin Dashbord",
+    "serviceItems": [
+      "Webutvikling",
+      "SEO-optimalisering",
+      "Annonsering",
+      "Design",
+      "Support"
+    ],
+    "companyItems": [
+      "Om Oss",
+      "Blogg",
+      "Karriere",
+      "Kontakt",
+      "Partnere"
+    ],
+    "legalItems": [
+      "Personvernpolicy",
+      "Vilkår og Betingelser",
+      "Informasjonskapselpolicy"
+    ],
+    "translationOn": "Oversettelse PÅ",
+    "translationOff": "Oversettelse AV"
+  },
+  "hero": {
+    "title": "Bygg Nettstedet Ditt på Dager – Ikke Uker",
+    "subtitle": "Se Nettstedet Ditt Før Du Betaler",
+    "description": "Ingen risiko. Ingen gjetting. En ekte forhåndsvisning før bygging.",
+    "ctaPrimary": "Start Chat med Utvikleren",
+    "ctaSecondary": "Se Maler",
+    "trustedBy": "Betrodd av voksende team over hele Europa",
+    "companies": [
+      "TechCorp",
+      "StartupX",
+      "Design Co",
+      "WebAgency",
+      "NordSoft",
+      "Studiofy"
+    ]
+  },
+  "positioning": {
+    "whyTitle": "Ingen Risiko. Ingen Gjetting. Bare Klarhet.",
+    "whyItems": [
+      "Se nettstedet før betaling",
+      "Vet nøyaktig hva du får før utvikling starter",
+      "Jobbe direkte med utvikleren som bygger prosjektet ditt",
+      "Ingen skjulte omfang, ingen uventede kostnader"
+    ],
+    "forTitle": "Bygget for folk som vil bevege seg raskt",
+    "forItems": [
+      "Grunnleggere som lanserer nye ideer",
+      "Bedrifter som oppdaterer utdaterte nettsteder",
+      "Byråer som trenger rask og pålitelig gjennomføring"
+    ],
+    "nextTitle": "Fra Idé til Lansering – Enkelt og Raskt",
+    "nextSteps": [
+      "Fortell oss hva du vil bygge",
+      "Vi matcher deg med riktig mal",
+      "Gjennomgå en ekte fungerende forhåndsvisning",
+      "Vi bygger og lanserer prosjektet ditt"
+    ],
+    "supportTitle": "Direkte Kommunikasjon. Raskere Resultater.",
+    "supportPoints": [
+      "Snakk direkte med utvikleren din ved hvert trinn",
+      "Ingen kontoadministratorer eller unødvendige lag",
+      "Raske svar og klare beslutninger",
+      "Bygget for å holde prosjektet ditt i bevegelse"
+    ]
+  },
+  "howItWorks": {
+    "title": "Slik Fungerer Det",
+    "description": "Tre praktiske trinn for å gå fra idé til lansering uten bortkastet tid.",
+    "cta": "Start Samtalen",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Velg Mal",
+        "description": "Bla gjennom malsamlingen vår og velg det nærmeste utgangspunktet for virksomheten din."
+      },
+      {
+        "step": "2",
+        "title": "Tilpass og Forhåndsvis",
+        "description": "Juster struktur, merkevare og funksjoner mens du gjennomgår forhåndsvisningen før betaling."
+      },
+      {
+        "step": "3",
+        "title": "Snakk med Utvikleren",
+        "description": "Bekreft retningen direkte med en utvikler og gå til rask levering."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Maler som Akselererer Levering",
+    "description": "Start fra et bevist fundament og tilpass det til virksomheten din på kortere tid.",
+    "explore": "Utforsk",
+    "featuredTitle": "Populære Utgangspunkter",
+    "demoPreview": "Forhåndsvisning",
+    "featuredDemos": [
+      {
+        "name": "Moderne Byrå",
+        "category": "business"
+      },
+      {
+        "name": "Bookingplattform",
+        "category": "bookings"
+      },
+      {
+        "name": "Dashboard Pro",
+        "category": "admin dashboards"
+      }
+    ],
+    "categories": {
+      "business": {
+        "title": "Forretningsnettsteder",
+        "detail": "For byråer, konsulenter, lokale bedrifter og tjenestemerker."
+      },
+      "bookings": {
+        "title": "Bookingsystemer",
+        "detail": "For salonger, klinikker, frisører og avtalebaserte bedrifter."
+      },
+      "ecommerce": {
+        "title": "E-handel",
+        "detail": "For nettbutikker, produktmerker og rasktbevegelige detaljhandelsideer."
+      },
+      "admin-dashboards": {
+        "title": "Dashbord og Admin-systemer",
+        "detail": "For SaaS-verktøy, interne systemer, analyse og CRM-produkter."
+      },
+      "chat-community": {
+        "title": "Chat- og Fellesskapsapper",
+        "detail": "For støttestrømmer, medlemsplattformer og fellesskapsrettede produkter."
+      },
+      "mobile-ui": {
+        "title": "Mobilapp UI",
+        "detail": "For startup-konsepter, applansering og mobile-first-produkter."
+      },
+      "ai-tools": {
+        "title": "AI-verktøy",
+        "detail": "For automatiseringsprodukter, assistenter, generatorer og AI SaaS-ideer."
+      },
+      "landing-pages": {
+        "title": "Landingssider / Markedsføringstrakts",
+        "detail": "For produktlansering, leadgenerering og konverteringsfokuserte kampanjer."
+      },
+      "portfolio": {
+        "title": "Personlige og Porteføljenettsteder",
+        "detail": "For frilansere, designere, utviklere og kreative som viser frem sitt arbeid."
+      },
+      "saas-startup": {
+        "title": "SaaS MVP / Startup Lanseringssett",
+        "detail": "For grunnleggere som vil lansere raskt, validere ideer og gi ut det første produktet."
+      }
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Kjernetilbud",
+    "title": "Tilpassede Nettsteder og Webapper – Bygget Raskt",
+    "description": "Start fra en bevist mal, forhåndsvis før utvikling og lanser raskere med direkte utviklersamarbeid.",
+    "briefTitle": "Hva Du Bringer",
+    "briefItems": [
+      "Forretningsmålene dine",
+      "Foretrukket malretning",
+      "Kjernefunksjonene du trenger",
+      "Tidslinjen og prioritetene dine"
+    ],
+    "previewTitle": "Hva Du Får Tilbake",
+    "previewFallback": "Se demo-forhåndsvisning før utvikling starter",
+    "points": [
+      {
+        "title": "Malbasert Hastighet",
+        "description": "Bruk bevisste malsystemer for å redusere byggetiden."
+      },
+      {
+        "title": "Forhåndsvisning Før Betaling",
+        "description": "Valider designretningen før full utvikling starter."
+      },
+      {
+        "title": "Direkte Arbeidsflyt med Utvikleren",
+        "description": "Arbeid direkte med byggmesteren og hold beslutninger raske."
+      }
+    ]
+  },
+  "services": {
+    "title": "Digitale Tjenester som Støtter Vekst",
+    "description": "Vi bygger ikke bare nettstedet ditt – vi hjelper det med å vokse.",
+    "groups": [
+      {
+        "title": "Webutvikling",
+        "items": [
+          "Nettsteder",
+          "Webapplikasjoner",
+          "Dashbord"
+        ]
+      },
+      {
+        "title": "SEO-optimalisering",
+        "items": [
+          "Teknisk SEO",
+          "On-page SEO",
+          "Ytelsesoptimalisering"
+        ]
+      },
+      {
+        "title": "Annonsering",
+        "items": [
+          "Meta-annonser",
+          "TikTok-annonser",
+          "Google-annonser"
+        ]
+      },
+      {
+        "title": "Design",
+        "items": [
+          "UI/UX-design",
+          "Merkevarebygging",
+          "Visuelt innhold"
+        ]
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Din Komplette Digitale Lanseringspartner",
+    "description": "Vi gjør mer enn å bygge sider. Vi hjelper bedrifter med å lansere med riktig produkt, ytelsesgrunnlag og vekststøtte.",
+    "reasons": [
+      {
+        "title": "Lanser Raskere enn Tradisjonelle Byråer",
+        "description": "Gå fra idé til levering raskt med en strukturert malbasert arbeidsflyt."
+      },
+      {
+        "title": "Live forhåndsvisning før betaling",
+        "description": "Gjennomgå konseptet før du forplikter deg til full utvikling."
+      },
+      {
+        "title": "Markedsføringsklar systemer",
+        "description": "Prosjekter bygges med SEO, sporing og betalt trafikk-støtte fra starten."
+      },
+      {
+        "title": "Direkte Kommunikasjon med Din Utvikler",
+        "description": "Hold deg nær beslutninger og oppretthold momentum fra planlegging til lansering."
+      }
+    ],
+    "stats": [
+      {
+        "label": "Bygde Prosjekter",
+        "target": 500,
+        "suffix": "+"
+      },
+      {
+        "label": "Fornøyde Kunder",
+        "target": 50,
+        "suffix": "+"
+      },
+      {
+        "label": "Leveringstid",
+        "target": 14,
+        "prefix": "4-",
+        "suffix": " dager"
+      },
+      {
+        "label": "Tilfredshetsscore",
+        "target": 98,
+        "suffix": "%"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start Prosjektet Ditt I Dag",
+    "description": "Se nettstedet ditt før betaling, bygg deretter med klar retning.",
+    "primary": "Start Chat med Utvikleren",
+    "secondary": "Se Maler",
+    "trust": "Ingen kredittkort nødvendig • Gratis konsultasjon • Forhåndsvisning før betaling"
+  },
+  "footer": {
+    "brandDescription": "Bygg med en klar prosess, direkte kommunikasjon og lanserings-klar levering.",
+    "servicesTitle": "Tjenester",
+    "services": [
+      "Webutvikling",
+      "SEO-optimalisering",
+      "Annonsering",
+      "Design",
+      "Support"
+    ],
+    "companyTitle": "Selskap",
+    "company": [
+      "Om Oss",
+      "Blogg",
+      "Karriere",
+      "Kontakt",
+      "Partnere"
+    ],
+    "legalTitle": "Juridisk",
+    "legal": [
+      "Personvernpolicy",
+      "Vilkår og Betingelser",
+      "Informasjonskapselpolicy"
+    ],
+    "contactTitle": "Kontakt",
+    "rights": "Company Platform. Alle rettigheter forbeholdt."
+  },
+  "dashboard": {
+    "myProfile": "Min Profil",
+    "backToSite": "Tilbake til nettstedet",
+    "tabs": {
+      "overview": "Oversikt",
+      "messages": "Meldinger",
+      "templates": "Maler",
+      "settings": "Innstillinger"
+    },
+    "overview": {
+      "welcomeBack": "Velkommen tilbake",
+      "quickAccess": "Hurtigtilgang",
+      "emailVerified": "E-post bekreftet",
+      "emailNotVerified": "E-post ikke bekreftet",
+      "providerAccount": "konto",
+      "links": {
+        "messages": {
+          "label": "Meldinger",
+          "description": "Chat med teamet"
+        },
+        "templates": {
+          "label": "Maler",
+          "description": "Bla gjennom tilgjengelige prosjekter"
+        },
+        "settings": {
+          "label": "Innstillinger",
+          "description": "Administrer kontoen din"
+        }
+      }
+    },
+    "messages": {
+      "title": "Chat med Utvikleren",
+      "subtitle": "Send en melding og vi svarer så snart som mulig",
+      "online": "Online",
+      "connecting": "Kobler til…",
+      "translationOn": "Oversettelse PÅ",
+      "translationOff": "Oversettelse AV",
+      "translationDesc": "Oversett automatisk adminens svar",
+      "emptyTitle": "Hvordan kan vi hjelpe?",
+      "emptySubtitle": "Velg et emne nedenfor for å starte, eller skriv din egen melding.",
+      "inputPlaceholderEmpty": "Eller skriv din egen melding…",
+      "inputPlaceholderReply": "Svar til utvikleren…",
+      "inputPlaceholderConnecting": "Kobler til…",
+      "userTag": "Bruker",
+      "adminTag": "Admin",
+      "translationLabel": "Oversettelse",
+      "faqSuggestions": [
+        "Jeg vil bygge et nettsted – hvor starter jeg?",
+        "Jeg trenger hjelp til å velge riktig mal.",
+        "Jeg har allerede en idé – kan vi diskutere den?",
+        "Jeg vil se en forhåndsvisning før jeg starter.",
+        "Jeg trenger en tilpasset funksjon – er det mulig?",
+        "Hvor lang tid tar det å lansere prosjektet mitt?"
+      ]
+    },
+    "settings": {
+      "title": "Innstillinger",
+      "subtitle": "Administrer kontoinnstillingene dine",
+      "verified": "Bekreftet",
+      "notVerified": "Ikke bekreftet",
+      "fieldFullName": "Fullt navn",
+      "fieldEmail": "E-postadresse",
+      "fieldSignIn": "Innloggingsmetode",
+      "fieldMemberSince": "Medlem siden",
+      "signOutTitle": "Logg ut",
+      "signOutSubtitle": "Du vil bli omdirigert til hovedsiden.",
+      "signOutButton": "Logg ut"
+    }
+  },
+  "admin": {
+    "title": "Administrasjonspanel",
+    "backToSite": "Tilbake til nettstedet",
+    "tabs": {
+      "overview": "Oversikt",
+      "users": "Brukere",
+      "content": "Innhold",
+      "messages": "Meldinger"
+    },
+    "overview": {
+      "title": "Oversikt",
+      "subtitle": "Plattformstatistikk på et øyeblikk",
+      "statUsers": "Totalt brukere",
+      "statContent": "Innholdsdokumenter",
+      "statLocales": "Aktive språk",
+      "errorLoad": "Kunne ikke laste statistikk.",
+      "tipsTitle": "Hurtigtips",
+      "tip1": "Bruk fanen Brukere for å gi eller tilbakekalle administratortilgang.",
+      "tip2": "Bruk fanen Innhold for å redigere en del av forsiden — alle språk oversettes automatisk via AI.",
+      "tip3": "Legg til OPENAI_API_KEY i backend/.env for å aktivere AI-oversettelse."
+    },
+    "users": {
+      "title": "Brukere",
+      "subtitle": "Administrer plattformbrukere",
+      "searchPlaceholder": "Søk navn eller e-post…",
+      "colUser": "Bruker",
+      "colProvider": "Leverandør",
+      "colStatus": "Status",
+      "colRole": "Rolle",
+      "verified": "Bekreftet",
+      "pending": "Venter",
+      "makeAdmin": "Gjør til admin",
+      "removeAdmin": "Fjern admin",
+      "confirmSure": "Sikker?",
+      "delete": "Slett",
+      "cancel": "Avbryt",
+      "loading": "Laster brukere…",
+      "noUsers": "Ingen brukere funnet"
+    },
+    "messages": {
+      "title": "Meldinger",
+      "subtitle": "Live chat med brukere",
+      "newBadge": "ny",
+      "live": "Live",
+      "connecting": "Kobler til…",
+      "translationOn": "Oversettelse PÅ",
+      "translationOff": "Oversettelse AV",
+      "translationLabel": "Oversettelse",
+      "translationDesc": "Oversett brukermeldinger til ditt språk",
+      "adminTag": "Admin",
+      "userTag": "Bruker",
+      "noConversations": "Ingen samtaler ennå",
+      "noUsersMatch": "Ingen brukere matcher søket ditt",
+      "selectConversation": "Velg en samtale",
+      "noMessages": "Ingen meldinger ennå i denne samtalen.",
+      "searchPlaceholder": "Søk brukere…",
+      "deleteConversation": "Slett samtale",
+      "deleteConfirm": "Slette?",
+      "deleteCancel": "Avbryt"
+    },
+    "content": {
+      "title": "Innholdsredaktør",
+      "subtitle": "Rediger engelsk kilde — alle språk oversettes automatisk via AI",
+      "sectionLabel": "Seksjon:",
+      "sectionHero": "Hero",
+      "sectionPositioning": "Posisjoneringsstripe",
+      "sectionHowItWorks": "Slik fungerer det",
+      "sectionTemplates": "Malvisning",
+      "sectionCoreOffer": "Kjernetilbud",
+      "sectionServices": "Tjenester",
+      "sectionWhyChooseUs": "Hvorfor velge oss",
+      "sectionCta": "Oppfordring til handling",
+      "sectionFooter": "Bunntekst",
+      "loading": "Laster…",
+      "saving": "Lagrer…",
+      "translating": "Lagret! AI oversetter 17 språk…",
+      "retranslating": "Gjenoversetter 17 språk…",
+      "allUpdated": "Alle språk oppdatert!",
+      "save": "Lagre og Oversett",
+      "retranslate": "Gjenoversett alt"
+    }
+  }
+}

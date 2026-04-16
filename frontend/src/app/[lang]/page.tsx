@@ -56,6 +56,14 @@ export default async function LocalizedHomePage({
   const { lang } = await params;
   const dict = await getDictionary(lang);
 
+  // Build a slug→title map so the Header can show translated template category names
+  const templateCategoryLabels = Object.fromEntries(
+    Object.entries(dict.templates.categories).map(([slug, cat]) => [
+      slug,
+      (cat as { title: string }).title,
+    ]),
+  );
+
   return (
     <div className="relative bg-slate-950 text-white overflow-x-clip">
       <ScrollReveal />
@@ -63,11 +71,15 @@ export default async function LocalizedHomePage({
       <div className="pointer-events-none fixed inset-0 -z-10 opacity-45">
         <div className="absolute inset-0 grid-overlay"></div>
       </div>
-      <Header lang={lang} labels={dict.header} />
+      <Header
+        lang={lang}
+        labels={dict.header}
+        templateCategoryLabels={templateCategoryLabels}
+      />
 
       <main>
         <HeroSection content={dict.hero} />
-        <PositioningSection lang={lang} />
+        <PositioningSection content={dict.positioning} />
         <HowItWorksSection content={dict.howItWorks} />
         <TemplatesShowcaseSection content={dict.templates} lang={lang} />
         <DemoPreviewSection content={dict.coreOffer} />

@@ -1,0 +1,460 @@
+{
+  "header": {
+    "templates": "Veidnes",
+    "login": "Pieslēgties",
+    "logout": "Izrakstīties",
+    "chat": "Tērzē ar Izstrādātāju",
+    "services": "Pakalpojumi",
+    "company": "Uzņēmums",
+    "legal": "Juridiskais",
+    "myProfile": "Mans Profils",
+    "adminDashboard": "Administratora Panelis",
+    "serviceItems": [
+      "Tīmekļa Izstrāde",
+      "SEO Optimizācija",
+      "Reklāma",
+      "Dizains",
+      "Atbalsts"
+    ],
+    "companyItems": [
+      "Par Mums",
+      "Blogs",
+      "Karjera",
+      "Kontakti",
+      "Partneri"
+    ],
+    "legalItems": [
+      "Privātuma Politika",
+      "Lietošanas Noteikumi",
+      "Sīkdatņu Politika"
+    ],
+    "translationOn": "Tulkošana IESLĒGTA",
+    "translationOff": "Tulkošana IZSLĒGTA"
+  },
+  "hero": {
+    "title": "Izveido Savu Vietni Dienās – Ne Nedēļās",
+    "subtitle": "Redzi Savu Vietni Pirms Maksāšanas",
+    "description": "Bez riska. Bez uzminēšanas. Reāls priekšskatījums pirms izstrādes.",
+    "ctaPrimary": "Sāc Tērzēšanu ar Izstrādātāju",
+    "ctaSecondary": "Skatīt Veidnes",
+    "trustedBy": "Uzticami augošām komandām visā Eiropā",
+    "companies": [
+      "TechCorp",
+      "StartupX",
+      "Design Co",
+      "WebAgency",
+      "NordSoft",
+      "Studiofy"
+    ]
+  },
+  "positioning": {
+    "whyTitle": "Bez Riska. Bez Uzminēšanas. Tikai Skaidrība.",
+    "whyItems": [
+      "Redzi vietni pirms maksāšanas",
+      "Zini tieši ko saņemsi pirms izstrāde sākas",
+      "Strādā tieši ar izstrādātāju, kurš veido tavu projektu",
+      "Nav slēptu jomu, nav negaidītu izmaksu"
+    ],
+    "forTitle": "Veidots cilvēkiem, kuri vēlas virzīties ātri",
+    "forItems": [
+      "Dibinātāji, kuri izlaiž jaunas idejas",
+      "Uzņēmumi, kas atjaunina novecojušas vietnes",
+      "Aģentūras, kurām nepieciešama ātra un uzticama izpilde"
+    ],
+    "nextTitle": "No Idejas līdz Palaišanai – Vienkārši un Ātri",
+    "nextSteps": [
+      "Pastāsti mums ko vēlies izveidot",
+      "Saskaņojam tevi ar piemēroto veidni",
+      "Pārskata reālu strādājošu priekšskatījumu",
+      "Veidojam un palaižam tavu projektu"
+    ],
+    "supportTitle": "Tieša Komunikācija. Ātrāki Rezultāti.",
+    "supportPoints": [
+      "Katrs solis runā tieši ar izstrādātāju",
+      "Nav kontu pārvaldnieku vai nevajadzīgu līmeņu",
+      "Ātras atbildes un skaidri lēmumi",
+      "Veidots lai turētu tavu projektu kustībā"
+    ]
+  },
+  "howItWorks": {
+    "title": "Kā Tas Darbojas",
+    "description": "Trīs praktiski soļi lai pārietu no idejas līdz palaišanai bez laika tērēšanas.",
+    "cta": "Sāc Sarunu",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Izvēlies Veidni",
+        "description": "Pārlapo mūsu veidņu kolekciju un izvēlies tuvāko sākuma punktu savam uzņēmumam."
+      },
+      {
+        "step": "2",
+        "title": "Pielāgo un Priekšskatī",
+        "description": "Pielāgo struktūru, brendu un funkcionalitātes pārskatot priekšskatījumu pirms maksāšanas."
+      },
+      {
+        "step": "3",
+        "title": "Runā ar Izstrādātāju",
+        "description": "Apstiprina kursu tieši ar izstrādātāju un pāriet uz ātru piegādi."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Veidnes kas Paātrina Piegādi",
+    "description": "Sāc no pārbaudīta pamata un pielāgo to savam uzņēmumam mazāk laikā.",
+    "explore": "Izpētīt",
+    "featuredTitle": "Populāri Sākuma Punkti",
+    "demoPreview": "Priekšskatījums",
+    "featuredDemos": [
+      {
+        "name": "Moderna Aģentūra",
+        "category": "business"
+      },
+      {
+        "name": "Rezervēšanas Platforma",
+        "category": "bookings"
+      },
+      {
+        "name": "Dashboard Pro",
+        "category": "admin dashboards"
+      }
+    ],
+    "categories": {
+      "business": {
+        "title": "Biznesa Vietnes",
+        "detail": "Aģentūrām, konsultantiem, vietējiem uzņēmumiem un pakalpojumu zīmoliem."
+      },
+      "bookings": {
+        "title": "Rezervēšanas Sistēmas",
+        "detail": "Saloniem, klīnikām, friziertavām un uz tikšanās balstītiem uzņēmumiem."
+      },
+      "ecommerce": {
+        "title": "E-komercija",
+        "detail": "Tiešsaistes veikaliem, produktu zīmoliem un ātri kustoties mazumtirdzniecības idejām."
+      },
+      "admin-dashboards": {
+        "title": "Paneļi un Administrācijas Sistēmas",
+        "detail": "SaaS rīkiem, iekšējām sistēmām, analītikai un CRM produktiem."
+      },
+      "chat-community": {
+        "title": "Tērzēšanas un Kopienas Lietotnes",
+        "detail": "Atbalsta plūsmām, biedru platformām un uz kopienu vērstiem produktiem."
+      },
+      "mobile-ui": {
+        "title": "Mobilās Lietotnes UI",
+        "detail": "Startup konceptiem, lietotņu palaišanai un mobilajiem produktiem."
+      },
+      "ai-tools": {
+        "title": "AI Rīki",
+        "detail": "Automatizācijas produktiem, asistentiem, ģeneratoriem un AI SaaS idejām."
+      },
+      "landing-pages": {
+        "title": "Laišanas Lapas / Mārketinga Piltuves",
+        "detail": "Produktu palaišanai, potenciālo klientu ģenerēšanai un uz konversiju vērstām kampaņām."
+      },
+      "portfolio": {
+        "title": "Personālās un Portfeja Vietnes",
+        "detail": "Ārštata darbiniekiem, dizaineriem, izstrādātājiem un radošajiem."
+      },
+      "saas-startup": {
+        "title": "SaaS MVP / Startup Palaišanas Komplekti",
+        "detail": "Dibinātājiem, kuri vēlas ātri palaist, validēt idejas un izlaist pirmo produktu."
+      }
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Galvenais Pakalpojums",
+    "title": "Pielāgotas Vietnes un Tīmekļa Lietotnes – Ātri Izveidotas",
+    "description": "Sāc no pārbaudītas veidnes, priekšskatī pirms izstrādes un palaid ātrāk ar tiešu izstrādātāja sadarbību.",
+    "briefTitle": "Ko Tu Nes",
+    "briefItems": [
+      "Sava biznesa mērķus",
+      "Vēlamo veidnes virzienu",
+      "Galvenās nepieciešamās funkcionalitātes",
+      "Savu grafiku un prioritātes"
+    ],
+    "previewTitle": "Ko Tu Saņem Atpakaļ",
+    "previewFallback": "Skati demo priekšskatījumu pirms izstrāde sākas",
+    "points": [
+      {
+        "title": "Uz Veidnēm Balstīts Ātrums",
+        "description": "Izmanto pārbaudītas veidņu sistēmas lai samazinātu izveides laiku."
+      },
+      {
+        "title": "Priekšskatījums Pirms Maksāšanas",
+        "description": "Validē dizaina virzienu pirms pilna izstrāde sākas."
+      },
+      {
+        "title": "Tiešs Darba Plūsma ar Izstrādātāju",
+        "description": "Strādā tieši ar veidotāju un saglabā ātrus lēmumus."
+      }
+    ]
+  },
+  "services": {
+    "title": "Digitālie Pakalpojumi kas Atbalsta Izaugsmi",
+    "description": "Mēs ne tikai veidojam tavu vietni – mēs palīdzam tai augt.",
+    "groups": [
+      {
+        "title": "Tīmekļa Izstrāde",
+        "items": [
+          "Vietnes",
+          "Tīmekļa lietotnes",
+          "Paneļi"
+        ]
+      },
+      {
+        "title": "SEO Optimizācija",
+        "items": [
+          "Tehniskais SEO",
+          "Uz lapas SEO",
+          "Veiktspējas optimizācija"
+        ]
+      },
+      {
+        "title": "Reklāma",
+        "items": [
+          "Meta reklāmas",
+          "TikTok reklāmas",
+          "Google reklāmas"
+        ]
+      },
+      {
+        "title": "Dizains",
+        "items": [
+          "UI/UX dizains",
+          "Brendings",
+          "Vizuālais saturs"
+        ]
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Tavs Pilnīgais Digitālās Palaišanas Partneris",
+    "description": "Mēs darām vairāk nekā tikai veidojam lapas. Mēs palīdzam uzņēmumiem palaist ar pareizo produktu, veiktspējas pamatu un izaugsmes atbalstu.",
+    "reasons": [
+      {
+        "title": "Palaid Ātrāk Nekā Tradicionālās Aģentūras",
+        "description": "Pārvirzies no idejas uz piegādi ātri ar strukturētu uz veidnēm balstītu darba plūsmu."
+      },
+      {
+        "title": "Tiešraides priekšskatījums pirms maksāšanas",
+        "description": "Pārskati konceptu pirms apņemties pilnai izstrādei."
+      },
+      {
+        "title": "Mārketingam gatavās sistēmas",
+        "description": "Projekti tiek veidoti ar SEO, izsekošanas un apmaksātas datplūsmas atbalstu no sākuma."
+      },
+      {
+        "title": "Tieša Komunikācija ar Savu Izstrādātāju",
+        "description": "Paliec tuvu lēmumiem un saglabā impulsu no plānošanas līdz palaišanai."
+      }
+    ],
+    "stats": [
+      {
+        "label": "Izveidotie Projekti",
+        "target": 500,
+        "suffix": "+"
+      },
+      {
+        "label": "Apmierināti Klienti",
+        "target": 50,
+        "suffix": "+"
+      },
+      {
+        "label": "Piegādes Laiks",
+        "target": 14,
+        "prefix": "4-",
+        "suffix": " dienas"
+      },
+      {
+        "label": "Apmierinātības Rādītājs",
+        "target": 98,
+        "suffix": "%"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Sāc Savu Projektu Šodien",
+    "description": "Redzi savu vietni pirms maksāšanas, tad veido ar skaidru virzienu.",
+    "primary": "Sāc Tērzēšanu ar Izstrādātāju",
+    "secondary": "Skatīt Veidnes",
+    "trust": "Nav nepieciešama kredītkarte • Bezmaksas konsultācija • Priekšskatījums pirms maksāšanas"
+  },
+  "footer": {
+    "brandDescription": "Veido ar skaidru procesu, tiešu komunikāciju un palaišanai gatavu piegādi.",
+    "servicesTitle": "Pakalpojumi",
+    "services": [
+      "Tīmekļa Izstrāde",
+      "SEO Optimizācija",
+      "Reklāma",
+      "Dizains",
+      "Atbalsts"
+    ],
+    "companyTitle": "Uzņēmums",
+    "company": [
+      "Par Mums",
+      "Blogs",
+      "Karjera",
+      "Kontakti",
+      "Partneri"
+    ],
+    "legalTitle": "Juridiskais",
+    "legal": [
+      "Privātuma Politika",
+      "Lietošanas Noteikumi",
+      "Sīkdatņu Politika"
+    ],
+    "contactTitle": "Kontakti",
+    "rights": "Company Platform. Visas tiesības aizsargātas."
+  },
+  "dashboard": {
+    "myProfile": "Mans Profils",
+    "backToSite": "Atpakaļ uz vietni",
+    "tabs": {
+      "overview": "Pārskats",
+      "messages": "Ziņojumi",
+      "templates": "Veidnes",
+      "settings": "Iestatījumi"
+    },
+    "overview": {
+      "welcomeBack": "Laipni atkal",
+      "quickAccess": "Ātrā Piekļuve",
+      "emailVerified": "E-pasts verificēts",
+      "emailNotVerified": "E-pasts nav verificēts",
+      "providerAccount": "konts",
+      "links": {
+        "messages": {
+          "label": "Ziņojumi",
+          "description": "Tērzē ar komandu"
+        },
+        "templates": {
+          "label": "Veidnes",
+          "description": "Pārlūko pieejamos projektus"
+        },
+        "settings": {
+          "label": "Iestatījumi",
+          "description": "Pārvaldi savu kontu"
+        }
+      }
+    },
+    "messages": {
+      "title": "Tērzē ar Izstrādātāju",
+      "subtitle": "Nosūti ziņojumu un mēs atbildēsim pēc iespējas ātrāk",
+      "online": "Tiešsaistē",
+      "connecting": "Pieslēdzas…",
+      "translationOn": "Tulkošana IESLĒGTA",
+      "translationOff": "Tulkošana IZSLĒGTA",
+      "translationDesc": "Automātiski tulkot administratora atbildes",
+      "emptyTitle": "Kā varam palīdzēt?",
+      "emptySubtitle": "Izvēlies tēmu zemāk lai sāktu, vai ieraksti savu ziņojumu.",
+      "inputPlaceholderEmpty": "Vai ieraksti savu ziņojumu…",
+      "inputPlaceholderReply": "Atbildi izstrādātājam…",
+      "inputPlaceholderConnecting": "Pieslēdzas…",
+      "userTag": "Lietotājs",
+      "adminTag": "Administrators",
+      "translationLabel": "Tulkojums",
+      "faqSuggestions": [
+        "Vēlos izveidot vietni – no kurienes sākt?",
+        "Man vajag palīdzību izvēlēties pareizo veidni.",
+        "Man jau ir ideja – vai varam to apspriest?",
+        "Vēlos redzēt priekšskatījumu pirms sākšanas.",
+        "Man vajag pielāgotu funkciju – vai tas iespējams?",
+        "Cik ilgs laiks nepieciešams mana projekta palaišanai?"
+      ]
+    },
+    "settings": {
+      "title": "Iestatījumi",
+      "subtitle": "Pārvaldi sava konta preferences",
+      "verified": "Verificēts",
+      "notVerified": "Nav verificēts",
+      "fieldFullName": "Pilns vārds",
+      "fieldEmail": "E-pasta adrese",
+      "fieldSignIn": "Pieteikšanās metode",
+      "fieldMemberSince": "Dalībnieks kopš",
+      "signOutTitle": "Izrakstīties",
+      "signOutSubtitle": "Jūs tiksiet novirzīts uz galveno lapu.",
+      "signOutButton": "Izrakstīties"
+    }
+  },
+  "admin": {
+    "title": "Administrācijas panelis",
+    "backToSite": "Atpakaļ uz vietni",
+    "tabs": {
+      "overview": "Pārskats",
+      "users": "Lietotāji",
+      "content": "Saturs",
+      "messages": "Ziņojumi"
+    },
+    "overview": {
+      "title": "Pārskats",
+      "subtitle": "Platformas statistika īsumā",
+      "statUsers": "Kopā lietotāji",
+      "statContent": "Satura dokumenti",
+      "statLocales": "Aktīvās valodas",
+      "errorLoad": "Neizdevās ielādēt statistiku.",
+      "tipsTitle": "Ātrie padomi",
+      "tip1": "Izmantojiet cilni Lietotāji, lai piešķirtu vai atsauktu administratora piekļuvi.",
+      "tip2": "Izmantojiet cilni Saturs, lai rediģētu jebkuru mājas lapas sadaļu — visas valodas tiek automātiski tulkotas ar AI.",
+      "tip3": "Pievienojiet OPENAI_API_KEY backend/.env, lai iespējotu AI tulkošanu."
+    },
+    "users": {
+      "title": "Lietotāji",
+      "subtitle": "Pārvaldīt platformas lietotājus",
+      "searchPlaceholder": "Meklēt vārdu vai e-pastu…",
+      "colUser": "Lietotājs",
+      "colProvider": "Pakalpojumu sniedzejs",
+      "colStatus": "Statuss",
+      "colRole": "Loma",
+      "verified": "Verificēts",
+      "pending": "Gaida",
+      "makeAdmin": "Padarīt par administratoru",
+      "removeAdmin": "Noņemt administratoru",
+      "confirmSure": "Pārliecināties?",
+      "delete": "Dzēst",
+      "cancel": "Atcelt",
+      "loading": "Lietotāju ielāde…",
+      "noUsers": "Lietotāji nav atrasti"
+    },
+    "messages": {
+      "title": "Ziņojumi",
+      "subtitle": "Tiešsaistes tērzēšana ar lietotājiem",
+      "newBadge": "jauns",
+      "live": "Tiešraidē",
+      "connecting": "Savienošana…",
+      "translationOn": "Tulkošana IESLĒGTA",
+      "translationOff": "Tulkošana IZSLĒGTA",
+      "translationLabel": "Tulkošana",
+      "translationDesc": "Automātiski tulkot lietotāju ziņojumus tavā valodā",
+      "adminTag": "Administrators",
+      "userTag": "Lietotājs",
+      "noConversations": "Vēl nav sarunu",
+      "noUsersMatch": "Neviens lietotājs neatbilst meklēšanai",
+      "selectConversation": "Izvēlēties sarunu",
+      "noMessages": "Šajā sarunā vēl nav ziņojumu.",
+      "searchPlaceholder": "Meklēt lietotājus…",
+      "deleteConversation": "Dzest sarunu",
+      "deleteConfirm": "Dzest?",
+      "deleteCancel": "Atcelt"
+    },
+    "content": {
+      "title": "Satura redaktors",
+      "subtitle": "Rediģēt angs valodas avotu — visas valodas tiek automātiski tulkotas ar AI",
+      "sectionLabel": "Sadaļa:",
+      "sectionHero": "Hero",
+      "sectionPositioning": "Pozicionēšanas josla",
+      "sectionHowItWorks": "Kā tas darbojas",
+      "sectionTemplates": "Veidnuu vitrīna",
+      "sectionCoreOffer": "Galvenais piedāvājums",
+      "sectionServices": "Pakalpojumi",
+      "sectionWhyChooseUs": "Kāpēc izvēlēties mūs",
+      "sectionCta": "Aicinājums uz rīcību",
+      "sectionFooter": "Kājene",
+      "loading": "Ielādē…",
+      "saving": "Saglaba…",
+      "translating": "Saglabats! AI tulko 17 valodas…",
+      "retranslating": "17 valodu atkārtota tulkošana…",
+      "allUpdated": "Visas valodas atjauninātas!",
+      "save": "Saglabāt un Tulkot",
+      "retranslate": "Pārtulkot visu"
+    }
+  }
+}

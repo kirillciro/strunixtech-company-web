@@ -1,17 +1,80 @@
 {
-  "header": {"templates": "Templates", "login": "Inloggen", "logout": "Uitloggen", "chat": "Chat met ontwikkelaar"},
+  "header": {
+    "templates": "Templates",
+    "login": "Inloggen",
+    "logout": "Uitloggen",
+    "chat": "Chat met ontwikkelaar",
+    "services": "Diensten",
+    "company": "Bedrijf",
+    "legal": "Juridisch",
+    "myProfile": "Mijn profiel",
+    "adminDashboard": "Beheerderspaneel",
+    "serviceItems": [
+      "Webontwikkeling",
+      "SEO-optimalisatie",
+      "Adverteren",
+      "Design",
+      "Ondersteuning"
+    ],
+    "companyItems": [
+      "Over ons",
+      "Blog",
+      "Vacatures",
+      "Contact",
+      "Partners"
+    ],
+    "legalItems": [
+      "Privacybeleid",
+      "Servicevoorwaarden",
+      "Cookiebeleid"
+    ],
+    "translationOn": "Vertaling AAN",
+    "translationOff": "Vertaling UIT"
+  },
   "hero": {
     "title": "Bouw je website in dagen - niet weken",
     "subtitle": "Bekijk je website voordat je betaalt",
     "description": "Geen risico. Niet gokken. Eerst een echte preview, daarna bouwen we.",
-    "roadmapLabel": "Hoe het begint",
     "ctaPrimary": "Start chat met ontwikkelaar",
     "ctaSecondary": "Bekijk templates",
     "trustedBy": "Vertrouwd door groeiende teams in Europa",
-    "steps": [
-      {"step": "1", "title": "Kies een template", "detail": "Kies de beste basis voor je website, webapp of intern platform."},
-      {"step": "2", "title": "Pas aan en bekijk", "detail": "Bekijk eerst een live preview zodat design en scope duidelijk zijn."},
-      {"step": "3", "title": "Praat met de ontwikkelaar", "detail": "Stem doelen af, keur het plan goed en ga direct naar uitvoering."}
+    "companies": [
+      "TechCorp",
+      "StartupX",
+      "Design Co",
+      "WebAgency",
+      "NordSoft",
+      "Studiofy"
+    ]
+  },
+  "positioning": {
+    "whyTitle": "Waarom klanten voor ons kiezen",
+    "whyItems": [
+      "Preview voor betaling",
+      "Geen lange contracten",
+      "Direct contact met ontwikkelaar",
+      "Duidelijke scope voor de bouw start"
+    ],
+    "forTitle": "Perfect voor",
+    "forItems": [
+      "MKB-bedrijven",
+      "Startups",
+      "Agencies",
+      "Dienstverleners"
+    ],
+    "nextTitle": "Wat gebeurt er na je chat?",
+    "nextSteps": [
+      "We begrijpen je idee",
+      "Je kiest een template",
+      "We maken je preview",
+      "Jij keurt goed en wij bouwen"
+    ],
+    "supportTitle": "Echte samenwerking, geen ruis",
+    "supportPoints": [
+      "Werk direct met een ontwikkelaar",
+      "Geen tussenlagen",
+      "Geen onnodige vertraging",
+      "Heldere communicatie"
     ]
   },
   "howItWorks": {
@@ -19,9 +82,21 @@
     "description": "Drie duidelijke stappen van idee naar livegang zonder tijdverlies.",
     "cta": "Start het gesprek",
     "steps": [
-      {"step": "1", "title": "Kies een template", "description": "Blader door onze templates en kies het beste startpunt voor je bedrijf."},
-      {"step": "2", "title": "Pas aan & preview", "description": "Pas structuur, branding en functies aan terwijl je de preview bekijkt voor betaling."},
-      {"step": "3", "title": "Praat met de ontwikkelaar", "description": "Bevestig de richting direct met een ontwikkelaar en ga snel door naar levering."}
+      {
+        "step": "1",
+        "title": "Kies een template",
+        "description": "Blader door onze templates en kies het beste startpunt voor je bedrijf."
+      },
+      {
+        "step": "2",
+        "title": "Pas aan & preview",
+        "description": "Pas structuur, branding en functies aan terwijl je de preview bekijkt voor betaling."
+      },
+      {
+        "step": "3",
+        "title": "Praat met de ontwikkelaar",
+        "description": "Bevestig de richting direct met een ontwikkelaar en ga snel door naar levering."
+      }
     ]
   },
   "templates": {
@@ -31,18 +106,60 @@
     "featuredTitle": "Populaire startpunten",
     "demoPreview": "Preview",
     "featuredDemos": [
-      {"name": "Modern Bureau", "category": "business"},
-      {"name": "Boekingsplatform", "category": "bookings"},
-      {"name": "Dashboard Pro", "category": "admin dashboards"}
+      {
+        "name": "Modern Bureau",
+        "category": "business"
+      },
+      {
+        "name": "Boekingsplatform",
+        "category": "bookings"
+      },
+      {
+        "name": "Dashboard Pro",
+        "category": "admin dashboards"
+      }
     ],
     "categories": {
-      "business": {"title": "Bedrijfswebsites", "detail": "Voor bureaus, consultants, lokale bedrijven en dienstverleners."},
-      "bookings": {"title": "Boekingssystemen", "detail": "Voor salons, klinieken, kappers en afspraakgerichte bedrijven."},
-      "ecommerce": {"title": "E-commerce", "detail": "Voor webshops, merken en snelgroeiende retail-ideeën."},
-      "admin-dashboards": {"title": "Dashboards en adminsystemen", "detail": "Voor SaaS-tools, interne systemen, analytics en CRM-producten."},
-      "chat-community": {"title": "Chat- en community-apps", "detail": "Voor supportflows, ledenplatforms en communityproducten."},
-      "mobile-ui": {"title": "Mobiele app UI", "detail": "Voor startup-ideeën, applanceringen en mobile-first producten."},
-      "ai-tools": {"title": "AI-tools", "detail": "Voor automatiseringsproducten, assistenten, generators en AI SaaS."}
+      "business": {
+        "title": "Bedrijfswebsites",
+        "detail": "Voor bureaus, consultants, lokale bedrijven en dienstverleners."
+      },
+      "bookings": {
+        "title": "Boekingssystemen",
+        "detail": "Voor salons, klinieken, kappers en afspraakgerichte bedrijven."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "detail": "Voor webshops, merken en snelgroeiende retail-ideeën."
+      },
+      "admin-dashboards": {
+        "title": "Dashboards en adminsystemen",
+        "detail": "Voor SaaS-tools, interne systemen, analytics en CRM-producten."
+      },
+      "chat-community": {
+        "title": "Chat- en community-apps",
+        "detail": "Voor supportflows, ledenplatforms en communityproducten."
+      },
+      "mobile-ui": {
+        "title": "Mobiele app UI",
+        "detail": "Voor startup-ideeën, applanceringen en mobile-first producten."
+      },
+      "ai-tools": {
+        "title": "AI-tools",
+        "detail": "Voor automatiseringsproducten, assistenten, generators en AI SaaS."
+      },
+      "landing-pages": {
+        "title": "Landingspagina's / Marketingfunnels",
+        "detail": "Voor productlanceringen, leadgeneratie en conversiegericht campagnes."
+      },
+      "portfolio": {
+        "title": "Persoonlijke & portfolio-websites",
+        "detail": "Voor freelancers, designers, developers en creatievelingen die hun werk tonen."
+      },
+      "saas-startup": {
+        "title": "SaaS MVP / Startup Lanceerkits",
+        "detail": "Voor founders die snel willen lanceren, ideeën valideren en hun eerste product uitbrengen."
+      }
     }
   },
   "coreOffer": {
@@ -50,39 +167,110 @@
     "title": "Maatwerk websites & webapps - snel gebouwd",
     "description": "Start met een bewezen template, bekijk de preview voor ontwikkeling en lanceer sneller met direct contact.",
     "briefTitle": "Wat jij meebrengt",
-    "briefItems": ["Je bedrijfsdoelen", "Gewenste template-richting", "Belangrijkste functies", "Je planning en prioriteiten"],
+    "briefItems": [
+      "Je bedrijfsdoelen",
+      "Gewenste template-richting",
+      "Belangrijkste functies",
+      "Je planning en prioriteiten"
+    ],
     "previewTitle": "Wat je terugkrijgt",
     "previewFallback": "Bekijk je demo preview voordat de ontwikkeling start",
     "points": [
-      {"title": "Snelheid met templates", "description": "Start vanuit bewezen systemen zodat levering sneller gaat zonder kwaliteitsverlies."},
-      {"title": "Preview voor betaling", "description": "Bevestig de ontwerp-richting voordat de volledige ontwikkeling begint."},
-      {"title": "Direct contact met ontwikkelaar", "description": "Neem sneller beslissingen en houd vaart in je project."}
+      {
+        "title": "Snelheid met templates",
+        "description": "Start vanuit bewezen systemen zodat levering sneller gaat zonder kwaliteitsverlies."
+      },
+      {
+        "title": "Preview voor betaling",
+        "description": "Bevestig de ontwerp-richting voordat de volledige ontwikkeling begint."
+      },
+      {
+        "title": "Direct contact met ontwikkelaar",
+        "description": "Neem sneller beslissingen en houd vaart in je project."
+      }
     ]
   },
   "services": {
     "title": "Alles wat je nodig hebt om je bedrijf te laten groeien",
     "description": "We bouwen niet alleen je website - we helpen je ook groeien.",
     "groups": [
-      {"title": "Webontwikkeling", "items": ["Websites", "Webapps", "Dashboards"]},
-      {"title": "SEO-optimalisatie", "items": ["Technische SEO", "On-page SEO", "Performance-optimalisatie"]},
-      {"title": "Advertising", "items": ["Meta Ads", "TikTok Ads", "Google Ads"]},
-      {"title": "Design", "items": ["UI/UX Design", "Branding", "Visuele content"]}
+      {
+        "title": "Webontwikkeling",
+        "items": [
+          "Websites",
+          "Webapps",
+          "Dashboards"
+        ]
+      },
+      {
+        "title": "SEO-optimalisatie",
+        "items": [
+          "Technische SEO",
+          "On-page SEO",
+          "Performance-optimalisatie"
+        ]
+      },
+      {
+        "title": "Advertising",
+        "items": [
+          "Meta Ads",
+          "TikTok Ads",
+          "Google Ads"
+        ]
+      },
+      {
+        "title": "Design",
+        "items": [
+          "UI/UX Design",
+          "Branding",
+          "Visuele content"
+        ]
+      }
     ]
   },
   "whyChooseUs": {
     "title": "Jouw volledige digitale launchpartner",
     "description": "We bouwen meer dan alleen pagina's. We helpen bedrijven lanceren met het juiste product, performance-basis en groeiondersteuning.",
     "reasons": [
-      {"title": "Sneller live dan traditionele bureaus", "description": "Ga snel van idee naar oplevering met een gestructureerde template-first workflow."},
-      {"title": "Live preview voor betaling", "description": "Bekijk het concept voordat je kiest voor volledige ontwikkeling."},
-      {"title": "Marketingklare systemen", "description": "Projecten worden vanaf het begin voorbereid voor SEO, tracking en betaalde campagnes."},
-      {"title": "Direct contact met je ontwikkelaar", "description": "Blijf dicht op beslissingen en behoud vaart van planning tot livegang."}
+      {
+        "title": "Sneller live dan traditionele bureaus",
+        "description": "Ga snel van idee naar oplevering met een gestructureerde template-first workflow."
+      },
+      {
+        "title": "Live preview voor betaling",
+        "description": "Bekijk het concept voordat je kiest voor volledige ontwikkeling."
+      },
+      {
+        "title": "Marketingklare systemen",
+        "description": "Projecten worden vanaf het begin voorbereid voor SEO, tracking en betaalde campagnes."
+      },
+      {
+        "title": "Direct contact met je ontwikkelaar",
+        "description": "Blijf dicht op beslissingen en behoud vaart van planning tot livegang."
+      }
     ],
     "stats": [
-      {"label": "Gebouwde projecten", "target": 500, "suffix": "+"},
-      {"label": "Tevreden klanten", "target": 50, "suffix": "+"},
-      {"label": "Levertijd", "target": 14, "prefix": "4-", "suffix": " dagen"},
-      {"label": "Tevredenheid", "target": 98, "suffix": "%"}
+      {
+        "label": "Gebouwde projecten",
+        "target": 500,
+        "suffix": "+"
+      },
+      {
+        "label": "Tevreden klanten",
+        "target": 50,
+        "suffix": "+"
+      },
+      {
+        "label": "Levertijd",
+        "target": 14,
+        "prefix": "4-",
+        "suffix": " dagen"
+      },
+      {
+        "label": "Tevredenheid",
+        "target": 98,
+        "suffix": "%"
+      }
     ]
   },
   "cta": {
@@ -95,12 +283,179 @@
   "footer": {
     "brandDescription": "Bouw met een duidelijk proces, direct contact en oplevering klaar voor lancering.",
     "servicesTitle": "Services",
-    "services": ["Webontwikkeling", "SEO-optimalisatie", "Advertising", "Design", "Support"],
+    "services": [
+      "Webontwikkeling",
+      "SEO-optimalisatie",
+      "Advertising",
+      "Design",
+      "Support"
+    ],
     "companyTitle": "Bedrijf",
-    "company": ["Over ons", "Blog", "Carrières", "Contact", "Partners"],
+    "company": [
+      "Over ons",
+      "Blog",
+      "Carrières",
+      "Contact",
+      "Partners"
+    ],
     "legalTitle": "Juridisch",
-    "legal": ["Privacybeleid", "Voorwaarden", "Cookiebeleid"],
+    "legal": [
+      "Privacybeleid",
+      "Voorwaarden",
+      "Cookiebeleid"
+    ],
     "contactTitle": "Contact",
     "rights": "Company Platform. Alle rechten voorbehouden."
+  },
+  "dashboard": {
+    "myProfile": "Mijn profiel",
+    "backToSite": "Terug naar site",
+    "tabs": {
+      "overview": "Overzicht",
+      "messages": "Berichten",
+      "templates": "Templates",
+      "settings": "Instellingen"
+    },
+    "overview": {
+      "welcomeBack": "Welkom terug",
+      "quickAccess": "Snelle toegang",
+      "emailVerified": "E-mail geverifieerd",
+      "emailNotVerified": "E-mail niet geverifieerd",
+      "providerAccount": "account",
+      "links": {
+        "messages": {
+          "label": "Berichten",
+          "description": "Chat met het team"
+        },
+        "templates": {
+          "label": "Templates",
+          "description": "Bekijk beschikbare projecten"
+        },
+        "settings": {
+          "label": "Instellingen",
+          "description": "Beheer je account"
+        }
+      }
+    },
+    "messages": {
+      "title": "Chat met ontwikkelaar",
+      "subtitle": "Stuur een bericht en we reageren zo snel mogelijk",
+      "online": "Online",
+      "connecting": "Verbinden…",
+      "translationOn": "Vertaling AAN",
+      "translationOff": "Vertaling UIT",
+      "translationDesc": "Vertaal beheerderberichten naar jouw taal",
+      "emptyTitle": "Hoe kunnen we je helpen?",
+      "emptySubtitle": "Kies hieronder een onderwerp of schrijf je eigen bericht.",
+      "inputPlaceholderEmpty": "Of schrijf je eigen bericht…",
+      "inputPlaceholderReply": "Antwoord aan ontwikkelaar…",
+      "inputPlaceholderConnecting": "Verbinden…",
+      "userTag": "Gebruiker",
+      "adminTag": "Admin",
+      "translationLabel": "Vertaling",
+      "faqSuggestions": [
+        "Ik wil een website bouwen — waar begin ik?",
+        "Ik heb hulp nodig bij het kiezen van het juiste template.",
+        "Ik heb al een idee — kunnen we dat bespreken?",
+        "Ik wil een voorbeeld zien voordat ik begin.",
+        "Ik heb een aangepaste functie nodig — is dat mogelijk?",
+        "Hoe lang duurt het om mijn project te lanceren?"
+      ]
+    },
+    "settings": {
+      "title": "Instellingen",
+      "subtitle": "Beheer je accountvoorkeuren",
+      "verified": "Geverifieerd",
+      "notVerified": "Niet geverifieerd",
+      "fieldFullName": "Volledige naam",
+      "fieldEmail": "E-mailadres",
+      "fieldSignIn": "Aanmeldmethode",
+      "fieldMemberSince": "Lid sinds",
+      "signOutTitle": "Uitloggen",
+      "signOutSubtitle": "Je wordt doorgestuurd naar de homepage.",
+      "signOutButton": "Uitloggen"
+    }
+  },
+  "admin": {
+    "title": "Beheerpaneel",
+    "backToSite": "Terug naar site",
+    "tabs": {
+      "overview": "Overzicht",
+      "users": "Gebruikers",
+      "content": "Inhoud",
+      "messages": "Berichten"
+    },
+    "overview": {
+      "title": "Overzicht",
+      "subtitle": "Platformstatistieken in een oogopslag",
+      "statUsers": "Totaal gebruikers",
+      "statContent": "Inhoudsdocumenten",
+      "statLocales": "Actieve talen",
+      "errorLoad": "Statistieken konden niet worden geladen.",
+      "tipsTitle": "Snelle tips",
+      "tip1": "Gebruik het tabblad Gebruikers om beheerderstoegang toe te kennen of in te trekken.",
+      "tip2": "Gebruik het tabblad Inhoud om een homepagesectie te bewerken — alle talen worden automatisch vertaald via AI.",
+      "tip3": "Voeg OPENAI_API_KEY toe aan backend/.env om AI-vertaling in te schakelen."
+    },
+    "users": {
+      "title": "Gebruikers",
+      "subtitle": "Platformgebruikers beheren",
+      "searchPlaceholder": "Naam of e-mail zoeken…",
+      "colUser": "Gebruiker",
+      "colProvider": "Provider",
+      "colStatus": "Status",
+      "colRole": "Rol",
+      "verified": "Geverifieerd",
+      "pending": "In behandeling",
+      "makeAdmin": "Beheerder maken",
+      "removeAdmin": "Beheerder verwijderen",
+      "confirmSure": "Zeker?",
+      "delete": "Verwijderen",
+      "cancel": "Annuleren",
+      "loading": "Gebruikers laden…",
+      "noUsers": "Geen gebruikers gevonden"
+    },
+    "messages": {
+      "title": "Berichten",
+      "subtitle": "Live chat met gebruikers",
+      "newBadge": "nieuw",
+      "live": "Live",
+      "connecting": "Verbinden…",
+      "translationOn": "Vertaling AAN",
+      "translationOff": "Vertaling UIT",
+      "translationLabel": "Vertaling",
+      "translationDesc": "Vertaal gebruikersberichten naar jouw taal",
+      "adminTag": "Beheerder",
+      "userTag": "Gebruiker",
+      "noConversations": "Nog geen gesprekken",
+      "noUsersMatch": "Geen gebruikers komen overeen met uw zoekopdracht",
+      "selectConversation": "Selecteer een gesprek",
+      "noMessages": "Nog geen berichten in dit gesprek.",
+      "searchPlaceholder": "Gebruikers zoeken…",
+      "deleteConversation": "Gesprek verwijderen",
+      "deleteConfirm": "Verwijderen?",
+      "deleteCancel": "Annuleren"
+    },
+    "content": {
+      "title": "Inhoudeditor",
+      "subtitle": "Engelse bron bewerken — alle talen worden automatisch vertaald via AI",
+      "sectionLabel": "Sectie:",
+      "sectionHero": "Hero",
+      "sectionPositioning": "Positioneringsstrip",
+      "sectionHowItWorks": "Hoe het werkt",
+      "sectionTemplates": "Templates-showcase",
+      "sectionCoreOffer": "Kernaanbod",
+      "sectionServices": "Diensten",
+      "sectionWhyChooseUs": "Waarom ons kiezen",
+      "sectionCta": "Oproep tot actie",
+      "sectionFooter": "Voettekst",
+      "loading": "Laden…",
+      "saving": "Opslaan…",
+      "translating": "Opgeslagen! AI vertaalt 17 talen…",
+      "retranslating": "17 talen opnieuw vertalen…",
+      "allUpdated": "Alle talen bijgewerkt!",
+      "save": "Opslaan & Vertalen",
+      "retranslate": "Alles opnieuw vertalen"
+    }
   }
 }

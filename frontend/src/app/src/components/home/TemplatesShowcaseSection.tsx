@@ -1,13 +1,18 @@
 import { templateCategories } from "@/lib/template-categories";
 import Link from "next/link";
 import {
+  ArrowRight,
   Bot,
   BriefcaseBusiness,
   CalendarDays,
   LayoutDashboard,
+  LayoutTemplate,
   MessageSquareMore,
+  MousePointerClick,
+  Rocket,
   ShoppingBag,
   Smartphone,
+  UserRound,
 } from "lucide-react";
 
 const categoryIconMap = {
@@ -18,7 +23,49 @@ const categoryIconMap = {
   "messages-square": MessageSquareMore,
   smartphone: Smartphone,
   bot: Bot,
+  "mouse-pointer-click": MousePointerClick,
+  "user-round": UserRound,
+  rocket: Rocket,
 } as const;
+
+const categoryAccent = [
+  {
+    from: "from-cyan-500",
+    to: "to-blue-600",
+    glow: "group-hover:shadow-cyan-500/20",
+    border: "group-hover:border-cyan-500/50",
+    iconBg: "from-cyan-500/20 to-blue-600/10",
+    iconColor: "text-cyan-400",
+    badge: "bg-cyan-500/10 text-cyan-300 border-cyan-500/20",
+  },
+  {
+    from: "from-blue-500",
+    to: "to-violet-600",
+    glow: "group-hover:shadow-blue-500/20",
+    border: "group-hover:border-blue-500/50",
+    iconBg: "from-blue-500/20 to-violet-600/10",
+    iconColor: "text-blue-400",
+    badge: "bg-blue-500/10 text-blue-300 border-blue-500/20",
+  },
+  {
+    from: "from-violet-500",
+    to: "to-purple-600",
+    glow: "group-hover:shadow-violet-500/20",
+    border: "group-hover:border-violet-500/50",
+    iconBg: "from-violet-500/20 to-purple-600/10",
+    iconColor: "text-violet-400",
+    badge: "bg-violet-500/10 text-violet-300 border-violet-500/20",
+  },
+  {
+    from: "from-emerald-500",
+    to: "to-teal-600",
+    glow: "group-hover:shadow-emerald-500/20",
+    border: "group-hover:border-emerald-500/50",
+    iconBg: "from-emerald-500/20 to-teal-600/10",
+    iconColor: "text-emerald-400",
+    badge: "bg-emerald-500/10 text-emerald-300 border-emerald-500/20",
+  },
+];
 
 type TemplatesContent = {
   title: string;
@@ -45,21 +92,46 @@ export default function TemplatesShowcaseSection({
     lang === "nl" ? "Bekijk alle templates" : "View all templates";
 
   return (
-    <section className="py-14 sm:py-20 bg-slate-800/30 border-y border-slate-700/50 reveal">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 reveal reveal-delay-1">
-          <span className="bg-linear-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
-            {content.title}
-          </span>
-        </h2>
-        <p className="text-slate-400 text-center mb-10 sm:mb-16 max-w-2xl mx-auto reveal reveal-delay-2">
-          {content.description}
-        </p>
+    <section className="relative py-20 sm:py-28 bg-slate-950 overflow-hidden reveal">
+      {/* Subtle background pattern */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle, #475569 1px, transparent 1px)",
+            backgroundSize: "32px 32px",
+            opacity: 0.12,
+            maskImage:
+              "linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)",
+          }}
+        />
+      </div>
 
-        {/* Template Categories Grid */}
-        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        {/* Header */}
+        <div className="text-center mb-14 sm:mb-20 reveal reveal-delay-1">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 mb-5">
+            <LayoutTemplate className="w-3.5 h-3.5" />
+            Templates
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+            <span className="bg-linear-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
+              {content.title}
+            </span>
+          </h2>
+          <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+            {content.description}
+          </p>
+        </div>
+
+        {/* Cards Grid */}
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-10 sm:mb-14">
           {visibleCategories.map((category, index) => {
             const Icon = categoryIconMap[category.icon];
+            const accent = categoryAccent[index % categoryAccent.length];
             const localizedCategory = content.categories[category.slug] ?? {
               title: category.title,
               detail: category.detail,
@@ -68,72 +140,60 @@ export default function TemplatesShowcaseSection({
               <Link
                 key={category.slug}
                 href={`/${lang}/templates/${category.slug}`}
-                className="group bg-slate-800/50 border border-slate-700 rounded-lg p-5 sm:p-8 hover:border-cyan-400/50 transition-all hover:bg-slate-800 reveal card-hover-lift"
-                style={{ transitionDelay: `${100 + index * 80}ms` }}
+                className={`group relative rounded-2xl border border-slate-700/60 bg-slate-900/60 p-6 sm:p-8 transition-all duration-300 hover:shadow-xl ${accent.glow} ${accent.border} reveal card-hover-lift overflow-hidden`}
+                style={{ transitionDelay: `${index * 80}ms` }}
               >
-                <div className="mb-4">
-                  <Icon className="w-9 h-9 text-cyan-300 animate-icon-breathe" />
-                </div>
-                <h3 className="text-white font-semibold text-lg mb-2 group-hover:text-cyan-300 transition-colors">
-                  {localizedCategory.title}
-                </h3>
-                <p className="text-slate-400 text-sm mb-4">
-                  {localizedCategory.detail}
-                </p>
-                <div className="flex items-center text-cyan-400 group-hover:gap-2 transition-all">
-                  {content.explore}
-                  <svg
-                    className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
+                {/* Inner gradient wash */}
+                <div
+                  className={`absolute inset-0 bg-linear-to-br ${accent.iconBg} opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`}
+                />
+
+                <div className="relative">
+                  {/* Icon + badge row */}
+                  <div className="flex items-start justify-between mb-5">
+                    <div
+                      className={`flex items-center justify-center w-12 h-12 rounded-xl bg-linear-to-br ${accent.iconBg} border border-white/10`}
+                    >
+                      <Icon className={`w-6 h-6 ${accent.iconColor}`} />
+                    </div>
+                    <span
+                      className={`px-2.5 py-1 rounded-full text-[11px] font-semibold border ${accent.badge}`}
+                    >
+                      Templates
+                    </span>
+                  </div>
+
+                  {/* Text */}
+                  <h3 className="text-white font-semibold text-lg sm:text-xl mb-2 group-hover:text-white transition-colors leading-snug">
+                    {localizedCategory.title}
+                  </h3>
+                  <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                    {localizedCategory.detail}
+                  </p>
+
+                  {/* Explore link */}
+                  <div
+                    className={`inline-flex items-center gap-1.5 text-sm font-medium ${accent.iconColor} group-hover:gap-2.5 transition-all`}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 7l5 5m0 0l-5 5m5-5H6"
-                    />
-                  </svg>
+                    {content.explore}
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  </div>
                 </div>
               </Link>
             );
           })}
         </div>
 
-        <div className="mb-10 sm:mb-12 text-center">
+        {/* View all CTA */}
+        <div className="text-center reveal reveal-delay-3">
           <Link
-            href={`/${lang}/templates`}
-            className="btn-soft-motion inline-flex items-center gap-2 rounded-lg border border-slate-600 px-5 py-3 text-sm font-semibold text-slate-100 hover:border-cyan-400 hover:text-cyan-200"
+            href={`/${lang}/dashboard?tab=templates`}
+            className="btn-soft-motion inline-flex items-center gap-2.5 px-8 py-4 rounded-xl border border-slate-600 bg-slate-900/60 text-sm font-semibold text-slate-100 hover:border-cyan-400 hover:text-cyan-300 hover:bg-slate-800/80 transition-all duration-200 shadow-lg shadow-black/20"
           >
-            + {viewAllLabel}
+            <LayoutTemplate className="w-4 h-4" />
+            {viewAllLabel}
+            <ArrowRight className="w-4 h-4" />
           </Link>
-        </div>
-
-        {/* Demo Projects Showcase */}
-        <div className="pt-12 border-t border-slate-700/50 reveal reveal-delay-3">
-          <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8">
-            {content.featuredTitle}
-          </h3>
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
-            {content.featuredDemos.map((demo, index) => (
-              <Link
-                key={demo.name}
-                href={`/${lang}/templates/${["business", "bookings", "admin-dashboards"][index]}`}
-                className="group bg-linear-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-lg overflow-hidden hover:border-cyan-400/50 transition-all"
-              >
-                <div className="h-40 bg-linear-to-br from-cyan-500/10 to-blue-600/10 flex items-center justify-center text-slate-400 group-hover:from-cyan-500/20 group-hover:to-blue-600/20 transition-colors">
-                  <span className="text-sm">{content.demoPreview}</span>
-                </div>
-                <div className="p-6">
-                  <h4 className="text-white font-semibold mb-2">{demo.name}</h4>
-                  <p className="text-slate-400 text-sm capitalize">
-                    {demo.category}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
         </div>
       </div>
     </section>

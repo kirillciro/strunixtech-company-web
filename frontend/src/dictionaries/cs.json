@@ -1,0 +1,460 @@
+{
+  "header": {
+    "templates": "Šablony",
+    "login": "Přihlásit se",
+    "logout": "Odhlásit se",
+    "chat": "Chat s Vývojářem",
+    "services": "Služby",
+    "company": "Společnost",
+    "legal": "Právní",
+    "myProfile": "Můj Profil",
+    "adminDashboard": "Admin Panel",
+    "serviceItems": [
+      "Vývoj Webu",
+      "SEO Optimalizace",
+      "Reklama",
+      "Design",
+      "Podpora"
+    ],
+    "companyItems": [
+      "O Nás",
+      "Blog",
+      "Kariéra",
+      "Kontakt",
+      "Partneři"
+    ],
+    "legalItems": [
+      "Zásady Ochrany Osobních Údajů",
+      "Podmínky Služby",
+      "Zásady Cookies"
+    ],
+    "translationOn": "Překlad ZAPNUT",
+    "translationOff": "Překlad VYPNUT"
+  },
+  "hero": {
+    "title": "Vytvořte Svůj Web za Dny – Ne Týdny",
+    "subtitle": "Zobrazte Svůj Web Před Platbou",
+    "description": "Žádné riziko. Žádné hádání. Skutečný náhled před výstavbou.",
+    "ctaPrimary": "Zahájit Chat s Vývojářem",
+    "ctaSecondary": "Prohlédnout Šablony",
+    "trustedBy": "Zabezpečení pro rostoucí týmy po celé Evropě",
+    "companies": [
+      "TechCorp",
+      "StartupX",
+      "Design Co",
+      "WebAgency",
+      "NordSoft",
+      "Studiofy"
+    ]
+  },
+  "positioning": {
+    "whyTitle": "Žádné Riziko. Žádné Hádání. Jen Jasnost.",
+    "whyItems": [
+      "Prohlédněte web před platbou",
+      "Přesně víte, co dostanete, než začne vývoj",
+      "Pracujte přímo s vývojářem, který buduje váš projekt",
+      "Žádný skrytý rozsah, žádné neočekávané náklady"
+    ],
+    "forTitle": "Vytvořeno pro lidi, kteří chtějí postupovat rychle",
+    "forItems": [
+      "Zakladatelé, kteří spouštějí nové nápady",
+      "Firmy, které aktualizují zastaralé weby",
+      "Agentury, které potřebují rychlé a spolehlivé provedení"
+    ],
+    "nextTitle": "Od Nápadu k Spuštění – Jednoduše a Rychle",
+    "nextSteps": [
+      "Řekněte nám, co chcete vytvořit",
+      "Spárujeme vás se správnou šablonou",
+      "Zkontrolujte skutečný funkční náhled",
+      "Vytváříme a spouštíme váš projekt"
+    ],
+    "supportTitle": "Přímá Komunikace. Rychlejší Výsledky.",
+    "supportPoints": [
+      "Mluvte přímo se svým vývojářem v každém kroku",
+      "Žádní správci účtů ani zbytečné vrstvy",
+      "Rychlé odpovědi a jasná rozhodnutí",
+      "Vytvořeno tak, aby váš projekt byl stále v pohybu"
+    ]
+  },
+  "howItWorks": {
+    "title": "Jak To Funguje",
+    "description": "Tři praktické kroky pro přechod od nápadu ke spuštění bez ztraceného času.",
+    "cta": "Zahájit Rozhovor",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Vyberte Šablonu",
+        "description": "Prohlédněte si naši kolekci šablon a vyberte nejbližší výchozí bod pro vaše podnikání."
+      },
+      {
+        "step": "2",
+        "title": "Přizpůsobte a Prohlédněte",
+        "description": "Upravte strukturu, branding a funkce zároveň při kontrole náhledu před platbou."
+      },
+      {
+        "step": "3",
+        "title": "Mluvte s Vývojářem",
+        "description": "Potvrďte směr přímo s vývojářem a přejděte k rychlému dodání."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Šablony, které Urychlují Dodání",
+    "description": "Začněte od osvědčeného základu a přizpůsobte ho svému podnikání za kratší dobu.",
+    "explore": "Prozkoumat",
+    "featuredTitle": "Populární Výchozí Body",
+    "demoPreview": "Náhled",
+    "featuredDemos": [
+      {
+        "name": "Moderní Agentura",
+        "category": "business"
+      },
+      {
+        "name": "Rezervační Platforma",
+        "category": "bookings"
+      },
+      {
+        "name": "Dashboard Pro",
+        "category": "admin dashboards"
+      }
+    ],
+    "categories": {
+      "business": {
+        "title": "Firemní Webové Stránky",
+        "detail": "Pro agentury, konzultanty, místní podniky a servisní značky."
+      },
+      "bookings": {
+        "title": "Rezervační Systémy",
+        "detail": "Pro salony, kliniky, holičství a podniky nastavené na termíny."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "detail": "Pro internetové obchody, produktové značky a rychle se pohybující maloobchodní nápady."
+      },
+      "admin-dashboards": {
+        "title": "Dashboardy a Admin Systémy",
+        "detail": "Pro SaaS nástroje, interní systémy, analýzu a CRM produkty."
+      },
+      "chat-community": {
+        "title": "Chat a Komunitní Aplikace",
+        "detail": "Pro podpůrné toky, členské platformy a produkty orientované na komunitu."
+      },
+      "mobile-ui": {
+        "title": "UI Mobilní Aplikace",
+        "detail": "Pro startup koncepty, spouštění aplikací a produkty mobile-first."
+      },
+      "ai-tools": {
+        "title": "AI Nástroje",
+        "detail": "Pro automatizační produkty, asistenty, generátory a AI SaaS nápady."
+      },
+      "landing-pages": {
+        "title": "Vstupní Stránky / Marketingové Trychtýře",
+        "detail": "Pro spouštění produktů, generování potenciálních zákazníků a konverzně zaměřené kampaně."
+      },
+      "portfolio": {
+        "title": "Osobní a Portfoliové Webové Stránky",
+        "detail": "Pro freelancery, designéry, vývojáře a kreativce, kteří předvádějí svou práci."
+      },
+      "saas-startup": {
+        "title": "SaaS MVP / Startovní Sady pro Startupy",
+        "detail": "Pro zakladatele, kteří chtějí rychle spustit, ověřit nápady a vydat první produkt."
+      }
+    }
+  },
+  "coreOffer": {
+    "eyebrow": "Hlavní Nabídka",
+    "title": "Vlastní Webové Stránky a Webové Aplikace – Rychle Vytvořené",
+    "description": "Začněte od osvědčené šablony, prohlédněte si před vývojem a spusťte rychleji s přímou spoluprací s vývojářem.",
+    "briefTitle": "Co Přinášíte Vy",
+    "briefItems": [
+      "Cíle vašeho podnikání",
+      "Preferovaný směr šablony",
+      "Klíčové funkce, které potřebujete",
+      "Váš časový harmonogram a priority"
+    ],
+    "previewTitle": "Co Dostanete Zpět",
+    "previewFallback": "Podívejte se na demo náhled, než začne vývoj",
+    "points": [
+      {
+        "title": "Rychlost na Základě Šablon",
+        "description": "Používejte osvědčené šablonové systémy ke zkrácení doby výstavby."
+      },
+      {
+        "title": "Náhled Před Platbou",
+        "description": "Ověřte směr designu, než začne úplný vývoj."
+      },
+      {
+        "title": "Přímý Pracovní Postup s Vývojářem",
+        "description": "Pracujte přímo se stavitelem a udržujte rozhodnutí rychlá."
+      }
+    ]
+  },
+  "services": {
+    "title": "Digitální Služby, které Podporují Růst",
+    "description": "Nejen, že budujeme váš web – pomáháme mu růst.",
+    "groups": [
+      {
+        "title": "Vývoj Webu",
+        "items": [
+          "Webové stránky",
+          "Webové aplikace",
+          "Dashboardy"
+        ]
+      },
+      {
+        "title": "SEO Optimalizace",
+        "items": [
+          "Technické SEO",
+          "On-page SEO",
+          "Optimalizace výkonu"
+        ]
+      },
+      {
+        "title": "Reklama",
+        "items": [
+          "Meta reklamy",
+          "TikTok reklamy",
+          "Google reklamy"
+        ]
+      },
+      {
+        "title": "Design",
+        "items": [
+          "UI/UX design",
+          "Branding",
+          "Vizuální obsah"
+        ]
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Váš Kompletní Partner pro Digitální Spuštění",
+    "description": "Děláme více než jen stavíme stránky. Pomáháme podnikům spuštět se správným produktem, výkonnostním základem a podporou růstu.",
+    "reasons": [
+      {
+        "title": "Spusťte Rychleji než Tradiční Agentury",
+        "description": "Přejděte od nápadu k dodání rychle se strukturovaným pracovním postupem na základě šablon."
+      },
+      {
+        "title": "Živý náhled před platbou",
+        "description": "Zkontrolujte koncept, než se zavážete k úplnému vývoji."
+      },
+      {
+        "title": "Systémy připravené pro marketing",
+        "description": "Projekty jsou budovány s podporou SEO, sledování a placeného provozu od začátku."
+      },
+      {
+        "title": "Přímá Komunikace s Vaším Vývojářem",
+        "description": "Zůstaňte blízko rozhodnutím a udržujte dynamiku od plánování ke spuštění."
+      }
+    ],
+    "stats": [
+      {
+        "label": "Vytvořené Projekty",
+        "target": 500,
+        "suffix": "+"
+      },
+      {
+        "label": "Spokojení Zákazníci",
+        "target": 50,
+        "suffix": "+"
+      },
+      {
+        "label": "Doba Dodání",
+        "target": 14,
+        "prefix": "4-",
+        "suffix": " dní"
+      },
+      {
+        "label": "Míra Spokojenosti",
+        "target": 98,
+        "suffix": "%"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Začněte Svůj Projekt Dnes",
+    "description": "Zobrazte si svůj web před platbou, pak vytvářejte s jasným směrem.",
+    "primary": "Zahájit Chat s Vývojářem",
+    "secondary": "Prohlédnout Šablony",
+    "trust": "Kreditní karta není potřeba • Bezplatná konzultace • Náhled před platbou"
+  },
+  "footer": {
+    "brandDescription": "Stavte s jasným procesem, přímou komunikací a dodávkou připravenou ke spuštění.",
+    "servicesTitle": "Služby",
+    "services": [
+      "Vývoj Webu",
+      "SEO Optimalizace",
+      "Reklama",
+      "Design",
+      "Podpora"
+    ],
+    "companyTitle": "Společnost",
+    "company": [
+      "O Nás",
+      "Blog",
+      "Kariéra",
+      "Kontakt",
+      "Partneři"
+    ],
+    "legalTitle": "Právní",
+    "legal": [
+      "Zásady Ochrany Osobních Údajů",
+      "Podmínky Služby",
+      "Zásady Cookies"
+    ],
+    "contactTitle": "Kontakt",
+    "rights": "Company Platform. Všechna práva vyhrazena."
+  },
+  "dashboard": {
+    "myProfile": "Můj Profil",
+    "backToSite": "Zpět na web",
+    "tabs": {
+      "overview": "Přehled",
+      "messages": "Zprávy",
+      "templates": "Šablony",
+      "settings": "Nastavení"
+    },
+    "overview": {
+      "welcomeBack": "Vítejte zpět",
+      "quickAccess": "Rychlý Přístup",
+      "emailVerified": "E-mail ověřen",
+      "emailNotVerified": "E-mail neověřen",
+      "providerAccount": "účet",
+      "links": {
+        "messages": {
+          "label": "Zprávy",
+          "description": "Chatujte s týmem"
+        },
+        "templates": {
+          "label": "Šablony",
+          "description": "Prohlédněte dostupné projekty"
+        },
+        "settings": {
+          "label": "Nastavení",
+          "description": "Spravujte svůj účet"
+        }
+      }
+    },
+    "messages": {
+      "title": "Chat s Vývojářem",
+      "subtitle": "Pošlete zprávu a odpovíme co nejdříve",
+      "online": "Online",
+      "connecting": "Připojování…",
+      "translationOn": "Překlad ZAPNUT",
+      "translationOff": "Překlad VYPNUT",
+      "translationDesc": "Automaticky překládat odpovědi admina",
+      "emptyTitle": "Jak vám můžeme pomoci?",
+      "emptySubtitle": "Vyberte téma níže pro začátek, nebo napište vlastní zprávu.",
+      "inputPlaceholderEmpty": "Nebo napište vlastní zprávu…",
+      "inputPlaceholderReply": "Odpovězte vývojáři…",
+      "inputPlaceholderConnecting": "Připojování…",
+      "userTag": "Uživatel",
+      "adminTag": "Admin",
+      "translationLabel": "Překlad",
+      "faqSuggestions": [
+        "Chci vytvořit web – kde začít?",
+        "Potřebuji pomoc s výběrem správné šablony.",
+        "Mám již nápad – můžeme ho prodiskutovat?",
+        "Chci vidět náhled před začátkem.",
+        "Potřebuji vlastní funkci – je to možné?",
+        "Jak dlouho trvá spuštění mého projektu?"
+      ]
+    },
+    "settings": {
+      "title": "Nastavení",
+      "subtitle": "Spravujte předvolby svého účtu",
+      "verified": "Ověřeno",
+      "notVerified": "Neověřeno",
+      "fieldFullName": "Celé jméno",
+      "fieldEmail": "E-mailová adresa",
+      "fieldSignIn": "Způsob přihlášení",
+      "fieldMemberSince": "Člen od",
+      "signOutTitle": "Odhlásit se",
+      "signOutSubtitle": "Budete přesměrováni na hlavní stránku.",
+      "signOutButton": "Odhlásit se"
+    }
+  },
+  "admin": {
+    "title": "Administrátorský panel",
+    "backToSite": "Zpět na web",
+    "tabs": {
+      "overview": "Přehled",
+      "users": "Uživatelé",
+      "content": "Obsah",
+      "messages": "Zprávy"
+    },
+    "overview": {
+      "title": "Přehled",
+      "subtitle": "Statistiky platformy na první pohled",
+      "statUsers": "Celkem uživatelů",
+      "statContent": "Dokumenty obsahu",
+      "statLocales": "Aktivní jazyky",
+      "errorLoad": "Statistiky se nepodařilo načíst.",
+      "tipsTitle": "Rychlé tipy",
+      "tip1": "Použijte záložku Uživatelé pro udělení nebo odebrání administrátorského přístupu.",
+      "tip2": "Použijte záložku Obsah pro úpravu libovolné sekce domovské stránky — všechny jazyky jsou automaticky přeloženy pomocí AI.",
+      "tip3": "Přidejte OPENAI_API_KEY do backend/.env pro povolení překladu AI."
+    },
+    "users": {
+      "title": "Uživatelé",
+      "subtitle": "Správa uživatelů platformy",
+      "searchPlaceholder": "Hledat jméno nebo e-mail…",
+      "colUser": "Uživatel",
+      "colProvider": "Poskytovatel",
+      "colStatus": "Stav",
+      "colRole": "Role",
+      "verified": "Ověřen",
+      "pending": "Čekající",
+      "makeAdmin": "Udělat administrátorem",
+      "removeAdmin": "Odebrat administrátora",
+      "confirmSure": "Jste si jistí?",
+      "delete": "Smazat",
+      "cancel": "Zrušit",
+      "loading": "Načítání uživatelů…",
+      "noUsers": "Žádní uživatelé nenalezeni"
+    },
+    "messages": {
+      "title": "Zprávy",
+      "subtitle": "Živý chat s uživateli",
+      "newBadge": "nové",
+      "live": "Live",
+      "connecting": "Připojování…",
+      "translationOn": "Překlad ZAP",
+      "translationOff": "Překlad VYP",
+      "translationLabel": "Překlad",
+      "translationDesc": "Automaticky překládat zprávy uživatelů do tvého jazyka",
+      "adminTag": "Admin",
+      "userTag": "Uživatel",
+      "noConversations": "Zatím žádné konverzace",
+      "noUsersMatch": "Žádní uživatelé neodpovídají vašemu hledání",
+      "selectConversation": "Vyberte konverzaci",
+      "noMessages": "V této konverzaci zatím nejsou žádné zprávy.",
+      "searchPlaceholder": "Hledat uživatele…",
+      "deleteConversation": "Smazat konverzaci",
+      "deleteConfirm": "Smazat?",
+      "deleteCancel": "Zrusit"
+    },
+    "content": {
+      "title": "Editor obsahu",
+      "subtitle": "Upravte anglický zdroj — všechny jazyky jsou automaticky přeloženy pomocí AI",
+      "sectionLabel": "Sekce:",
+      "sectionHero": "Hero",
+      "sectionPositioning": "Lišta pozicování",
+      "sectionHowItWorks": "Jak to funguje",
+      "sectionTemplates": "Prezentace šablon",
+      "sectionCoreOffer": "Hlavní nabídka",
+      "sectionServices": "Služby",
+      "sectionWhyChooseUs": "Proč nás vybrat",
+      "sectionCta": "Výzva k akci",
+      "sectionFooter": "Zápatí",
+      "loading": "Načítání…",
+      "saving": "Ukládání…",
+      "translating": "Uloženo! AI překládá 17 jazyků…",
+      "retranslating": "Opakovaný překlad 17 jazyků…",
+      "allUpdated": "Všechny jazyky aktualizovány!",
+      "save": "Uložit a Přeložit",
+      "retranslate": "Přeložit vše znovu"
+    }
+  }
+}
